@@ -12,7 +12,7 @@ public class PersistentSingleton : MonoBehaviour
     private void Awake()
     {
         int numberOfObject = 0;
-        foreach (PersistentSingleton singleton in FindObjectsOfType<PersistentSingleton>())
+        foreach (PersistentSingleton singleton in FindObjectsByType<PersistentSingleton>(FindObjectsSortMode.None))
         {
             if (singleton.id  == id)
             {
