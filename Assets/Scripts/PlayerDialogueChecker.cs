@@ -7,23 +7,40 @@ public class PlayerDialogueChecker : MonoBehaviour
     int currentDialogueIndex = 0;
 
     UIManager uiManager;
+    PlayerController playerController;
 
     private void Start()
     {
-        uiManager = FindFirstObjectByType<UIManager>();
-
-        Debug.Log(uiManager.gameObject.name);
+        uiManager = FindObjectOfType<UIManager>();
+        playerController = FindObjectOfType<PlayerController>();
     }
 
     private void Update()
     {
-        Debug.Log("aa");
+        Dialogue();
+    }
 
-        if (isInteractable)
+    void Dialogue()
+    {
+        if (isInteractable && Input.GetKeyDown(KeyCode.Return))
         {
-            if (Input.GetKeyDown(KeyCode.H))
+            if (!uiManager.IsDisplayingSymbols)
             {
-                uiManager.ShowDialogue("This is a test Dialogue!");
+                if (currentDialogueIndex < currentDialogue.DialogueLines.Length)
+                {
+                    uiManager.ShowDialogue(currentDialogue.DialogueLines[currentDialogueIndex]);
+
+                    currentDialogueIndex++;
+                }
+                else
+                {
+                    uiManager.CloseDialogue();
+                    currentDialogueIndex = 0;
+                }
+            }
+            else
+            {
+                uiManager.QuickCompleteDialogue(currentDialogue.DialogueLines[currentDialogueIndex - 1]);
             }
         }
     }
@@ -31,8 +48,6 @@ public class PlayerDialogueChecker : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("a");
-
         if (other.gameObject.CompareTag("Dialogue"))
         {
             isInteractable = true;
@@ -45,6 +60,8 @@ public class PlayerDialogueChecker : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Dialogue"))
         {
+            uiManager.CloseDialogue();
+
             isInteractable = false;
 
             currentDialogue = null;

@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     bool isMoving;
     Vector3 velocity;
 
+    bool moveBlock;
+
     bool isGrounded;
     bool canJump;
     float coyoteTimeLeft;
@@ -37,6 +39,8 @@ public class PlayerController : MonoBehaviour
 
     CharacterController controller;
 
+    public bool MoveBlock { get { return moveBlock; } set {  moveBlock = value; } }
+
     private void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -44,6 +48,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (moveBlock) { return; }
+
         GroundCheck();
         Move();
         RotatePlayer();
