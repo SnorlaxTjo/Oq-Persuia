@@ -1,0 +1,9 @@
+CITY
+
+MAGITY
+
+A good description about Magity
+
+- Point A
+- Point B
+- Point C

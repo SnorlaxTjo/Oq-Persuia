@@ -1,0 +1,9 @@
+CITY
+
+MOJERA OUTSKIRTS
+
+The outskirts of Mojera
+
+- Point A
+- Point B
+- Point C

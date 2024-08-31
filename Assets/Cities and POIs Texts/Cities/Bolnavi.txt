@@ -1,0 +1,9 @@
+CITY
+
+BOLNAVI
+
+A good description about Bolnavi
+
+- Point A
+- Point B
+- Point C

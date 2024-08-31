@@ -1,0 +1,9 @@
+CITY
+
+PEDREZADIO
+
+A good description about Pedrezadio
+
+- Point A
+- Point B
+- Point C
