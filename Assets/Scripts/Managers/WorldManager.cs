@@ -7,14 +7,17 @@ public class WorldManager : MonoBehaviour
 {
     [SerializeField] GameObject player;
     [SerializeField] World[] worlds;
+    [SerializeField] float timeToHaveBlackScreen;
 
     Vector3[] localCameraLimits = new Vector3[2];
 
     CameraManager cameraManager;
+    UIManager uiManager;
 
     private void Start()
     {
         cameraManager = FindObjectOfType<CameraManager>();
+        uiManager = FindObjectOfType<UIManager>();
     }
 
     public Vector3[] LocalCameraLimits { get { return localCameraLimits; } }
@@ -27,9 +30,10 @@ public class WorldManager : MonoBehaviour
     IEnumerator ChangeWorldRoutine(int world, int teleportPosition)
     {
         player.GetComponent<PlayerController>().MoveBlock = true;
-        player.GetComponent<CharacterController>().enabled = false;
 
-        yield return new WaitForEndOfFrame();
+        uiManager.SetTransition(true);
+
+        yield return new WaitForSeconds(1);
 
         World setWorld = worlds[world];
 
@@ -45,9 +49,10 @@ public class WorldManager : MonoBehaviour
         cameraManager.ChangeCameraLimits(localCameraLimits[0], localCameraLimits[1]);
         player.transform.position = setWorld.teleportPlaces[teleportPosition].position;
 
-        yield return new WaitForEndOfFrame();
+        yield return new WaitForSeconds(timeToHaveBlackScreen);
 
-        player.GetComponent<CharacterController>().enabled = true;
+        uiManager.SetTransition(false);
+
         player.GetComponent<PlayerController>().MoveBlock = false;
     }
 }

@@ -21,6 +21,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI descriptionText;
     [SerializeField] TextMeshProUGUI locationsText;
 
+    [Header("Transition")]
+    [SerializeField] Animator transitionAnimator;
+
     #region Dialogue Variables
     bool isDisplayingSymbols;
     char[] dialogueChars;
@@ -124,6 +127,13 @@ public class UIManager : MonoBehaviour
         titleText.text = string.Empty;
         descriptionText.text = string.Empty;
         locationsText.text = string.Empty;
+    }
+    #endregion
+
+    #region Transition
+    public void SetTransition(bool whatToSet)
+    {
+        transitionAnimator.SetBool("Transition", whatToSet);
     }
     #endregion
 }

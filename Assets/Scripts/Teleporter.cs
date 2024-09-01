@@ -12,7 +12,7 @@ public class Teleporter : MonoBehaviour
 
     private void Start()
     {
-        worldManager = transform.parent.parent.GetComponent<WorldManager>();
+        worldManager = FindObjectOfType<WorldManager>();
     }
 
     private void OnTriggerEnter(Collider other)
