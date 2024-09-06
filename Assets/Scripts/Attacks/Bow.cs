@@ -30,6 +30,8 @@ public class Bow : MonoBehaviour
         {
             ShootArrow();
             ResetBow();
+
+            playerController.MoveBlock = false;
         }
 
         if (Input.GetMouseButton(1))
@@ -67,11 +69,9 @@ public class Bow : MonoBehaviour
 
         GameObject shotArrow = Instantiate(arrow, shootPosition.position, shootPosition.rotation);
 
-        shotArrow.transform.localEulerAngles = new Vector3(setBowStage.arrowRotation, shotArrow.transform.localEulerAngles.y, shotArrow.transform.localEulerAngles.z);
-
         float velocity = (setBowStage.arrowVelocity);
 
-        shotArrow.GetComponent<Arrow>().SetVelocity(new Vector3(velocity, velocity, velocity));
+        shotArrow.GetComponent<Arrow>().SetVelocity(new Vector3(velocity, velocity / 2, velocity));
     }
 
     void ResetBow()
@@ -83,8 +83,6 @@ public class Bow : MonoBehaviour
         {
             bowStage.stageObject.SetActive(false);
         }
-
-        playerController.MoveBlock = false;
     }
 }
 
@@ -93,5 +91,4 @@ public struct BowStage
 {
     public GameObject stageObject;
     public float arrowVelocity;
-    public float arrowRotation;
 }

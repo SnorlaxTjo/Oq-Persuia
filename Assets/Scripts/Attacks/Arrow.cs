@@ -8,9 +8,15 @@ public class Arrow : MonoBehaviour
 
     [SerializeField] Rigidbody arrowRigidbody;
 
-    float current;
     float lifeTime;
     bool isOnGround;
+
+    Vector3 originalRotation;
+
+    Vector3 previousPosition;
+    Vector3 currentPosition;
+    Vector3 positionDifference;
+
 
     private void Update()
     {
@@ -20,22 +26,14 @@ public class Arrow : MonoBehaviour
             gameObject.SetActive(false);
             Destroy(gameObject);
         }
-
-        RotateArrow();
-    }
-
-    void RotateArrow()
-    {
-        if (isOnGround) { return; }
-
-        Vector3 rotation = Vector3.RotateTowards(transform.eulerAngles, transform.position + arrowRigidbody.velocity, Time.deltaTime, 0);
-
-        transform.eulerAngles = rotation;
     }
 
     public void SetVelocity(Vector3 velocity)
     {
-        Vector3 direction = new Vector3(velocity.x * transform.forward.x, velocity.y * transform.forward.y, velocity.z * transform.forward.z);
+        originalRotation = transform.eulerAngles;
+        currentPosition = transform.position;
+
+        Vector3 direction = new Vector3(velocity.x * transform.forward.x, velocity.y, velocity.z * transform.forward.z);
 
         arrowRigidbody.velocity = direction;
     }

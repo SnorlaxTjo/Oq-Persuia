@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
     bool canJump;
     float coyoteTimeLeft;
     float jumpTimeLeft;
+    bool isGroundPounding;
 
     float lastRotation;
     float currentVelocity;
@@ -38,12 +39,16 @@ public class PlayerController : MonoBehaviour
     Vector3 right = new Vector3(1, 0, 0);
 
     CharacterController controller;
+    GroundPound groundPound;
 
     public bool MoveBlock { get { return moveBlock; } set {  moveBlock = value; } }
+    public bool IsGrounded { get { return isGrounded; } }
+    public bool IsGroundPounding { get { return isGroundPounding; } set { isGroundPounding = value; } }
 
     private void Start()
     {
         controller = GetComponent<CharacterController>();
+        groundPound = GetComponent<GroundPound>();
     }
 
     private void Update()
@@ -93,9 +98,19 @@ public class PlayerController : MonoBehaviour
 
     void Jump()
     {
-        if ((isGrounded || coyoteTimeLeft > 0) && velocity.y < 0)
+        if ((isGrounded || coyoteTimeLeft > 0) && velocity.y < 0 && !isGroundPounding)
         {
             velocity.y = -2f;
+        }
+
+        if (isGroundPounding)
+        {
+            velocity.y = -20f;
+
+            if (Physics.Raycast(transform.position, -transform.up, groundDistance, groundMask))
+            {
+                groundPound.DoGroundPoundAttack();
+            }
         }
 
         if (!isGrounded)
