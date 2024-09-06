@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6857871030516235771}
   - component: {fileID: 7795341864226346118}
   - component: {fileID: 2525422591880772}
+  - component: {fileID: 6210944740914923276}
   m_Layer: 0
   m_Name: GroundPoundChecker
   m_TagString: Untagged
@@ -106,3 +107,17 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &6210944740914923276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014744861563751781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dbed9ba3d8a0e94c82bf7f51cdfac1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSize: 20
+  timeToGrow: 0.75

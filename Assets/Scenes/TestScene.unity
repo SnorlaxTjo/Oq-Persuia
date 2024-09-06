@@ -2228,7 +2228,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &411013798
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7921,10 +7921,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5822954693144033425, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
-      propertyPath: groundPoundChecker
-      value: 
-      objectReference: {fileID: 8014744861563751781, guid: ea7d1f73b3fe56e4dabb82c32c6548c5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

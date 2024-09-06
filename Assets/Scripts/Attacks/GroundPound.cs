@@ -24,8 +24,9 @@ public class GroundPound : MonoBehaviour
 
     public void DoGroundPoundAttack()
     {
-        GameObject groundPoundObject = Instantiate(groundPoundChecker, groundPoundCheckerSpawnPos, gameObject);
+        GameObject groundPoundObject = Instantiate(groundPoundChecker, groundPoundCheckerSpawnPos);
 
         playerController.IsGroundPounding = false;
+        playerController.MoveBlock = true;
     }
 }
