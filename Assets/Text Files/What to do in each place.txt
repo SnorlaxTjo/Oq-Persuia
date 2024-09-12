@@ -2,28 +2,28 @@ Airport
 Meet up with Mayor, get to know what is going on. Game starts here
 
 Ferrico
-
+Get registred in the country, obtain a house
 
 Gohery
-
+Learn about what routes you take to learn different skills
 
 Mojera
-
+Hear about the attack on the news, see how the people of Oq-Persuia reacts
 
 Mojera Greenhouse
-
+Accept the role of saviour
 
 
 ROUTE SELECTION 1 - EAST
 
 Mojera Outskirts
-
+Skill Introduction - Bow & Arrow. Learn how to use the skill
 
 Windmill
 
 
 Wietra
-
+Skill Examination - Bow & Arrow. Test your strengths with the bow & arrow to see if you can be trusted
 
 Demior
 
@@ -32,13 +32,13 @@ Demior
 ROUTE SELECTION 2 - NORTH
 
 Itorimy
-
+Skill Introduction - Ground Pound. Learn how to use the skill
 
 Podalia
-
+Get to know about a fairytale about a hero who saved Oq-Persuia 1000 years ago
 
 Yamio
-
+Skill Examination - Ground Pound. Test your strengths with ground pounding to see if you can be trusted
 
 
 ROUTE SELECTION 2 - SOUTH
@@ -119,20 +119,23 @@ Persuia Volcano
 ALL ROUTE FUSIONS
 
 Pedrezadio
-
+Ultimate attacking test, making sure you're good enough
 
 Digirup
+Learn different defense-techniques and how to use them
 
+Digirup Shopping Centre
+Purchase 2 selected items for your prefered defense-types.
 
 Julgen
 
 
 Zielen
-1. 
+1. Seeing the enemy entering the city, and evacuating everyone to the ruins
 2. Mini boss fight. The enemy has gotten to Zielen, and is trying to conquer it
 
 Zielen Ruins
-
+Make sure the people from Zielen are secure at the ruins, after evacuating the city
 
 Ancient Ruins
 Final bossfight. This is where the enemy started their attack
