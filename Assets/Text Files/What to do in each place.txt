@@ -20,13 +20,13 @@ Mojera Outskirts
 Skill Introduction - Bow & Arrow. Learn how to use the skill
 
 Windmill
-
+Hear the sacred texts about how Oq-Persuia was created
 
 Wietra
 Skill Examination - Bow & Arrow. Test your strengths with the bow & arrow to see if you can be trusted
 
 Demior
-
+Gain trust by the people of Oq-Persuia
 
 
 ROUTE SELECTION 2 - NORTH
@@ -119,7 +119,7 @@ Persuia Volcano
 ALL ROUTE FUSIONS
 
 Pedrezadio
-Ultimate attacking test, making sure you're good enough
+Ultimate attacking test, making sure you're good enough. Make a promise to the country about you saving them
 
 Digirup
 Learn different defense-techniques and how to use them
@@ -128,7 +128,7 @@ Digirup Shopping Centre
 Purchase 2 selected items for your prefered defense-types.
 
 Julgen
-
+Defence examination. Make sure you're ready to defend yourself
 
 Zielen
 1. Seeing the enemy entering the city, and evacuating everyone to the ruins
