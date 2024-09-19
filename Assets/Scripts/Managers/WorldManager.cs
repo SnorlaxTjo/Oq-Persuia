@@ -37,8 +37,8 @@ public class WorldManager : MonoBehaviour
 
         World setWorld = worlds[world];
 
-        localCameraLimits[0] = new Vector3(setWorld.world.transform.position.x + setWorld.lowerCameraLimit.x, setWorld.world.transform.position.y + setWorld.lowerCameraLimit.y, setWorld.world.transform.position.z + setWorld.lowerCameraLimit.z);
-        localCameraLimits[1] = new Vector3(setWorld.world.transform.position.x + setWorld.upperCameraLimit.x, setWorld.world.transform.position.y + setWorld.upperCameraLimit.y, setWorld.world.transform.position.z + setWorld.upperCameraLimit.z);
+        localCameraLimits[0] = new Vector3(setWorld.lowerCameraLimit.x, setWorld.lowerCameraLimit.y, setWorld.lowerCameraLimit.z);
+        localCameraLimits[1] = new Vector3(setWorld.upperCameraLimit.x, setWorld.upperCameraLimit.y, setWorld.upperCameraLimit.z);
 
         foreach (World _world in worlds)
         {
