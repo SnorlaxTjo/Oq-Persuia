@@ -1679,7 +1679,7 @@ MonoBehaviour:
     lowerCameraLimit: {x: 830, y: 0, z: -70}
     upperCameraLimit: {x: 870, y: 0, z: 165}
   - name: 6 - CITY | Mojera
-    world: {fileID: 2028836122}
+    world: {fileID: 1577364183}
     teleportPlaces:
     - {fileID: 1645390247}
     - {fileID: 927908363}
@@ -1801,6 +1801,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 383017376}
+  - component: {fileID: 383017377}
   m_Layer: 0
   m_Name: Ferrico-Gohery
   m_TagString: Untagged
@@ -1829,6 +1830,21 @@ Transform:
   - {fileID: 2008763760}
   m_Father: {fileID: 29672263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &383017377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383017375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8aa5bb703e5e2942b94411153fbe680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lowerCameraLimit: {x: 400, y: 0, z: 5}
+  upperCameraLimit: {x: 480, y: 0, z: 40}
+  worldHeight: 0
 --- !u!1 &500877709
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,6 +1854,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 500877710}
+  - component: {fileID: 500877711}
   m_Layer: 0
   m_Name: Airport-Ferrico
   m_TagString: Untagged
@@ -1866,6 +1883,21 @@ Transform:
   - {fileID: 1467839658}
   m_Father: {fileID: 29672263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &500877711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500877709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8aa5bb703e5e2942b94411153fbe680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lowerCameraLimit: {x: 21, y: 0, z: 0}
+  upperCameraLimit: {x: 83, y: 0, z: 90}
+  worldHeight: 0
 --- !u!1 &549854089
 GameObject:
   m_ObjectHideFlags: 0
@@ -2777,6 +2809,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 713119206}
+  - component: {fileID: 713119207}
   m_Layer: 0
   m_Name: Ferrico
   m_TagString: Untagged
@@ -2805,6 +2838,21 @@ Transform:
   - {fileID: 763948018}
   m_Father: {fileID: 1400170544}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &713119207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713119205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8aa5bb703e5e2942b94411153fbe680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lowerCameraLimit: {x: 8, y: 0, z: 328}
+  upperCameraLimit: {x: 92, y: 0, z: 365}
+  worldHeight: 0
 --- !u!1001 &738977211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4009,6 +4057,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1144655368}
+  - component: {fileID: 1144655369}
   m_Layer: 0
   m_Name: Gohery
   m_TagString: Untagged
@@ -4037,6 +4086,21 @@ Transform:
   - {fileID: 1926343252}
   m_Father: {fileID: 1400170544}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1144655369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144655367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8aa5bb703e5e2942b94411153fbe680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lowerCameraLimit: {x: 340, y: 0, z: 330}
+  upperCameraLimit: {x: 460, y: 0, z: 415}
+  worldHeight: 0
 --- !u!1 &1158694403
 GameObject:
   m_ObjectHideFlags: 0
@@ -4797,6 +4861,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1276760617}
+  - component: {fileID: 1276760618}
   m_Layer: 0
   m_Name: Airport
   m_TagString: Untagged
@@ -4824,6 +4889,21 @@ Transform:
   - {fileID: 1579729394}
   m_Father: {fileID: 1577828468}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1276760618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276760616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8aa5bb703e5e2942b94411153fbe680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lowerCameraLimit: {x: 8, y: 0, z: -290}
+  upperCameraLimit: {x: 92, y: 0, z: -250}
+  worldHeight: 0
 --- !u!1 &1346180887
 GameObject:
   m_ObjectHideFlags: 0
@@ -5736,6 +5816,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1577364184}
+  - component: {fileID: 1577364185}
   m_Layer: 0
   m_Name: Mojera
   m_TagString: Untagged
@@ -5769,6 +5850,21 @@ Transform:
   - {fileID: 1167680505}
   m_Father: {fileID: 1400170544}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1577364185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577364183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8aa5bb703e5e2942b94411153fbe680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lowerCameraLimit: {x: 750, y: 3.2, z: 350}
+  upperCameraLimit: {x: 950, y: 3.2, z: 550}
+  worldHeight: 3.2
 --- !u!1 &1577828467
 GameObject:
   m_ObjectHideFlags: 0
@@ -7381,6 +7477,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2028836123}
+  - component: {fileID: 2028836124}
   m_Layer: 0
   m_Name: Gohery-Mojera
   m_TagString: Untagged
@@ -7411,6 +7508,21 @@ Transform:
   - {fileID: 1588677348}
   m_Father: {fileID: 29672263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2028836124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028836122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8aa5bb703e5e2942b94411153fbe680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lowerCameraLimit: {x: 840, y: 3.2, z: -70}
+  upperCameraLimit: {x: 860, y: 3.2, z: 165}
+  worldHeight: 3.2
 --- !u!1 &2045242043
 GameObject:
   m_ObjectHideFlags: 0
