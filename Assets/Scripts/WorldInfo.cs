@@ -9,20 +9,29 @@ public class WorldInfo : MonoBehaviour
     [SerializeField] Vector3 upperCameraLimit;
     [SerializeField] float worldHeight;
 
-    public Vector3 LowerCameraLimit { get { return lowerCameraLimit; } }
-    public Vector3 UpperCameraLimit { get { return upperCameraLimit; } }
+    Vector3 finalLowerCameraLimit;
+    Vector3 finalUpperCameraLimit;
+
+    public Vector3 LowerCameraLimit { get { return finalLowerCameraLimit; } }
+    public Vector3 UpperCameraLimit { get { return finalUpperCameraLimit; } }
+
+    private void Start()
+    {
+        finalLowerCameraLimit = transform.position + lowerCameraLimit;
+        finalUpperCameraLimit = transform.position + upperCameraLimit;
+    }
 
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
 
-        Vector3 topLeft = new Vector3(lowerCameraLimit.x, worldHeight, upperCameraLimit.z);
-        Vector3 bottomRight = new Vector3(upperCameraLimit.x, worldHeight, lowerCameraLimit.z);
-        Gizmos.DrawLine(lowerCameraLimit, topLeft);
-        Gizmos.DrawLine(upperCameraLimit, topLeft);
-        Gizmos.DrawLine(lowerCameraLimit, bottomRight);
-        Gizmos.DrawLine(upperCameraLimit, bottomRight);
-        Gizmos.DrawLine(upperCameraLimit, lowerCameraLimit);
+        Vector3 topLeft = new Vector3(transform.position.x + lowerCameraLimit.x, worldHeight, transform.position.z + upperCameraLimit.z);
+        Vector3 bottomRight = new Vector3(transform.position.x + upperCameraLimit.x, worldHeight, transform.position.z + lowerCameraLimit.z);
+        Gizmos.DrawLine(transform.position + lowerCameraLimit, topLeft);
+        Gizmos.DrawLine(transform.position + upperCameraLimit, topLeft);
+        Gizmos.DrawLine(transform.position + lowerCameraLimit, bottomRight);
+        Gizmos.DrawLine(transform.position + upperCameraLimit, bottomRight);
+        Gizmos.DrawLine(transform.position + upperCameraLimit, transform.position + lowerCameraLimit);
         Gizmos.DrawLine(topLeft, bottomRight);
     }
 }
