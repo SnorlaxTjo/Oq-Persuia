@@ -4,10 +4,20 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
+    [SerializeField] Transform cameraTransform;
     [SerializeField] Transform player;
     [SerializeField] Vector3 offset;
+    [SerializeField] Vector3 hitMoveOffset;
     [SerializeField] Vector3 lowerLimit;
     [SerializeField] Vector3 upperLimit;
+    [SerializeField] LayerMask layerMask;
+
+    bool isColliding;
+
+    private void Start()
+    {
+        layerMask = ~layerMask;
+    }
 
     private void Update()
     {
@@ -16,6 +26,21 @@ public class CameraManager : MonoBehaviour
 
         Vector3 clampedPos = new Vector3(clampedX + offset.x, player.position.y + offset.y, clampedZ + offset.z);
         transform.position = clampedPos;
+    }
+
+    private void FixedUpdate()
+    {
+        float playerDistance = Mathf.Sqrt(Mathf.Pow(transform.position.z - player.position.z, 2) + Mathf.Pow(transform.position.y - player.position.y, 2));
+
+        RaycastHit hit;
+        if (Physics.Raycast(player.position, offset, out hit, playerDistance, layerMask))
+        {
+            cameraTransform.position = hit.point + hitMoveOffset;
+        }
+        else
+        {
+            cameraTransform.position = transform.position;
+        }
     }
 
     public void ChangeCameraLimits(Vector3 newLowerLimit, Vector3 newUpperLimit)
@@ -36,5 +61,10 @@ public class CameraManager : MonoBehaviour
         Gizmos.DrawLine(upperLimit, bottomRight);
         Gizmos.DrawLine(upperLimit, lowerLimit);
         Gizmos.DrawLine(topLeft, bottomRight);
+
+
+        Gizmos.color = Color.red;
+
+        Gizmos.DrawLine(player.position, transform.position);
     }
 }
