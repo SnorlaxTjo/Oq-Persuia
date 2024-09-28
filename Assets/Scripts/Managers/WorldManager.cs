@@ -66,6 +66,4 @@ public struct World
     public string name;
     public GameObject world;
     public Transform[] teleportPlaces;
-    public Vector3 lowerCameraLimit;
-    public Vector3 upperCameraLimit;
 }

@@ -12,7 +12,9 @@ public class CameraManager : MonoBehaviour
     [SerializeField] Vector3 upperLimit;
     [SerializeField] LayerMask layerMask;
 
-    bool isColliding;
+    bool canCheckForCollision;
+
+    public bool CanCheckForCollision { get { return canCheckForCollision; } set { canCheckForCollision = value; } }
 
     private void Start()
     {
@@ -30,12 +32,16 @@ public class CameraManager : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!canCheckForCollision) { return; }
+
         float playerDistance = Mathf.Sqrt(Mathf.Pow(transform.position.z - player.position.z, 2) + Mathf.Pow(transform.position.y - player.position.y, 2));
 
         RaycastHit hit;
         if (Physics.Raycast(player.position, offset, out hit, playerDistance, layerMask))
         {
-            cameraTransform.position = hit.point + hitMoveOffset;
+            float clampedX = Mathf.Clamp(hit.point.x, lowerLimit.x, upperLimit.x);
+
+            cameraTransform.position = new Vector3(clampedX, hit.point.y, hit.point.z) + hitMoveOffset;
         }
         else
         {
