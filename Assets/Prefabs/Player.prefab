@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4570852183857698181}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundPoundPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 2354308256256953728}
   - component: {fileID: 3171581495983565773}
   - component: {fileID: 6726000255912706239}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stage1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 5119520765018174276}
   - component: {fileID: 1047203423211573950}
   - component: {fileID: 3944015961854156510}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FrontFace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 8557225298929563118}
   - component: {fileID: 5855502851515981235}
   - component: {fileID: 2999522502376005837}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stage0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 7763728242132401247}
   - component: {fileID: 8332667353228838633}
   - component: {fileID: 5822954693144033425}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -514,7 +514,7 @@ GameObject:
   - component: {fileID: 4473454924025255596}
   - component: {fileID: 5132596427564701275}
   - component: {fileID: 1106957175428385496}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DialogueChecker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -654,7 +654,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5127663162662811125}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BowStages
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -690,7 +690,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5361011510429182785}
   - component: {fileID: 5832990595037976738}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -747,7 +747,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7625019434804070293}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ShootPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -781,7 +781,7 @@ GameObject:
   - component: {fileID: 3396962910091393860}
   - component: {fileID: 1532094840637768661}
   - component: {fileID: 7942742339770530315}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stage3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -886,7 +886,7 @@ GameObject:
   - component: {fileID: 7859973124142524212}
   - component: {fileID: 6899730427036168168}
   - component: {fileID: 1258295245967823233}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stage2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -988,7 +988,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1485170418089598738}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HeldWeapons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
