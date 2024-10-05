@@ -120,6 +120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrowLifeTime: 5
+  raycastLength: 0.55
+  hitPoint: {fileID: 1723592749694751144, guid: ad845b2671c61d5449d2f091e1a9bdc3, type: 3}
   arrowRigidbody: {fileID: 4505161774835672047}
 --- !u!54 &4505161774835672047
 Rigidbody:

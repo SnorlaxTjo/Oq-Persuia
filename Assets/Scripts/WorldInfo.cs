@@ -11,6 +11,10 @@ public class WorldInfo : MonoBehaviour
 
     [Space]
 
+    [SerializeField] bool turnOffCameraCollision;
+
+    [Space]
+
     [Header("Custom Camera Position")]
     [SerializeField] bool useCustomCameraPosition;
     [SerializeField] Vector3 cameraPlayerOffset;
@@ -21,6 +25,8 @@ public class WorldInfo : MonoBehaviour
 
     public Vector3 LowerCameraLimit { get { return finalLowerCameraLimit; } }
     public Vector3 UpperCameraLimit { get { return finalUpperCameraLimit; } }
+
+    public bool TurnOffCameraCollisions { get { return turnOffCameraCollision; } }
 
     public bool UseCustomCameraPosition { get {  return useCustomCameraPosition; } }
     public Vector3 CameraPlayerOffset { get {  return cameraPlayerOffset; } }

@@ -12,6 +12,8 @@ public class WorldManager : MonoBehaviour
 
     Vector3[] localCameraLimits = new Vector3[2];
 
+    bool turnOffCameraCollisions;
+
     bool changeCameraPosition;
     Vector3 cameraPosition;
     float cameraRotation;
@@ -42,13 +44,17 @@ public class WorldManager : MonoBehaviour
 
         World setWorld = worlds[world];
 
-        Vector3 lowerCameraLimit = setWorld.world.GetComponent<WorldInfo>().LowerCameraLimit;
-        Vector3 upperCameraLimit = setWorld.world.GetComponent<WorldInfo>().UpperCameraLimit;
+        WorldInfo setWorldInfo = setWorld.world.GetComponent<WorldInfo>();
+
+        Vector3 lowerCameraLimit = setWorldInfo.LowerCameraLimit;
+        Vector3 upperCameraLimit = setWorldInfo.UpperCameraLimit;
 
         localCameraLimits[0] = new Vector3(lowerCameraLimit.x, 0, lowerCameraLimit.z);
         localCameraLimits[1] = new Vector3(upperCameraLimit.x, 0, upperCameraLimit.z);
 
-        changeCameraPosition = setWorld.world.GetComponent<WorldInfo>().UseCustomCameraPosition;      
+        turnOffCameraCollisions = setWorldInfo.TurnOffCameraCollisions;
+
+        changeCameraPosition = setWorldInfo.UseCustomCameraPosition;      
 
         foreach (World _world in worlds)
         {
@@ -59,10 +65,12 @@ public class WorldManager : MonoBehaviour
         cameraManager.ChangeCameraLimits(localCameraLimits[0], localCameraLimits[1]);
         player.transform.position = setWorld.teleportPlaces[teleportPosition].position;
 
+        cameraManager.CanCheckForCollision = !turnOffCameraCollisions;
+
         if (changeCameraPosition)
         {
-            cameraPosition = setWorld.world.GetComponent<WorldInfo>().CameraPlayerOffset;
-            cameraRotation = setWorld.world.GetComponent<WorldInfo>().CameraRotation;
+            cameraPosition = setWorldInfo.CameraPlayerOffset;
+            cameraRotation = setWorldInfo.CameraRotation;
 
             cameraManager.ChangeCameraPosition(cameraPosition, cameraRotation);
         }
