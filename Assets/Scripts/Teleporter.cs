@@ -7,6 +7,9 @@ public class Teleporter : MonoBehaviour
 {
     [SerializeField] int worldToTeleportTo;
     [SerializeField] int teleporterPlaceToTeleportTo;
+
+    [Space]
+
     [SerializeField] bool turnOffCameraColliderChecker;
 
     WorldManager worldManager;

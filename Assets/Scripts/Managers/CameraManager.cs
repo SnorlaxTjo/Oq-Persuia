@@ -13,12 +13,17 @@ public class CameraManager : MonoBehaviour
     [SerializeField] LayerMask layerMask;
 
     bool canCheckForCollision;
+    Vector3 standardOffset;
+    Vector3 standardRotation;
 
     public bool CanCheckForCollision { get { return canCheckForCollision; } set { canCheckForCollision = value; } }
 
     private void Start()
     {
         layerMask = ~layerMask;
+
+        standardOffset = offset;
+        standardRotation = cameraTransform.localEulerAngles;
     }
 
     private void Update()
@@ -53,6 +58,18 @@ public class CameraManager : MonoBehaviour
     {
         lowerLimit = newLowerLimit;
         upperLimit = newUpperLimit;
+    }
+
+    public void ChangeCameraPosition(Vector3 newPosition, float newRotation)
+    {
+        offset = newPosition;
+        cameraTransform.localEulerAngles = new Vector3(newRotation, 0, 0);
+    }
+
+    public void ResetCameraPosition()
+    {
+        offset = standardOffset;
+        cameraTransform.localEulerAngles = standardRotation;
     }
 
     private void OnDrawGizmosSelected()
