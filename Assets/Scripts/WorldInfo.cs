@@ -5,20 +5,27 @@ using UnityEngine;
 
 public class WorldInfo : MonoBehaviour
 {
+    [SerializeField] bool alwaysShowCameraGizmos;
+
+    [Space]
+
     [SerializeField] Vector3 lowerCameraLimit;
     [SerializeField] Vector3 upperCameraLimit;
     [SerializeField] float worldHeight;
 
     [Space]
-
     [SerializeField] bool turnOffCameraCollision;
 
     [Space]
-
     [Header("Custom Camera Position")]
     [SerializeField] bool useCustomCameraPosition;
     [SerializeField] Vector3 cameraPlayerOffset;
     [SerializeField] float cameraRotation;
+
+    [Space]
+    [Header("Active Weapons in World")]
+    [SerializeField] bool bow;
+    [SerializeField] bool groundPound;
 
     Vector3 finalLowerCameraLimit;
     Vector3 finalUpperCameraLimit;
@@ -31,6 +38,9 @@ public class WorldInfo : MonoBehaviour
     public bool UseCustomCameraPosition { get {  return useCustomCameraPosition; } }
     public Vector3 CameraPlayerOffset { get {  return cameraPlayerOffset; } }
     public float CameraRotation { get { return cameraRotation; } }
+
+    public bool Bow { get { return bow; } }
+    public bool GroundPound { get { return groundPound; } }
 
     private void Start()
     {
@@ -47,8 +57,24 @@ public class WorldInfo : MonoBehaviour
         }
     }
 
+    private void OnDrawGizmos()
+    {
+        if (!alwaysShowCameraGizmos) { return; }
+        Gizmos.color = Color.yellow;
+
+        Vector3 topLeft = new Vector3(transform.position.x + lowerCameraLimit.x, worldHeight, transform.position.z + upperCameraLimit.z);
+        Vector3 bottomRight = new Vector3(transform.position.x + upperCameraLimit.x, worldHeight, transform.position.z + lowerCameraLimit.z);
+        Gizmos.DrawLine(transform.position + lowerCameraLimit, topLeft);
+        Gizmos.DrawLine(transform.position + upperCameraLimit, topLeft);
+        Gizmos.DrawLine(transform.position + lowerCameraLimit, bottomRight);
+        Gizmos.DrawLine(transform.position + upperCameraLimit, bottomRight);
+        Gizmos.DrawLine(transform.position + upperCameraLimit, transform.position + lowerCameraLimit);
+        Gizmos.DrawLine(topLeft, bottomRight);
+    }
+
     private void OnDrawGizmosSelected()
     {
+        if (alwaysShowCameraGizmos) { return; }
         Gizmos.color = Color.yellow;
 
         Vector3 topLeft = new Vector3(transform.position.x + lowerCameraLimit.x, worldHeight, transform.position.z + upperCameraLimit.z);

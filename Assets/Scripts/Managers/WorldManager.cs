@@ -21,10 +21,13 @@ public class WorldManager : MonoBehaviour
     CameraManager cameraManager;
     UIManager uiManager;
 
+    Bow bow;
+
     private void Start()
     {
         cameraManager = FindObjectOfType<CameraManager>();
         uiManager = FindObjectOfType<UIManager>();
+        bow = FindObjectOfType<Bow>();
     }
 
     public Vector3[] LocalCameraLimits { get { return localCameraLimits; } }
@@ -78,6 +81,8 @@ public class WorldManager : MonoBehaviour
         {
             cameraManager.ResetCameraPosition();
         }
+
+        bow.CanShoot = setWorldInfo.Bow;
 
         yield return new WaitForSeconds(timeToHaveBlackScreen);
 

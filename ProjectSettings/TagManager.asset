@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Dialogue
   - MouseFollower
+  - ArrowHitPoint
   layers:
   - Default
   - TransparentFX

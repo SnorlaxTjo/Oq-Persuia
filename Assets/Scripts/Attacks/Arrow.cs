@@ -33,11 +33,13 @@ public class Arrow : MonoBehaviour
 
         if (Physics.Raycast(arrowRay, out hit, raycastLength))
         {
-            hasHit = true;
-            Debug.Log("a");
+            if (hit.collider.gameObject.CompareTag("ArrowHitPoint"))
+            {
+                hasHit = true;
 
-            GameObject arrowHitPoint = Instantiate(hitPoint);
-            arrowHitPoint.transform.position = hit.point;
+                GameObject arrowHitPoint = Instantiate(hitPoint);
+                arrowHitPoint.transform.position = hit.point;
+            }
         }
     }
 

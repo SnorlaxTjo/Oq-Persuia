@@ -16,8 +16,13 @@ public class Bow : MonoBehaviour
 
     int currentStage;
     float timeLeftUntilNextStage;
+    bool hasObtainedBow = true; //Just temporatrely set to true before actual bow-obtainment implemented
+    bool canShoot;
 
     PlayerController playerController;
+
+    public bool HasObtainedBow { get { return hasObtainedBow; } set { hasObtainedBow = value; } }
+    public bool CanShoot { get { return canShoot; } set { canShoot = value; } }
 
     private void Start()
     {
@@ -26,6 +31,8 @@ public class Bow : MonoBehaviour
 
     private void Update()
     {
+        if (!hasObtainedBow || !canShoot) { return; }
+
         if (Input.GetMouseButtonUp(1))
         {
             ShootArrow();
