@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4505161774835672047}
   m_Layer: 0
   m_Name: Arrow
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrowLifeTime: 5
-  raycastLength: 0.55
+  raycastLength: 0.65
   hitPoint: {fileID: 1723592749694751144, guid: ad845b2671c61d5449d2f091e1a9bdc3, type: 3}
   arrowRigidbody: {fileID: 4505161774835672047}
 --- !u!54 &4505161774835672047
