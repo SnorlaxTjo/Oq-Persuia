@@ -1,0 +1,137 @@
+fileFormatVersion: 2
+guid: 345ef557f1883294cb44816f87a1c78f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Greenhouse_Door
+    100002: //RootNode
+    100004: Greenhouse_Structure
+    100006: Greenhouse_Window_Left
+    100008: Greenhouse_Window_Right
+    400000: Greenhouse_Door
+    400002: //RootNode
+    400004: Greenhouse_Structure
+    400006: Greenhouse_Window_Left
+    400008: Greenhouse_Window_Right
+    2100000: MAT_Wall_Trim
+    2100002: MAT_Wood_Structure
+    2100004: MAT_Glass
+    2100006: MAT_Greenhouse_Ground
+    2300000: Greenhouse_Door
+    2300002: Greenhouse_Structure
+    2300004: Greenhouse_Window_Left
+    2300006: Greenhouse_Window_Right
+    3300000: Greenhouse_Door
+    3300002: Greenhouse_Structure
+    3300004: Greenhouse_Window_Left
+    3300006: Greenhouse_Window_Right
+    4300000: Greenhouse_Structure
+    4300002: Greenhouse_Door
+    4300004: Greenhouse_Window_Right
+    4300006: Greenhouse_Window_Left
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Glass
+    second: {fileID: 2100000, guid: b7289ba2842ded94b95647cfbedb59d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Greenhouse_Ground
+    second: {fileID: 2100000, guid: 10d136d4ca606084dac8349164e0a798, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Wall_Trim
+    second: {fileID: 2100000, guid: def40a642de6489468ac1daa408c2201, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Wood_Structure
+    second: {fileID: 2100000, guid: 3d1c6a90e0f40a748a751748395a1a59, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
