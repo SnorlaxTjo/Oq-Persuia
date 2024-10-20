@@ -6,11 +6,14 @@ public class GroundPoundChecker : MonoBehaviour
 {
     [SerializeField] float maxSize;
     [SerializeField] float timeToGrow;
+    [SerializeField] int damageToDeal;
 
     float currentSize;
     float currentTime;
 
     PlayerController playerController;
+
+    public int DamageToDeal { get { return damageToDeal; } }
 
     private void Start()
     {

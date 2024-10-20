@@ -339,6 +339,7 @@ GameObject:
   - component: {fileID: 7763728242132401247}
   - component: {fileID: 8332667353228838633}
   - component: {fileID: 5822954693144033425}
+  - component: {fileID: 3155256027598741207}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -500,6 +501,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groundPoundChecker: {fileID: 8014744861563751781, guid: ea7d1f73b3fe56e4dabb82c32c6548c5, type: 3}
   groundPoundCheckerSpawnPos: {fileID: 4570852183857698181}
+--- !u!114 &3155256027598741207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3798214278775842110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af02e69c8912a564097332f8ac2a1b50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!1 &3997582702687750556
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,12 +744,16 @@ MonoBehaviour:
   bowStages:
   - stageObject: {fileID: 3620853102059708644}
     arrowVelocity: 0
+    damage: 0
   - stageObject: {fileID: 2813619769246938386}
     arrowVelocity: 5
+    damage: 2
   - stageObject: {fileID: 9019564936058102254}
-    arrowVelocity: 10
+    arrowVelocity: 12
+    damage: 5
   - stageObject: {fileID: 6864215830752537921}
     arrowVelocity: 15
+    damage: 20
   timeBewteenStages: 0.5
   shootPosition: {fileID: 7625019434804070293}
 --- !u!1 &6158025047019040951

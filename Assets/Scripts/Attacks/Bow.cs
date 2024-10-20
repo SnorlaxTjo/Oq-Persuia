@@ -76,9 +76,11 @@ public class Bow : MonoBehaviour
 
         GameObject shotArrow = Instantiate(arrow, shootPosition.position, shootPosition.rotation);
 
-        float velocity = (setBowStage.arrowVelocity);
+        float velocity = setBowStage.arrowVelocity;
+        int damage = setBowStage.damage;
 
         shotArrow.GetComponent<Arrow>().SetVelocity(new Vector3(velocity, velocity / 2, velocity));
+        shotArrow.GetComponent<Arrow>().DamageToDeal = damage;
     }
 
     void ResetBow()
@@ -98,4 +100,5 @@ public struct BowStage
 {
     public GameObject stageObject;
     public float arrowVelocity;
+    public int damage;
 }

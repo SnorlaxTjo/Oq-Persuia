@@ -12,6 +12,9 @@ public class Arrow : MonoBehaviour
 
     float lifeTime;
     bool hasHit;
+    int damageToDeal;
+
+    public int DamageToDeal { get { return damageToDeal; } set {  damageToDeal = value; } }
 
 
     private void Update()

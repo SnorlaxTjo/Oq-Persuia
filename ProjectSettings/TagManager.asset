@@ -8,6 +8,7 @@ TagManager:
   - MouseFollower
   - ArrowHitPoint
   - Arrow
+  - GroundPound
   layers:
   - Default
   - TransparentFX
