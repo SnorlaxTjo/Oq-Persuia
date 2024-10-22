@@ -19,10 +19,13 @@ public class Minion : MonoBehaviour
     float currentVelocity;
     float timeLeftToBeStunned;
     Vector3 movementDirection;
+    GameObject correspondingArrow;
 
     Transform playerTransform;
     Rigidbody minionRigidbody;
     BossManager bossManager;
+
+    public GameObject CorrespondingArrow { get { return correspondingArrow; } set { correspondingArrow = value; } }
 
     private void Start()
     {
@@ -39,7 +42,7 @@ public class Minion : MonoBehaviour
         if (stunned || knockback)
         {
             timeLeftToBeStunned -= Time.deltaTime;
-            if (stunned) minionRigidbody.velocity = Vector3.zero;
+            if (stunned) minionRigidbody.velocity = new Vector3(0, minionRigidbody.velocity.y, 0);
 
             if (timeLeftToBeStunned <= 0)
             {
@@ -51,6 +54,12 @@ public class Minion : MonoBehaviour
         {
             timeLeftToBeStunned = timeToBeStunned;
         }
+
+        Vector3 enemyDirection = transform.position - correspondingArrow.transform.position;
+        Vector3 newRotation = Vector3.RotateTowards(correspondingArrow.transform.forward, enemyDirection, Time.deltaTime, 0);
+
+        correspondingArrow.transform.rotation = Quaternion.LookRotation(newRotation);
+        correspondingArrow.transform.eulerAngles = new Vector3(0, correspondingArrow.transform.eulerAngles.y, 0);
     }
 
     private void FixedUpdate()
@@ -60,8 +69,9 @@ public class Minion : MonoBehaviour
         Vector3 moveDirection = playerTransform.position - transform.position;
         moveDirection = new Vector3(moveDirection.x, 0, moveDirection.z);
         moveDirection.Normalize();
+        moveDirection *= moveSpeed;
 
-        minionRigidbody.velocity = moveDirection * moveSpeed;
+        minionRigidbody.velocity = new Vector3(moveDirection.x, minionRigidbody.velocity.y, moveDirection.z);
         movementDirection = moveDirection;
 
         float targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg;
@@ -77,6 +87,10 @@ public class Minion : MonoBehaviour
         if (currentHealth <= 0)
         {
             bossManager.RemoveEnemy();
+            bossManager.AllEnemyArrows.Remove(correspondingArrow);
+
+            correspondingArrow.SetActive(false);
+            Destroy(correspondingArrow);
 
             gameObject.SetActive(false);
             Destroy(gameObject);

@@ -5,8 +5,14 @@ using UnityEngine;
 
 public class BossManager : MonoBehaviour
 {
+    [SerializeField] GameObject player;
     [SerializeField] Transform bossParent;
     [SerializeField] int[] amountOfWavesOnEachStage;
+
+    [Header("EnemyPointers")]
+    [SerializeField] Transform groundTransform;
+    [SerializeField] float arrowGroundOffset;
+    [SerializeField] GameObject enemyArrow;
 
     [Header("Stage 1 -  Minions")]
     [SerializeField] GameObject minion;
@@ -22,6 +28,20 @@ public class BossManager : MonoBehaviour
     int currentStage;
     int currentWave;
     int enemiesLeftOnCurrentWave;
+    List<GameObject> allEnemyArrows = new List<GameObject>();
+
+    public List<GameObject> AllEnemyArrows { get { return allEnemyArrows; } set { allEnemyArrows = value; } }
+
+    private void Update()
+    {
+        if (allEnemyArrows.Count > 0)
+        {
+            foreach (GameObject arrow in allEnemyArrows)
+            {
+                arrow.transform.position = new Vector3(player.transform.position.x, groundTransform.position.y + arrowGroundOffset + 0.5f, player.transform.position.z);
+            }
+        }    
+    }
 
     public void RemoveEnemy()
     {
@@ -50,6 +70,10 @@ public class BossManager : MonoBehaviour
                     GameObject summonedMinion = Instantiate(minion, bossParent);
                     summonedMinion.transform.position = location.position;
                     enemiesLeftOnCurrentWave++;
+
+                    GameObject summonedEnemyArrow = Instantiate(enemyArrow, bossParent);
+                    summonedMinion.GetComponent<Minion>().CorrespondingArrow = summonedEnemyArrow;
+                    allEnemyArrows.Add(summonedEnemyArrow);
                 }
                 break;
             case 1:

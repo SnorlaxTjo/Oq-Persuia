@@ -18263,7 +18263,7 @@ Transform:
   m_GameObject: {fileID: 695257252}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -33718,8 +33718,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c538061647963ab44af7b1b5fc1b21ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1845477637}
   bossParent: {fileID: 2145302360}
   amountOfWavesOnEachStage: 030000000000000000000000
+  groundTransform: {fileID: 1532424653}
+  arrowGroundOffset: 0.2
+  enemyArrow: {fileID: 8227698503149246950, guid: 201722681f6a26347bffdebee6b07105, type: 3}
   minion: {fileID: 373684353867396672, guid: be4c7b6e617691048a92466272e00454, type: 3}
   minionSpawnLocations:
   - spawnLocation:
@@ -43941,11 +43945,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1542171094}
+  - {fileID: 1532424653}
   - {fileID: 990718824}
   - {fileID: 1964600549}
   - {fileID: 624840346}
   - {fileID: 2145302360}
-  - {fileID: 1532424653}
   m_Father: {fileID: 2045718126}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1761564768
