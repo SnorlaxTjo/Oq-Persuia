@@ -12,6 +12,7 @@ public class Minion : MonoBehaviour
     [SerializeField] float timeToBeStunned;
     [SerializeField] int damageToPlayer;
     [SerializeField] float hitKnockbackStrength;
+    [SerializeField] float distanceToHideArrow;
 
     bool stunned;
     bool knockback;
@@ -60,6 +61,17 @@ public class Minion : MonoBehaviour
 
         correspondingArrow.transform.rotation = Quaternion.LookRotation(newRotation);
         correspondingArrow.transform.eulerAngles = new Vector3(0, correspondingArrow.transform.eulerAngles.y, 0);
+
+        float playerDistance = Vector3.Distance(playerTransform.position, transform.position);
+
+        if (Mathf.Abs(playerDistance) <= distanceToHideArrow)
+        {
+            correspondingArrow.SetActive(false);
+        }
+        else
+        {
+            correspondingArrow.SetActive(true);
+        }
     }
 
     private void FixedUpdate()

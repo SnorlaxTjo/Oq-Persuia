@@ -80,6 +80,7 @@ MonoBehaviour:
   timeToBeStunned: 1
   damageToPlayer: 5
   hitKnockbackStrength: 7
+  distanceToHideArrow: 15
 --- !u!1 &2068773242227757570
 GameObject:
   m_ObjectHideFlags: 0
