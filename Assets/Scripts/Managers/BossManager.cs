@@ -77,6 +77,18 @@ public class BossManager : MonoBehaviour
                 }
                 break;
             case 1:
+                switch (currentWave)
+                {
+                    case 0:
+                        foreach(GameObject cannon in smallCannons)
+                        {
+                            cannon.GetComponent<BallParts>().Activated = true;
+                        }
+                        break;
+                    case 1:
+                        break;
+                }
+
                 break;
             case 2:
                 break;
