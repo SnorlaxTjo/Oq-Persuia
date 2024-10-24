@@ -40,6 +40,12 @@ public class Minion : MonoBehaviour
 
     private void Update()
     {
+        // DEBUG ONLY! Remove in final project
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            Damage(health);
+        }
+
         if (stunned || knockback)
         {
             timeLeftToBeStunned -= Time.deltaTime;

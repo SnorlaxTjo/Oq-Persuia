@@ -83,9 +83,20 @@ public class BossManager : MonoBehaviour
                         foreach(GameObject cannon in smallCannons)
                         {
                             cannon.GetComponent<BallParts>().Activated = true;
+                            enemiesLeftOnCurrentWave++;
+
+                            GameObject summonedEnemyArrow = Instantiate(enemyArrow, bossParent);
+                            cannon.GetComponent<BallParts>().CorrespondingArrow = summonedEnemyArrow;
+                            allEnemyArrows.Add(summonedEnemyArrow);
                         }
                         break;
                     case 1:
+                        largeCannon.GetComponent<BallParts>().Activated = true;
+                        enemiesLeftOnCurrentWave++;
+
+                        GameObject summonedEnemyArrow2 = Instantiate(enemyArrow, bossParent);
+                        largeCannon.GetComponent<BallParts>().CorrespondingArrow = summonedEnemyArrow2;
+                        allEnemyArrows.Add(summonedEnemyArrow2);
                         break;
                 }
 

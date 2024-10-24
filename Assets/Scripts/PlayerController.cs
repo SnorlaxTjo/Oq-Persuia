@@ -53,12 +53,13 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        Jump();
+
         if (moveBlock) { return; }
 
         GroundCheck();
         Move();
         RotatePlayer();
-        Jump();
     }
 
     void GroundCheck()
@@ -133,7 +134,7 @@ public class PlayerController : MonoBehaviour
             jumpTimeLeft = maxJumpTime;
         }
 
-        if (Input.GetButton("Jump") && canJump)
+        if (Input.GetButton("Jump") && canJump && !moveBlock)
         {
             jumpTimeLeft -= Time.deltaTime;
 
