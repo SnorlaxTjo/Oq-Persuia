@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -76,6 +75,7 @@ public class BossManager : MonoBehaviour
                     allEnemyArrows.Add(summonedEnemyArrow);
                 }
                 break;
+
             case 1:
                 switch (currentWave)
                 {
@@ -90,6 +90,7 @@ public class BossManager : MonoBehaviour
                             allEnemyArrows.Add(summonedEnemyArrow);
                         }
                         break;
+
                     case 1:
                         largeCannon.GetComponent<BallParts>().Activated = true;
                         enemiesLeftOnCurrentWave++;
@@ -99,9 +100,11 @@ public class BossManager : MonoBehaviour
                         allEnemyArrows.Add(summonedEnemyArrow2);
                         break;
                 }
-
                 break;
+
             case 2:
+                finalBoss.GetComponent<FinalBoss>().Activated = true;
+                enemiesLeftOnCurrentWave++;
                 break;
         }
     }

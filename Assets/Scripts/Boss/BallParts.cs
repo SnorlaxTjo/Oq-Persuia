@@ -1,12 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.ShaderGraph.Drawing;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class BallParts : MonoBehaviour
 {
-    [SerializeField] float health;
+    [SerializeField] int health;
     [SerializeField] float moveSpeed;
     [SerializeField] Transform playerTransform;
     [SerializeField] float distanceToHideArrow;
@@ -83,6 +80,12 @@ public class BallParts : MonoBehaviour
     private void Update()
     {
         if (!activated) { return; }
+
+        // DEBUG ONLY! Remove in final project
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            Damage(health);
+        }
 
         Vector3 enemyDirection = transform.position - correspondingArrow.transform.position;
         Vector3 newRotation = Vector3.RotateTowards(correspondingArrow.transform.forward, enemyDirection, Time.deltaTime, 0);
