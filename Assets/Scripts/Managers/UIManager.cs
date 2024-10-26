@@ -20,6 +20,14 @@ public class UIManager : MonoBehaviour
     [Header("Transition")]
     [SerializeField] Animator transitionAnimator;
 
+    [Header("Player Health Bar")]
+    [SerializeField] Image playerHealthBar;
+    [SerializeField] Image playerHealthBarBackground;
+
+    [Header("Boss Health Bar")]
+    [SerializeField] Image bossHealthBar;
+    [SerializeField] Image bossHealthBarBackground;
+
     #region Dialogue Variables
     bool isDisplayingSymbols;
     char[] dialogueChars;
@@ -31,19 +39,29 @@ public class UIManager : MonoBehaviour
     bool isShowingMap;
     #endregion
 
+    #region Health Bar Variables
+    float fullPlayerHealthBarLength;
+    float fullBossHealthBarLength;
+    #endregion
+
     PlayerController playerController;
+    PlayerHealth playerHealth;
 
     public bool IsDisplayingSymbols { get { return isDisplayingSymbols; } }
 
     private void Start()
     {
         playerController = FindObjectOfType<PlayerController>();
+        playerHealth = FindObjectOfType<PlayerHealth>();
+
+        fullPlayerHealthBarLength = playerHealthBar.rectTransform.rect.width;
     }
 
     private void Update()
     {
         DisplayDialogue();
         ToggleMap();
+        SetHealthBar();
     }
 
     #region Dialogue
@@ -131,5 +149,21 @@ public class UIManager : MonoBehaviour
     {
         transitionAnimator.SetBool("Transition", whatToSet);
     }
+    #endregion
+
+    #region Health Bars
+
+    void SetHealthBar()
+    {
+        int maxHealth = playerHealth.MaxHealth;
+        int currentHealth = playerHealth.CurrentHealth;
+
+        float healthPercentage = (float)currentHealth / (float)maxHealth;
+        float healthBarLength = fullPlayerHealthBarLength * healthPercentage;
+        Debug.Log(healthPercentage);
+
+        playerHealthBar.rectTransform.sizeDelta = new Vector2(healthBarLength, playerHealthBar.rectTransform.rect.height);
+    }
+
     #endregion
 }

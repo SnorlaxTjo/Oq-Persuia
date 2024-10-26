@@ -9,6 +9,7 @@ TagManager:
   - ArrowHitPoint
   - Arrow
   - GroundPound
+  - BossGroundPound
   layers:
   - Default
   - TransparentFX

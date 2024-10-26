@@ -3344,6 +3344,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3, y: 10, z: 1}
   m_Center: {x: 0, y: 5, z: 0}
+--- !u!1 &80759619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 80759620}
+  m_Layer: 8
+  m_Name: GroundPoundPlace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &80759620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80759619}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -10, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 813582779}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &83913297
 GameObject:
   m_ObjectHideFlags: 0
@@ -12697,7 +12728,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1761564767}
+  m_Father: {fileID: 1826540022}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &408532127
 GameObject:
@@ -15141,6 +15172,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5321948953743770716, guid: b396398a825a2fb4c9492391dd568bb0, type: 3}
   m_PrefabInstance: {fileID: 503622780}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &507472205 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3173966464092162620, guid: 98697301fa559c2469cd102195099811, type: 3}
+  m_PrefabInstance: {fileID: 1274491597413253920}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &510605006
 GameObject:
   m_ObjectHideFlags: 0
@@ -17517,7 +17559,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1761564767}
+  m_Father: {fileID: 1826540022}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &586330674
 GameObject:
@@ -18240,7 +18282,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1761564767}
+  m_Father: {fileID: 1826540022}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &620081270
 GameObject:
@@ -23136,6 +23178,7 @@ Transform:
   - {fileID: 1800219325}
   - {fileID: 2026903109}
   - {fileID: 2086712274}
+  - {fileID: 80759620}
   m_Father: {fileID: 1727933993}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &813582780
@@ -23150,9 +23193,91 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31516ae4c1e01104b9bfa551101771a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
+  moveSpeed: 6
   smoothTime: 0.1
   playerTransform: {fileID: 959911869}
+  bossAttacks:
+  - name: Ball
+    attack:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 813582780}
+          m_TargetAssemblyTypeName: FinalBoss, Assembly-CSharp
+          m_MethodName: SpawnBall
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    probability: 3
+  - name: Slap
+    attack:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 813582780}
+          m_TargetAssemblyTypeName: FinalBoss, Assembly-CSharp
+          m_MethodName: Slap
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    probability: 2
+  - name: Dash
+    attack:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 813582780}
+          m_TargetAssemblyTypeName: FinalBoss, Assembly-CSharp
+          m_MethodName: Dash
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    probability: 2
+  - name: Ground Pound
+    attack:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 813582780}
+          m_TargetAssemblyTypeName: FinalBoss, Assembly-CSharp
+          m_MethodName: GroundPound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    probability: 1
+  timeBetweenEachAttack: 10
+  head: {fileID: 1800219325}
+  ball: {fileID: 704192000619679106, guid: 3644e716da7730d478e8d53fcc1ccd26, type: 3}
+  ballSpawnPoint: {fileID: 499737583}
+  dashSpeed: 90
+  dashTime: 0.25
+  timeToStayStillBetweenDash: 1
+  jumpBoost: 10
+  jumpTime: 1
+  downBoost: 50
+  groundPoundObject: {fileID: 8014744861563751781, guid: 3e6a5e3a319577a48bbb85521c3e9d34, type: 3}
+  groundPoundPosition: {fileID: 80759620}
+  moveBlockTime: 1
 --- !u!54 &813582781
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26175,7 +26300,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1761564767}
+  m_Father: {fileID: 1826540022}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &909032845
 GameObject:
@@ -29402,7 +29527,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1761564767}
+  m_Father: {fileID: 1826540022}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1048978177
 PrefabInstance:
@@ -39338,6 +39463,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1416434989 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7021488480231399426, guid: 98697301fa559c2469cd102195099811, type: 3}
+  m_PrefabInstance: {fileID: 1274491597413253920}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1421397603
 GameObject:
   m_ObjectHideFlags: 0
@@ -42429,12 +42565,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1542171093}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1761564767}
+  m_Father: {fileID: 1826540022}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!154 &1542171095
 TerrainCollider:
@@ -48265,12 +48401,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1542171094}
-  - {fileID: 617545756}
-  - {fileID: 905965558}
-  - {fileID: 1048541952}
-  - {fileID: 583362866}
-  - {fileID: 404828176}
+  - {fileID: 1826540022}
   - {fileID: 1532424653}
   - {fileID: 990718824}
   - {fileID: 1964600549}
@@ -49484,6 +49615,43 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
+--- !u!1 &1826540021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1826540022}
+  m_Layer: 0
+  m_Name: Terrains
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1826540022
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826540021}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1542171094}
+  - {fileID: 617545756}
+  - {fileID: 905965558}
+  - {fileID: 1048541952}
+  - {fileID: 583362866}
+  - {fileID: 404828176}
+  m_Father: {fileID: 1761564767}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1829139313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57614,6 +57782,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7866077781270458780, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: playerHealthBar
+      value: 
+      objectReference: {fileID: 1416434989}
+    - target: {fileID: 7866077781270458780, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: playerHealthBarBackground
+      value: 
+      objectReference: {fileID: 507472205}
     - target: {fileID: 8799987319473712836, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
