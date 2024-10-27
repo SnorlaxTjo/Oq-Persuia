@@ -6,12 +6,18 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Rigidbody))]
 public class FinalBoss : MonoBehaviour
 {
+    [SerializeField] int health;
+
+    [Space]
+
     [SerializeField] float moveSpeed;
     [SerializeField] float smoothTime = 0.1f;
     [SerializeField] Transform playerTransform;
     [SerializeField] BossAttack[] bossAttacks;
     [SerializeField] float timeBetweenEachAttack;
     [SerializeField] Transform head;
+    [SerializeField] int damageToPlayer;
+    [SerializeField] float stunTime;
 
     [Header("Attacks")]
     [Space]
@@ -21,6 +27,7 @@ public class FinalBoss : MonoBehaviour
     [SerializeField] Transform ballSpawnPoint;
 
     [Header("Slap")]
+    [SerializeField] float animationTime;
 
     [Header("Dash")]
     [SerializeField] float dashSpeed;
@@ -35,6 +42,7 @@ public class FinalBoss : MonoBehaviour
     [SerializeField] Transform groundPoundPosition;
     [SerializeField] float moveBlockTime;
 
+    int currentHealth;
     bool activated;
     float currentVelocity;
     int allAttackProbability;
@@ -42,14 +50,19 @@ public class FinalBoss : MonoBehaviour
     bool moveBlock;
     float currentMoveSpeed;
     float standardHeight;
+    bool damageBlock;
 
     Rigidbody bossRigidbody;
+    Animator bossAnimator;
+    UIManager uiManager;
 
     public bool Activated { get { return activated; } set {  activated = value; } }
 
     private void Start()
     {
         bossRigidbody = GetComponent<Rigidbody>();
+        bossAnimator = GetComponent<Animator>();
+        uiManager = FindObjectOfType<UIManager>();
 
         foreach(BossAttack bossAttack in bossAttacks)
         {
@@ -63,6 +76,7 @@ public class FinalBoss : MonoBehaviour
 
         currentMoveSpeed = moveSpeed;
         standardHeight = transform.position.y;
+        currentHealth = health;
     }
 
     private void FixedUpdate()
@@ -131,6 +145,18 @@ public class FinalBoss : MonoBehaviour
         }
     }
 
+    void Damage(int damage)
+    {
+        currentHealth -= damage;
+        uiManager.SetBossHealthBar(currentHealth, health);
+
+        if (currentHealth <= 0)
+        {
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+    }
+
     #region Boss Attacks
 
     public void SpawnBall()
@@ -143,6 +169,8 @@ public class FinalBoss : MonoBehaviour
 
     public void Slap()
     {
+        StartCoroutine(SlapRoutine());
+
         Debug.Log("Slap");
     }
 
@@ -158,6 +186,17 @@ public class FinalBoss : MonoBehaviour
         StartCoroutine(GroundPoundRoutine());
 
         Debug.Log("Ground Pound");
+    }
+
+    IEnumerator SlapRoutine()
+    {
+        moveBlock = true;
+        bossAnimator.SetBool("SlapAttack", true);
+
+        yield return new WaitForSeconds(animationTime);
+
+        moveBlock = false;
+        bossAnimator.SetBool("SlapAttack", false);
     }
 
     IEnumerator DashRoutine()
@@ -202,6 +241,38 @@ public class FinalBoss : MonoBehaviour
     }
 
     #endregion
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<PlayerHealth>().Damage(damageToPlayer);
+        }
+        else if (other.gameObject.CompareTag("Arrow"))
+        {
+            Damage(other.GetComponent<Arrow>().DamageToDeal);
+
+            other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
+
+            StartCoroutine(DamageBlockRoutine());
+        }
+        else if (other.gameObject.CompareTag("GroundPound"))
+        {
+            Damage(other.gameObject.GetComponent<GroundPoundChecker>().DamageToDeal);
+
+            StartCoroutine(DamageBlockRoutine());
+        }
+    }
+
+    IEnumerator DamageBlockRoutine()
+    {
+        damageBlock = true;
+
+        yield return new WaitForSeconds(1);
+
+        damageBlock = false;
+    }
 }
 
 [Serializable]

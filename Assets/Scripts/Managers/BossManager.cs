@@ -29,7 +29,14 @@ public class BossManager : MonoBehaviour
     int enemiesLeftOnCurrentWave;
     List<GameObject> allEnemyArrows = new List<GameObject>();
 
+    UIManager uiManager;
+
     public List<GameObject> AllEnemyArrows { get { return allEnemyArrows; } set { allEnemyArrows = value; } }
+
+    private void Start()
+    {
+        uiManager = FindObjectOfType<UIManager>();
+    }
 
     private void Update()
     {
@@ -105,6 +112,7 @@ public class BossManager : MonoBehaviour
             case 2:
                 finalBoss.GetComponent<FinalBoss>().Activated = true;
                 enemiesLeftOnCurrentWave++;
+                uiManager.ActivateBossHealthBar();
                 break;
         }
     }

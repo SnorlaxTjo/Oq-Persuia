@@ -42,6 +42,14 @@ public class UIManager : MonoBehaviour
     #region Health Bar Variables
     float fullPlayerHealthBarLength;
     float fullBossHealthBarLength;
+
+    bool fadingPlayerHealthBar;
+    float playerHealthBarAlpha;
+    bool playerHealthBarVisible;
+
+    bool fadingBossHealthBar;
+    float bossHealthBarAlpha;
+    bool bossHealthBarVisible;
     #endregion
 
     PlayerController playerController;
@@ -55,6 +63,7 @@ public class UIManager : MonoBehaviour
         playerHealth = FindObjectOfType<PlayerHealth>();
 
         fullPlayerHealthBarLength = playerHealthBar.rectTransform.rect.width;
+        fullBossHealthBarLength = bossHealthBar.rectTransform.rect.width;
     }
 
     private void Update()
@@ -62,6 +71,7 @@ public class UIManager : MonoBehaviour
         DisplayDialogue();
         ToggleMap();
         SetHealthBar();
+        FadeHealthBars();
     }
 
     #region Dialogue
@@ -160,9 +170,47 @@ public class UIManager : MonoBehaviour
 
         float healthPercentage = (float)currentHealth / (float)maxHealth;
         float healthBarLength = fullPlayerHealthBarLength * healthPercentage;
-        Debug.Log(healthPercentage);
 
         playerHealthBar.rectTransform.sizeDelta = new Vector2(healthBarLength, playerHealthBar.rectTransform.rect.height);
+    }
+
+    public void SetBossHealthBar(int bossHealth, int maxHealth)
+    {
+        float healthPercentage = (float)bossHealth / (float)maxHealth;
+        float healthBarLength = fullBossHealthBarLength * healthPercentage;
+
+        bossHealthBar.rectTransform.sizeDelta = new Vector2(healthBarLength, bossHealthBar.rectTransform.rect.height);
+    }
+
+    public void ActivateBossHealthBar()
+    {
+        fadingBossHealthBar = true;
+    }
+
+    void FadeHealthBars()
+    {
+        if (fadingPlayerHealthBar)
+        {
+
+        }
+
+        if (fadingBossHealthBar)
+        {
+            if (!bossHealthBarVisible)
+            {
+                bossHealthBarAlpha += Time.deltaTime;
+
+                if (bossHealthBarAlpha >= 1f)
+                {
+                    bossHealthBarAlpha = 1f;
+                    bossHealthBarVisible = true;
+                    fadingBossHealthBar = false;
+                }
+
+                bossHealthBar.color = new Color(1f, 0f, 0f, bossHealthBarAlpha);
+                bossHealthBarBackground.color = new Color(0.5f, 0f, 0f, bossHealthBarAlpha);
+            }
+        }
     }
 
     #endregion

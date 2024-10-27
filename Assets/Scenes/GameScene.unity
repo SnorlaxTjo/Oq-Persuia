@@ -15172,17 +15172,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5321948953743770716, guid: b396398a825a2fb4c9492391dd568bb0, type: 3}
   m_PrefabInstance: {fileID: 503622780}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &507472205 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3173966464092162620, guid: 98697301fa559c2469cd102195099811, type: 3}
-  m_PrefabInstance: {fileID: 1274491597413253920}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &510605006
 GameObject:
   m_ObjectHideFlags: 0
@@ -23154,6 +23143,7 @@ GameObject:
   - component: {fileID: 813582779}
   - component: {fileID: 813582781}
   - component: {fileID: 813582780}
+  - component: {fileID: 813582782}
   m_Layer: 8
   m_Name: MainPart
   m_TagString: Untagged
@@ -23193,6 +23183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31516ae4c1e01104b9bfa551101771a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 200
   moveSpeed: 6
   smoothTime: 0.1
   playerTransform: {fileID: 959911869}
@@ -23267,8 +23258,11 @@ MonoBehaviour:
     probability: 1
   timeBetweenEachAttack: 10
   head: {fileID: 1800219325}
+  damageToPlayer: 15
+  stunTime: 1
   ball: {fileID: 704192000619679106, guid: 3644e716da7730d478e8d53fcc1ccd26, type: 3}
   ballSpawnPoint: {fileID: 499737583}
+  animationTime: 9
   dashSpeed: 90
   dashTime: 0.25
   timeToStayStillBetweenDash: 1
@@ -23305,6 +23299,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &813582782
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813582778}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 70c9c0ae83ffed541b2a13b4b869a04d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &814177931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39463,17 +39478,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1416434989 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7021488480231399426, guid: 98697301fa559c2469cd102195099811, type: 3}
-  m_PrefabInstance: {fileID: 1274491597413253920}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1421397603
 GameObject:
   m_ObjectHideFlags: 0
@@ -57778,18 +57782,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2207760307154636610, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6219073005144638033, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 7248130669429599122, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_Name
       value: UIManager
       objectReference: {fileID: 0}
-    - target: {fileID: 7866077781270458780, guid: 98697301fa559c2469cd102195099811, type: 3}
-      propertyPath: playerHealthBar
-      value: 
-      objectReference: {fileID: 1416434989}
-    - target: {fileID: 7866077781270458780, guid: 98697301fa559c2469cd102195099811, type: 3}
-      propertyPath: playerHealthBarBackground
-      value: 
-      objectReference: {fileID: 507472205}
     - target: {fileID: 8799987319473712836, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -57829,6 +57833,22 @@ PrefabInstance:
     - target: {fileID: 8799987319473712836, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8823341210897079430, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8823341210897079430, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8823341210897079430, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8823341210897079430, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
