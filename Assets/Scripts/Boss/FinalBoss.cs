@@ -147,6 +147,8 @@ public class FinalBoss : MonoBehaviour
 
     void Damage(int damage)
     {
+        if (damageBlock) { return; }
+
         currentHealth -= damage;
         uiManager.SetBossHealthBar(currentHealth, health);
 

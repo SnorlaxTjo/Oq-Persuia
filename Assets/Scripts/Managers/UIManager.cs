@@ -36,6 +36,7 @@ public class UIManager : MonoBehaviour
     #endregion
 
     #region Map Variables
+    bool hasGottenMap;
     bool isShowingMap;
     #endregion
 
@@ -56,6 +57,7 @@ public class UIManager : MonoBehaviour
     PlayerHealth playerHealth;
 
     public bool IsDisplayingSymbols { get { return isDisplayingSymbols; } }
+    public bool HasGottenMap { set { hasGottenMap = value; } }
 
     private void Start()
     {
@@ -104,7 +106,7 @@ public class UIManager : MonoBehaviour
         dialogueChars = dialogue.ToCharArray();
         isDisplayingSymbols = true;
 
-        playerController.MoveBlock = true;
+        playerController.CompleteMoveBlock = true;
     }
 
     public void QuickCompleteDialogue(string dialogue)
@@ -122,18 +124,20 @@ public class UIManager : MonoBehaviour
         currentChar = 0;
         dialogueText.text = string.Empty;
 
-        playerController.MoveBlock = false;
+        playerController.CompleteMoveBlock = false;
     }
     #endregion
 
     #region Map
     void ToggleMap()
     {
+        if (!hasGottenMap) { return; }
+
         if (Input.GetKeyDown(KeyCode.M))
         {
             isShowingMap = !isShowingMap;
             mapMenu.SetActive(isShowingMap);
-            playerController.MoveBlock = isShowingMap;
+            playerController.CompleteMoveBlock = isShowingMap;
         }
     }
 

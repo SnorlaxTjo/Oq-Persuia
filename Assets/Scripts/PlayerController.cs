@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     Vector3 velocity;
 
     bool moveBlock;
+    bool completeMoveBlock;
 
     bool isGrounded;
     bool canJump;
@@ -39,6 +40,7 @@ public class PlayerController : MonoBehaviour
     GroundPound groundPound;
 
     public bool MoveBlock { get { return moveBlock; } set {  moveBlock = value; } }
+    public bool CompleteMoveBlock { get { return completeMoveBlock; } set { completeMoveBlock = value; } }
     public bool IsGrounded { get { return isGrounded; } }
     public bool IsGroundPounding { get { return isGroundPounding; } set { isGroundPounding = value; } }
 
@@ -50,6 +52,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (completeMoveBlock) { return; }
+
         Jump();
 
         if (moveBlock) { return; }
@@ -148,6 +152,11 @@ public class PlayerController : MonoBehaviour
         }
 
         controller.Move(velocity * Time.deltaTime);
+    }
+
+    public void Teleport(Vector3 placeToTeleportTo)
+    {
+        transform.position = placeToTeleportTo;
     }
 
     private void OnDrawGizmosSelected()

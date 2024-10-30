@@ -22,19 +22,31 @@ public class PlayerDialogueChecker : MonoBehaviour
 
     void Dialogue()
     {
-        if (isInteractable && Input.GetKeyDown(KeyCode.Return))
+        if (isInteractable && Input.GetKeyDown(KeyCode.E))
         {
             if (!uiManager.IsDisplayingSymbols)
             {
                 if (currentDialogueIndex < currentDialogue.DialogueLines.Length)
                 {
-                    uiManager.ShowDialogue(currentDialogue.DialogueLines[currentDialogueIndex]);
+                    if (currentDialogue.HasSpoken)
+                    {
+                        currentDialogueIndex = currentDialogue.DialogueLines.Length - 1;
+                        uiManager.ShowDialogue(currentDialogue.DialogueLines[currentDialogueIndex]);
+                        currentDialogueIndex++;
+                    }
+                    else
+                    {
+                        uiManager.ShowDialogue(currentDialogue.DialogueLines[currentDialogueIndex]);
 
-                    currentDialogueIndex++;
+                        currentDialogueIndex++;
+                    }                  
                 }
                 else
                 {
                     uiManager.CloseDialogue();
+                    if (!currentDialogue.HasSpoken) currentDialogue.WhatToDoUponFinishedTalking?.Invoke();
+
+                    currentDialogue.HasSpoken = true;
                     currentDialogueIndex = 0;
                 }
             }

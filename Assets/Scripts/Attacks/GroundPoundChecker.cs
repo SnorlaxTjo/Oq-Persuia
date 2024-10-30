@@ -27,7 +27,7 @@ public class GroundPoundChecker : MonoBehaviour
 
         if (currentTime >= timeToGrow)
         {
-            playerController.MoveBlock = false;
+            playerController.CompleteMoveBlock = false;
 
             gameObject.SetActive(false);
             Destroy(gameObject);

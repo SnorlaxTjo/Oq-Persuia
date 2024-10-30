@@ -37,7 +37,7 @@ public class WorldManager : MonoBehaviour
 
     IEnumerator ChangeWorldRoutine(int world, int teleportPosition)
     {
-        player.GetComponent<PlayerController>().MoveBlock = true;
+        player.GetComponent<PlayerController>().CompleteMoveBlock = true;
 
         uiManager.SetTransition(true);
 
@@ -64,7 +64,7 @@ public class WorldManager : MonoBehaviour
         setWorld.world.SetActive(true);
 
         cameraManager.ChangeCameraLimits(localCameraLimits[0], localCameraLimits[1]);
-        player.transform.position = setWorld.teleportPlaces[teleportPosition].position;
+        player.GetComponent<PlayerController>().Teleport(setWorld.teleportPlaces[teleportPosition].position);
 
         cameraManager.CanCheckForCollision = !turnOffCameraCollisions;
 
@@ -86,7 +86,7 @@ public class WorldManager : MonoBehaviour
 
         uiManager.SetTransition(false);
 
-        player.GetComponent<PlayerController>().MoveBlock = false;
+        player.GetComponent<PlayerController>().CompleteMoveBlock = false;
     }
 }
 
