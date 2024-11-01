@@ -31,12 +31,12 @@ public class PlayerDialogueChecker : MonoBehaviour
                     if (currentDialogue.HasSpoken)
                     {
                         currentDialogueIndex = currentDialogue.DialogueLines.Length - 1;
-                        uiManager.ShowDialogue(currentDialogue.DialogueLines[currentDialogueIndex]);
+                        uiManager.ShowDialogue(currentDialogue.DialogueLines[currentDialogueIndex].dialogueLine);
                         currentDialogueIndex++;
                     }
                     else
                     {
-                        uiManager.ShowDialogue(currentDialogue.DialogueLines[currentDialogueIndex]);
+                        uiManager.ShowDialogue(currentDialogue.DialogueLines[currentDialogueIndex].dialogueLine);
 
                         currentDialogueIndex++;
                     }                  
@@ -52,7 +52,7 @@ public class PlayerDialogueChecker : MonoBehaviour
             }
             else
             {
-                uiManager.QuickCompleteDialogue(currentDialogue.DialogueLines[currentDialogueIndex - 1]);
+                uiManager.QuickCompleteDialogue(currentDialogue.DialogueLines[currentDialogueIndex - 1].dialogueLine);
             }
         }
     }
