@@ -7,6 +7,8 @@ public class UIManager : MonoBehaviour
     [Header("Dialogue")]
     [SerializeField] GameObject dialogueBackground;
     [SerializeField] TextMeshProUGUI dialogueText;
+    [SerializeField] GameObject nameBackground;
+    [SerializeField] TextMeshProUGUI nameText;
     [SerializeField] float timeBetweenEachSymbol = 0.05f;
 
     [Header("Map")]
@@ -86,7 +88,10 @@ public class UIManager : MonoBehaviour
                 dialogueText.text += dialogueChars[currentChar];
 
                 currentChar++;
-                timeUntilNextSymbol += timeBetweenEachSymbol;
+                if (dialogueChars[currentChar - 1] != ' ')
+                {
+                    timeUntilNextSymbol += timeBetweenEachSymbol;
+                }               
             }
             if (currentChar >= dialogueChars.Length)
             {
@@ -97,7 +102,7 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void ShowDialogue(string dialogue)
+    public void ShowDialogue(string dialogue, bool showName, string name)
     {
         dialogueBackground.SetActive(true);
 
@@ -105,6 +110,12 @@ public class UIManager : MonoBehaviour
         currentChar = 0;
         dialogueChars = dialogue.ToCharArray();
         isDisplayingSymbols = true;
+
+        if (showName)
+        {
+            nameBackground.SetActive(true);
+            nameText.text = name;
+        }
 
         playerController.CompleteMoveBlock = true;
     }
@@ -123,6 +134,9 @@ public class UIManager : MonoBehaviour
         isDisplayingSymbols = false;
         currentChar = 0;
         dialogueText.text = string.Empty;
+
+        nameBackground.SetActive(false);
+        nameText.text = string.Empty;
 
         playerController.CompleteMoveBlock = false;
     }

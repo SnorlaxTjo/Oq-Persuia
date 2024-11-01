@@ -31,12 +31,12 @@ public class PlayerDialogueChecker : MonoBehaviour
                     if (currentDialogue.HasSpoken)
                     {
                         currentDialogueIndex = currentDialogue.DialogueLines.Length - 1;
-                        uiManager.ShowDialogue(currentDialogue.DialogueLines[currentDialogueIndex].dialogueLine);
+                        uiManager.ShowDialogue(currentDialogue.DialogueLines[currentDialogueIndex].dialogueLine, currentDialogue.DisplayName, currentDialogue.DialogueLines[currentDialogueIndex].npcName);
                         currentDialogueIndex++;
                     }
                     else
                     {
-                        uiManager.ShowDialogue(currentDialogue.DialogueLines[currentDialogueIndex].dialogueLine);
+                        uiManager.ShowDialogue(currentDialogue.DialogueLines[currentDialogueIndex].dialogueLine, currentDialogue.DisplayName, currentDialogue.DialogueLines[currentDialogueIndex].npcName);
 
                         currentDialogueIndex++;
                     }                  

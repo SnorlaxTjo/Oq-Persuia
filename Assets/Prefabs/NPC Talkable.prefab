@@ -213,7 +213,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db9fe4d656d438a4db107187041a5fa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueLines: []
+  displayName: 1
+  dialogueLines2: []
+  whatToDoUponFinishedTalking:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!136 &3449523351675386807
 CapsuleCollider:
   m_ObjectHideFlags: 0
