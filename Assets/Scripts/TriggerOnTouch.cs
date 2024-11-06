@@ -10,6 +10,9 @@ public class TriggerOnTouch : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             whatToDoUponTouch?.Invoke();
+
+            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }

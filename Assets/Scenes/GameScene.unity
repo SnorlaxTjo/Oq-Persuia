@@ -2376,6 +2376,293 @@ Transform:
   - {fileID: 1005553520}
   m_Father: {fileID: 1929057424}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &53359472
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 238247518}
+    m_Modifications:
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 49.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 38.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231877689135029610, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_Name
+      value: NPC Talkable
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.size
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[0].npcName
+      value: Richard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[1].npcName
+      value: Richard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[2].npcName
+      value: Richard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[3].npcName
+      value: Richard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[4].npcName
+      value: Richard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[5].npcName
+      value: Richard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[6].npcName
+      value: Richard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[7].npcName
+      value: Richard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[8].npcName
+      value: Richard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[9].npcName
+      value: Richard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[10].npcName
+      value: Richard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[11].npcName
+      value: Richard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[12].npcName
+      value: Richard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[13].npcName
+      value: Richard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[14].npcName
+      value: Richard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[15].npcName
+      value: Richard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[16].npcName
+      value: Richard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[17].npcName
+      value: Richard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[18].npcName
+      value: Richard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[0].dialogueLine
+      value: I see Tony told you to go here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[1].dialogueLine
+      value: Anyways, the reason I wanted to call you here is to tell you a bit of
+        back story.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[2].dialogueLine
+      value: I feel like you would only benefit from knowing how the country of Oq
+        Persuia came to be.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[3].dialogueLine
+      value: You see, 1000 years ago, the islans of Zielen got an attack from an
+        evil creature.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[4].dialogueLine
+      value: Yes, it's the same as now, it returns every 100 years.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[5].dialogueLine
+      value: Anyways, the residents of the island were caught in fear, not knowing
+        what to do.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[6].dialogueLine
+      value: Around the same time, travelers from the city of Persuia came to the
+        island.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[7].dialogueLine
+      value: The travelers saw the ongoing fight, and decided to help the ones that
+        seemed the most similar to them.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[8].dialogueLine
+      value: That was the residents of Zielen Island.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[9].dialogueLine
+      value: Even though their home had been completely destroyed, the residents
+        of Persuia wanted to help.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[10].dialogueLine
+      value: Together, they managed to defeat the enemy.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[11].dialogueLine
+      value: The residents of the two islands came to an agreement of forming a union,
+        with decisions being made in Persuia.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[12].dialogueLine
+      value: The people faced very little consequences working together.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[13].dialogueLine
+      value: Later on, Hisina Island, where we currently are became a part of the
+        country as well.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[14].dialogueLine
+      value: But that's about it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[15].dialogueLine
+      value: The Zielen Ruins are historical proof of the first ever attack.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[16].dialogueLine
+      value: Anyways, I heard that you've learned to use the bow.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[17].dialogueLine
+      value: You should head to Wietra to go through the bow examination.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[18].dialogueLine
+      value: It's straight east from Mojera Outskirts.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 354102340}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1886831475}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_isTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Collider, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+--- !u!4 &53359473 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+  m_PrefabInstance: {fileID: 53359472}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &53926729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7511,6 +7798,7 @@ Transform:
   - {fileID: 824884276}
   - {fileID: 332353974}
   - {fileID: 473970689}
+  - {fileID: 53359473}
   m_Father: {fileID: 1577828468}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &238247519
@@ -11874,7 +12162,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13447,6 +13735,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1886831475}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!65 &410394795
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13462,7 +13762,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -20579,6 +20879,155 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658498632}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &659235908
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1255137858}
+    m_Modifications:
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 45.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 41.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231877689135029610, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_Name
+      value: NPC Talkable
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[0].npcName
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[1].npcName
+      value: Tareq
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[2].npcName
+      value: Tareq
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[3].npcName
+      value: Tareq
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[4].npcName
+      value: Tareq
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[5].npcName
+      value: Tareq
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[0].dialogueLine
+      value: So you're here for the bow examination?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[1].dialogueLine
+      value: I'm Tareq, and I host the examination.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[2].dialogueLine
+      value: So how does the examination work?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[3].dialogueLine
+      value: Simple. There will be 3 levels, and all you have to do is hit the yellow
+        or red part of each board.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[4].dialogueLine
+      value: There are lights underneach each target, but I think you'll understand
+        better when you enter.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[5].dialogueLine
+      value: The examination takes place in the giant gray building in the north
+        of the town.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1866719156}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_isTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Collider, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+--- !u!4 &659235909 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+  m_PrefabInstance: {fileID: 659235908}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &660668705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23028,6 +23477,180 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5321948953743770716, guid: b396398a825a2fb4c9492391dd568bb0, type: 3}
   m_PrefabInstance: {fileID: 753814295}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &754284433
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1255137858}
+    m_Modifications:
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 68.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 86.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231877689135029610, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_Name
+      value: NPC Talkable (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[0].npcName
+      value: Tareq
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[1].npcName
+      value: Tareq
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[2].npcName
+      value: Tareq
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[3].npcName
+      value: Tareq
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[4].npcName
+      value: Tareq
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[5].npcName
+      value: Tareq
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[0].dialogueLine
+      value: Well Done.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[1].dialogueLine
+      value: That wasn't that bad, right?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[2].dialogueLine
+      value: Anyways, I hereby present you with the bow and arrow badge!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[3].dialogueLine
+      value: This is proof that you can properly use a bow and arrow.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[4].dialogueLine
+      value: Take it, and keep it with care.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: dialogueLines2.Array.data[5].dialogueLine
+      value: Good luck with saving our country! I believe in you!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1621044357}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1866719156}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_isTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_isTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Collider, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Collider, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+--- !u!4 &754284434 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+  m_PrefabInstance: {fileID: 754284433}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &761427272
 GameObject:
@@ -37307,6 +37930,8 @@ Transform:
   - {fileID: 2134431405}
   - {fileID: 535798435}
   - {fileID: 2011291368}
+  - {fileID: 659235909}
+  - {fileID: 754284434}
   m_Father: {fileID: 1400170544}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1255137859
@@ -44925,7 +45550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[3].dialogueLine
-      value: It's super easy to use! Just hold down RIght Click, and release when
+      value: It's super easy to use! Just hold down Right Click, and release when
         you want to shoot!
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
@@ -48705,7 +49330,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -50401,6 +51026,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1886831475}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!65 &1677326867
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50416,7 +51053,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -55010,7 +55647,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -55500,9 +56137,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC Talkable (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8231877689135029610, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.size
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[0].npcName
@@ -55534,26 +56175,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[1].dialogueLine
-      value: I'm Tony, and I own the bow and arrow practice field here.
+      value: Your next step is to head east to Wietra, to go through a bow examination.
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[2].dialogueLine
-      value: Here, let me give you a bow to use,
+      value: Or, that's how it would be, normally.
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[3].dialogueLine
-      value: It's super easy to use! Just hold down RIght Click, and release when
-        you want to shoot!
+      value: You see, I got a call from the mayor of Ferrico
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[4].dialogueLine
-      value: Depending on how long you hold down for, the arrow will travel diferent
-        lengths.
+      value: He told me to tell you to meet him at the windmill.
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[5].dialogueLine
-      value: Head to the practice field and try it out! It's just to the right of
-        us.
+      value: It's just south of here, you should probably go there and see what he
+        wants.
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.size
@@ -55566,18 +56205,18 @@ PrefabInstance:
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1845477638}
+      objectReference: {fileID: 2134287601}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_HasObtainedBow
+      value: set_isTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Bow, Assembly-CSharp
+      value: UnityEngine.Collider, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
@@ -55595,6 +56234,11 @@ PrefabInstance:
 --- !u!4 &1886831474 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3449451609069831772, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+  m_PrefabInstance: {fileID: 1886831473}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1886831475 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8231877689135029610, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
   m_PrefabInstance: {fileID: 1886831473}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1887587092
@@ -57673,7 +58317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[4].dialogueLine
-      value: In order to defat the enemy, we need to atatck it.
+      value: In order to defat the enemy, we need to attack it.
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[5].dialogueLine
@@ -62082,7 +62726,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
