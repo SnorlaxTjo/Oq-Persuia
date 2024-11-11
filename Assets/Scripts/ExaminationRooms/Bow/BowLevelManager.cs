@@ -110,7 +110,7 @@ public class BowLevelManager : MonoBehaviour
         {
             if (currentLevel >= levels.Length - 1)
             {
-                worldManager.ChangeWorld(worldToTeleportOutTo, teleporter);
+                worldManager.ChangeWorld(worldToTeleportOutTo, teleporter, false, 0);
                 return;
             }
 

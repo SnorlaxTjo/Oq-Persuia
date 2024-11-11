@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider))]
@@ -5,6 +6,8 @@ public class Teleporter : MonoBehaviour
 {
     [SerializeField] int worldToTeleportTo;
     [SerializeField] int teleporterPlaceToTeleportTo;
+    [SerializeField] bool triggerCutscene;
+    [SerializeField] int cutsceneToTrigger;
 
     WorldManager worldManager;
 
@@ -17,7 +20,7 @@ public class Teleporter : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            worldManager.ChangeWorld(worldToTeleportTo, teleporterPlaceToTeleportTo);
+            worldManager.ChangeWorld(worldToTeleportTo, teleporterPlaceToTeleportTo, triggerCutscene, cutsceneToTrigger);
         }
     }
 }

@@ -18,6 +18,7 @@ public class WorldManager : MonoBehaviour
 
     CameraManager cameraManager;
     UIManager uiManager;
+    CutsceneManager cutsceneManager;
 
     Bow bow;
 
@@ -25,17 +26,19 @@ public class WorldManager : MonoBehaviour
     {
         cameraManager = FindObjectOfType<CameraManager>();
         uiManager = FindObjectOfType<UIManager>();
+        cutsceneManager = FindObjectOfType<CutsceneManager>();
+
         bow = FindObjectOfType<Bow>();
     }
 
     public Vector3[] LocalCameraLimits { get { return localCameraLimits; } }
 
-    public void ChangeWorld(int worldToChangeTo, int teleportPosition)
+    public void ChangeWorld(int worldToChangeTo, int teleportPosition, bool startCutscene, int cutscene)
     {
-        StartCoroutine(ChangeWorldRoutine(worldToChangeTo, teleportPosition));
+        StartCoroutine(ChangeWorldRoutine(worldToChangeTo, teleportPosition, startCutscene, cutscene));
     }
 
-    IEnumerator ChangeWorldRoutine(int world, int teleportPosition)
+    IEnumerator ChangeWorldRoutine(int world, int teleportPosition, bool startCutscene, int cutscene)
     {
         player.GetComponent<PlayerController>().CompleteMoveBlock = true;
 
@@ -81,6 +84,11 @@ public class WorldManager : MonoBehaviour
         }
 
         bow.CanShoot = setWorldInfo.Bow;
+
+        if (startCutscene)
+        {
+            cutsceneManager.StartCutscene(cutscene);
+        }
 
         yield return new WaitForSeconds(timeToHaveBlackScreen);
 
