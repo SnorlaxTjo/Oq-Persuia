@@ -1,8 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum MapMarkerType
+{
+    City,
+    POI
+}
+
 public class MapMarker : MonoBehaviour
 {
+    [SerializeField] MapMarkerType markerType;
     [SerializeField] Sprite placeImage;
     [SerializeField] TextAsset placeInfo;
 
@@ -31,7 +38,7 @@ public class MapMarker : MonoBehaviour
     {
         if (!isActivated) { return; }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonUp(0))
         {
             hasClicked = !hasClicked;
 
@@ -50,7 +57,16 @@ public class MapMarker : MonoBehaviour
 
                 isActivated = false;
             }
+            else
+            {
+                ShowTinyMenu();
+            }          
         }
+    }
+
+    void ShowTinyMenu()
+    {
+        uiManager.ShowMiniMenu(markerType, (Vector2)gameObject.GetComponent<Image>().rectTransform.position);
     }
 
     void SortTextFile()

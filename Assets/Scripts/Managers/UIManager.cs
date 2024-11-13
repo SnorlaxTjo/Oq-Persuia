@@ -18,6 +18,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI titleText;
     [SerializeField] TextMeshProUGUI descriptionText;
     [SerializeField] TextMeshProUGUI locationsText;
+    [SerializeField] Image playerMarker;
+    [SerializeField] Image goalMarker;
+    [SerializeField] GameObject cityMenu;
+    [SerializeField] GameObject poiMenu;
 
     [Header("Transition")]
     [SerializeField] Animator transitionAnimator;
@@ -165,10 +169,43 @@ public class UIManager : MonoBehaviour
 
     public void ClearCityInfo()
     {
+        HideMiniMenu();
+
         placeImage.sprite = standardSprite;
         titleText.text = string.Empty;
         descriptionText.text = string.Empty;
-        locationsText.text = string.Empty;
+        locationsText.text = string.Empty;       
+    }
+
+    public void SetMapPlayerMarker(Vector2 position)
+    {
+        playerMarker.rectTransform.position = position + new Vector2(960, 540);
+    }
+
+    public void SetMapGoalMarker(Vector2 position)
+    {
+        goalMarker.rectTransform.position = position + new Vector2(960, 540);
+    }
+
+    public void ShowMiniMenu(MapMarkerType markerType, Vector2 position)
+    {
+        switch (markerType)
+        {
+            case MapMarkerType.City:
+                cityMenu.SetActive(true);
+                cityMenu.GetComponent<RectTransform>().position = position;
+                break;
+            case MapMarkerType.POI:
+                poiMenu.SetActive(true);
+                poiMenu.GetComponent<RectTransform>().position = position;
+                break;
+        }
+    }
+
+    public void HideMiniMenu()
+    {
+        cityMenu.SetActive(false);
+        poiMenu.SetActive(false);
     }
     #endregion
 
@@ -176,7 +213,7 @@ public class UIManager : MonoBehaviour
     public void SetTransition(bool whatToSet)
     {
         transitionAnimator.SetBool("Transition", whatToSet);
-    }
+    }  
     #endregion
 
     #region Health Bars

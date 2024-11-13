@@ -90,6 +90,8 @@ public class WorldManager : MonoBehaviour
             cutsceneManager.StartCutscene(cutscene);
         }
 
+        uiManager.SetMapPlayerMarker(setWorld.markerPosition);
+
         yield return new WaitForSeconds(timeToHaveBlackScreen);
 
         uiManager.SetTransition(false);
@@ -104,4 +106,5 @@ public struct World
     public string name;
     public GameObject world;
     public Transform[] teleportPlaces;
+    public Vector2 markerPosition;
 }
