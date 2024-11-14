@@ -8118,6 +8118,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!1 &238777496
 GameObject:
   m_ObjectHideFlags: 0
@@ -8272,6 +8273,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!1 &240817747
 GameObject:
   m_ObjectHideFlags: 0
@@ -9684,6 +9686,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 0
 --- !u!1001 &279003828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13140,6 +13143,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!1 &383417247
 GameObject:
   m_ObjectHideFlags: 0
@@ -13762,6 +13766,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!1 &404803986
 GameObject:
   m_ObjectHideFlags: 0
@@ -14599,6 +14604,7 @@ MonoBehaviour:
   cameraRotation: 30
   bow: 1
   groundPound: 0
+  canFastTravel: 0
 --- !u!1 &427597811
 GameObject:
   m_ObjectHideFlags: 0
@@ -16748,7 +16754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -16756,6 +16762,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
@@ -16767,11 +16777,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 243112906}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1303328792}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
@@ -16783,6 +16801,10 @@ PrefabInstance:
       value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_HasGottenFastTravel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
@@ -16791,7 +16813,15 @@ PrefabInstance:
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: FastTravel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
@@ -16800,6 +16830,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -17203,6 +17237,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!1001 &503622780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21170,6 +21205,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!1 &654319146
 GameObject:
   m_ObjectHideFlags: 0
@@ -22803,6 +22839,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!1001 &715668245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24958,6 +24995,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!4 &784128584
 Transform:
   m_ObjectHideFlags: 0
@@ -29614,6 +29652,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!1 &922584324
 GameObject:
   m_ObjectHideFlags: 0
@@ -32163,6 +32202,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!1 &1030764144
 GameObject:
   m_ObjectHideFlags: 0
@@ -32328,6 +32368,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!1 &1032405049
 GameObject:
   m_ObjectHideFlags: 0
@@ -33433,6 +33474,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7348335246731431289, guid: 05f610bdf72a02c4ea6a96edf7de4e6c, type: 3}
   m_PrefabInstance: {fileID: 1061978157}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1064781254 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3008524642919474992, guid: 98697301fa559c2469cd102195099811, type: 3}
+  m_PrefabInstance: {fileID: 1274491597413253920}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1067581907
 GameObject:
   m_ObjectHideFlags: 0
@@ -35178,6 +35230,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!1001 &1147385126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38821,6 +38874,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!1 &1266332450
 GameObject:
   m_ObjectHideFlags: 0
@@ -39417,6 +39471,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!1 &1279668129
 GameObject:
   m_ObjectHideFlags: 0
@@ -40464,6 +40519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54c9304cfea17ac4ead3a3ec956ed212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fastTravelButton: {fileID: 1064781254}
 --- !u!4 &1303328793
 Transform:
   m_ObjectHideFlags: 0
@@ -48803,6 +48859,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!1 &1577828467
 GameObject:
   m_ObjectHideFlags: 0
@@ -49857,6 +49914,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!1001 &1610962857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54286,6 +54344,7 @@ MonoBehaviour:
   cameraRotation: 40
   bow: 1
   groundPound: 1
+  canFastTravel: 1
 --- !u!1 &1763138515
 GameObject:
   m_ObjectHideFlags: 0
@@ -58152,6 +58211,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!1 &1909716590
 GameObject:
   m_ObjectHideFlags: 0
@@ -58801,6 +58861,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!1001 &1930311907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59829,6 +59890,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!1001 &1953791826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61683,6 +61745,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!1001 &2034073392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63516,6 +63579,7 @@ MonoBehaviour:
   cameraRotation: 0
   bow: 0
   groundPound: 0
+  canFastTravel: 1
 --- !u!1 &2124181843
 GameObject:
   m_ObjectHideFlags: 0
@@ -64188,6 +64252,7 @@ MonoBehaviour:
   cameraRotation: 30
   bow: 1
   groundPound: 0
+  canFastTravel: 0
 --- !u!1001 &2137145627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64745,6 +64810,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1855521280}
     m_Modifications:
+    - target: {fileID: 1799198321099716346, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_Name
+      value: FastTravelText
+      objectReference: {fileID: 0}
     - target: {fileID: 3008524642919474992, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -64776,6 +64845,10 @@ PrefabInstance:
     - target: {fileID: 7248130669429599122, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_Name
       value: UIManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367832639464084472, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_Name
+      value: CloseText
       objectReference: {fileID: 0}
     - target: {fileID: 8799987319473712836, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_LocalPosition.x

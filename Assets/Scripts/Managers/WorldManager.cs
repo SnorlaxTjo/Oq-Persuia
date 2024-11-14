@@ -92,6 +92,8 @@ public class WorldManager : MonoBehaviour
 
         uiManager.SetMapPlayerMarker(setWorld.markerPosition);
 
+        FindObjectOfType<FastTravel>().EnableTravel(setWorldInfo.CanFastTravel);
+
         yield return new WaitForSeconds(timeToHaveBlackScreen);
 
         uiManager.SetTransition(false);

@@ -24,6 +24,9 @@ public class WorldInfo : MonoBehaviour
     [SerializeField] bool bow;
     [SerializeField] bool groundPound;
 
+    [Space]
+    [SerializeField] bool canFastTravel = true;
+
     Vector3 finalLowerCameraLimit;
     Vector3 finalUpperCameraLimit;
 
@@ -38,6 +41,8 @@ public class WorldInfo : MonoBehaviour
 
     public bool Bow { get { return bow; } }
     public bool GroundPound { get { return groundPound; } }
+
+    public bool CanFastTravel { get {  return canFastTravel; } }
 
     private void Start()
     {
