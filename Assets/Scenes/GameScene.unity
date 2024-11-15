@@ -11205,12 +11205,14 @@ MonoBehaviour:
     world: {fileID: 1276760616}
     teleportPlaces:
     - {fileID: 838377086}
+    markerObject: {fileID: 1274491597413253926}
     markerPosition: {x: -638, y: -307}
   - name: 1 - ROUTE | Airport - Ferrico
     world: {fileID: 500877709}
     teleportPlaces:
     - {fileID: 91665160}
     - {fileID: 917273373}
+    markerObject: {fileID: 0}
     markerPosition: {x: -670, y: -279}
   - name: 2 - CITY | Ferrico
     world: {fileID: 713119205}
@@ -11218,24 +11220,28 @@ MonoBehaviour:
     - {fileID: 922584325}
     - {fileID: 1554449776}
     - {fileID: 842899324}
+    markerObject: {fileID: 1274491597413253932}
     markerPosition: {x: -696, y: -232}
   - name: 3 - ROUTE | Ferrico - Gohery
     world: {fileID: 383017375}
     teleportPlaces:
     - {fileID: 1545438765}
     - {fileID: 2017986112}
+    markerObject: {fileID: 0}
     markerPosition: {x: -656, y: -206}
   - name: 4 - CITY | Gohery
     world: {fileID: 1144655367}
     teleportPlaces:
     - {fileID: 69964277}
     - {fileID: 15084863}
+    markerObject: {fileID: 1274491597413253931}
     markerPosition: {x: -603, y: -207}
   - name: 5 - ROUTE | Gohery - Mojera
     world: {fileID: 2028836122}
     teleportPlaces:
     - {fileID: 1201714299}
     - {fileID: 1377377664}
+    markerObject: {fileID: 0}
     markerPosition: {x: -603, y: -167}
   - name: 6 - CITY | Mojera
     world: {fileID: 1577364183}
@@ -11244,17 +11250,20 @@ MonoBehaviour:
     - {fileID: 927908363}
     - {fileID: 1271581143}
     - {fileID: 1170400310}
+    markerObject: {fileID: 1274491597413253930}
     markerPosition: {x: -603, y: -120}
   - name: 7 - OTHER | Ferrico Home
     world: {fileID: 278506969}
     teleportPlaces:
     - {fileID: 1371730126}
+    markerObject: {fileID: 0}
     markerPosition: {x: -696, y: -232}
   - name: 8 - ROUTE | Mojera - Mojera Outskirts
     world: {fileID: 917290939}
     teleportPlaces:
     - {fileID: 419770956}
     - {fileID: 705584018}
+    markerObject: {fileID: 0}
     markerPosition: {x: -558, y: -120}
   - name: 9 - CITY | Mojera Outskirts
     world: {fileID: 239283238}
@@ -11263,17 +11272,20 @@ MonoBehaviour:
     - {fileID: 1505456415}
     - {fileID: 454960648}
     - {fileID: 586330675}
+    markerObject: {fileID: 1274491597413253929}
     markerPosition: {x: -515, y: -174}
   - name: 10 - OTHER | Bow Practice
     world: {fileID: 2135978779}
     teleportPlaces:
     - {fileID: 29804665}
+    markerObject: {fileID: 0}
     markerPosition: {x: -515, y: -174}
   - name: 11 - ROUTE | Mojera Outskirts - Wietra
     world: {fileID: 784128582}
     teleportPlaces:
     - {fileID: 1423714724}
     - {fileID: 165636474}
+    markerObject: {fileID: 0}
     markerPosition: {x: -454, y: -174}
   - name: 12 - CITY | Wietra
     world: {fileID: 1255137857}
@@ -11281,45 +11293,53 @@ MonoBehaviour:
     - {fileID: 986679724}
     - {fileID: 1642250183}
     - {fileID: 1281499156}
+    markerObject: {fileID: 1274491597413253928}
     markerPosition: {x: -391, y: -174}
   - name: 13 - OTHER | Bow Examination
     world: {fileID: 425933209}
     teleportPlaces:
     - {fileID: 1395202538}
+    markerObject: {fileID: 0}
     markerPosition: {x: -391, y: -174}
   - name: 14 - ROUTE | Mojera - Mojera Greenhouse
     world: {fileID: 653065428}
     teleportPlaces:
     - {fileID: 1830074847}
     - {fileID: 85779194}
+    markerObject: {fileID: 0}
     markerPosition: {x: -558, y: -83}
   - name: 15 - POI | Mojera Greenhouse
     world: {fileID: 1929057423}
     teleportPlaces:
     - {fileID: 59788669}
+    markerObject: {fileID: 1274491597413253927}
     markerPosition: {x: -517, y: -50}
   - name: 16 - ROUTE | Mojera Outskirts - Windmill
     world: {fileID: 1953314036}
     teleportPlaces:
     - {fileID: 988248665}
     - {fileID: 577838918}
+    markerObject: {fileID: 0}
     markerPosition: {x: -515, y: -207}
   - name: 17 - POI | Windmill
     world: {fileID: 238247517}
     teleportPlaces:
     - {fileID: 181797352}
+    markerObject: {fileID: 1274491597413253925}
     markerPosition: {x: -515, y: -235}
   - name: 18 - CITY | Julgen
     world: {fileID: 1032140758}
     teleportPlaces:
     - {fileID: 345860965}
     - {fileID: 878275149}
+    markerObject: {fileID: 1274491597413253924}
     markerPosition: {x: 0, y: 0}
   - name: 19 - ROUTE | Julgen - Zielen
     world: {fileID: 2120494528}
     teleportPlaces:
     - {fileID: 1219124175}
     - {fileID: 285166020}
+    markerObject: {fileID: 0}
     markerPosition: {x: 0, y: 0}
   - name: 20 - CITY | Zielen
     world: {fileID: 404244320}
@@ -11327,28 +11347,33 @@ MonoBehaviour:
     - {fileID: 2050678879}
     - {fileID: 402333681}
     - {fileID: 1707838974}
+    markerObject: {fileID: 1274491597413253923}
     markerPosition: {x: 0, y: 0}
   - name: 21 - ROUTE | Zielen - Zielen Ruins
     world: {fileID: 1030113400}
     teleportPlaces:
     - {fileID: 289842462}
     - {fileID: 1317560038}
+    markerObject: {fileID: 0}
     markerPosition: {x: 0, y: 0}
   - name: 22 - POI | Zielen Ruins
     world: {fileID: 1909339677}
     teleportPlaces:
     - {fileID: 1323966667}
+    markerObject: {fileID: 1274491597413253921}
     markerPosition: {x: 0, y: 0}
   - name: 23 - ROUTE | Zielen - Ancient Ruins
     world: {fileID: 1609250300}
     teleportPlaces:
     - {fileID: 244404876}
     - {fileID: 1905823778}
+    markerObject: {fileID: 0}
     markerPosition: {x: 0, y: 0}
   - name: 24 - POI | Anient Ruins
     world: {fileID: 1761564766}
     teleportPlaces:
     - {fileID: 111088195}
+    markerObject: {fileID: 1274491597413253922}
     markerPosition: {x: 0, y: 0}
   timeToHaveBlackScreen: 0.5
 --- !u!1 &309427057
@@ -59728,7 +59753,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -59739,6 +59764,14 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1926343254}
@@ -59747,11 +59780,27 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 454916518}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1787646655}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1787646655}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
@@ -59763,12 +59812,28 @@ PrefabInstance:
       value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SetGoalMarkerX
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SetGoalMarkerY
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: UnityEngine.Collider, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
@@ -59779,11 +59844,27 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_FloatArgument
+      value: -594
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_FloatArgument
+      value: -130
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
+      propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -64810,45 +64891,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1855521280}
     m_Modifications:
-    - target: {fileID: 1799198321099716346, guid: 98697301fa559c2469cd102195099811, type: 3}
-      propertyPath: m_Name
-      value: FastTravelText
-      objectReference: {fileID: 0}
-    - target: {fileID: 3008524642919474992, guid: 98697301fa559c2469cd102195099811, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3008524642919474992, guid: 98697301fa559c2469cd102195099811, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+    - target: {fileID: 1522441292726477405, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3008524642919474992, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1303328792}
-    - target: {fileID: 3008524642919474992, guid: 98697301fa559c2469cd102195099811, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
+    - target: {fileID: 4146856236068259007, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3008524642919474992, guid: 98697301fa559c2469cd102195099811, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Travel
+    - target: {fileID: 6914888747273728709, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -594
       objectReference: {fileID: 0}
-    - target: {fileID: 3008524642919474992, guid: 98697301fa559c2469cd102195099811, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: FastTravel, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3008524642919474992, guid: 98697301fa559c2469cd102195099811, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+    - target: {fileID: 6914888747273728709, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -214
       objectReference: {fileID: 0}
     - target: {fileID: 7248130669429599122, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_Name
       value: UIManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 8367832639464084472, guid: 98697301fa559c2469cd102195099811, type: 3}
-      propertyPath: m_Name
-      value: CloseText
       objectReference: {fileID: 0}
     - target: {fileID: 8799987319473712836, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_LocalPosition.x
@@ -64895,6 +64960,66 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98697301fa559c2469cd102195099811, type: 3}
+--- !u!1 &1274491597413253921 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8472645921931427175, guid: 98697301fa559c2469cd102195099811, type: 3}
+  m_PrefabInstance: {fileID: 1274491597413253920}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1274491597413253922 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4168414088382458082, guid: 98697301fa559c2469cd102195099811, type: 3}
+  m_PrefabInstance: {fileID: 1274491597413253920}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1274491597413253923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6104856325220710628, guid: 98697301fa559c2469cd102195099811, type: 3}
+  m_PrefabInstance: {fileID: 1274491597413253920}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1274491597413253924 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3191250413825972711, guid: 98697301fa559c2469cd102195099811, type: 3}
+  m_PrefabInstance: {fileID: 1274491597413253920}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1274491597413253925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3378455945469896414, guid: 98697301fa559c2469cd102195099811, type: 3}
+  m_PrefabInstance: {fileID: 1274491597413253920}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1274491597413253926 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 871463307932869848, guid: 98697301fa559c2469cd102195099811, type: 3}
+  m_PrefabInstance: {fileID: 1274491597413253920}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1274491597413253927 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3660430901583955548, guid: 98697301fa559c2469cd102195099811, type: 3}
+  m_PrefabInstance: {fileID: 1274491597413253920}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1274491597413253928 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7714010402463065809, guid: 98697301fa559c2469cd102195099811, type: 3}
+  m_PrefabInstance: {fileID: 1274491597413253920}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1274491597413253929 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3091835193045600926, guid: 98697301fa559c2469cd102195099811, type: 3}
+  m_PrefabInstance: {fileID: 1274491597413253920}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1274491597413253930 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8399008065452129550, guid: 98697301fa559c2469cd102195099811, type: 3}
+  m_PrefabInstance: {fileID: 1274491597413253920}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1274491597413253931 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5666628302921624013, guid: 98697301fa559c2469cd102195099811, type: 3}
+  m_PrefabInstance: {fileID: 1274491597413253920}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1274491597413253932 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5594337637682209049, guid: 98697301fa559c2469cd102195099811, type: 3}
+  m_PrefabInstance: {fileID: 1274491597413253920}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2078180216276025719
 GameObject:
   m_ObjectHideFlags: 0

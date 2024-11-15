@@ -156,7 +156,13 @@ public class PlayerController : MonoBehaviour
 
     public void Teleport(Vector3 placeToTeleportTo)
     {
+        controller.enabled = false;
+
         transform.position = placeToTeleportTo;
+        Debug.Log(placeToTeleportTo);
+        Debug.Log(transform.position);
+
+        controller.enabled = true;
     }
 
     private void OnDrawGizmosSelected()

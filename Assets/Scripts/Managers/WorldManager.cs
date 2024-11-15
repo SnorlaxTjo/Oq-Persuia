@@ -43,6 +43,7 @@ public class WorldManager : MonoBehaviour
         player.GetComponent<PlayerController>().CompleteMoveBlock = true;
 
         uiManager.SetTransition(true);
+        uiManager.MapBlock = true;
 
         yield return new WaitForSeconds(1);
 
@@ -91,12 +92,17 @@ public class WorldManager : MonoBehaviour
         }
 
         uiManager.SetMapPlayerMarker(setWorld.markerPosition);
+        if (setWorld.markerObject != null)
+        {
+            setWorld.markerObject.GetComponent<MapMarker>().HasVisited = true;
+        }    
 
         FindObjectOfType<FastTravel>().EnableTravel(setWorldInfo.CanFastTravel);
 
         yield return new WaitForSeconds(timeToHaveBlackScreen);
 
         uiManager.SetTransition(false);
+        uiManager.MapBlock = false;
 
         player.GetComponent<PlayerController>().CompleteMoveBlock = false;
     }
@@ -108,5 +114,6 @@ public struct World
     public string name;
     public GameObject world;
     public Transform[] teleportPlaces;
+    public GameObject markerObject;
     public Vector2 markerPosition;
 }

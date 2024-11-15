@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class UIManager : MonoBehaviour
 {
     [Header("Dialogue")]
@@ -21,7 +22,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] Image playerMarker;
     [SerializeField] Image goalMarker;
     [SerializeField] GameObject cityMenu;
+    [SerializeField] TextMeshProUGUI cityText;
     [SerializeField] GameObject poiMenu;
+    [SerializeField] TextMeshProUGUI poiText;
 
     [Header("Transition")]
     [SerializeField] Animator transitionAnimator;
@@ -44,6 +47,7 @@ public class UIManager : MonoBehaviour
     #region Map Variables
     bool hasGottenMap;
     bool isShowingMap;
+    bool mapBlock;
     #endregion
 
     #region Health Bar Variables
@@ -64,6 +68,7 @@ public class UIManager : MonoBehaviour
 
     public bool IsDisplayingSymbols { get { return isDisplayingSymbols; } }
     public bool HasGottenMap { set { hasGottenMap = value; } }
+    public bool MapBlock { get { return mapBlock; } set { mapBlock = value; } }
 
     private void Start()
     {
@@ -149,14 +154,19 @@ public class UIManager : MonoBehaviour
     #region Map
     void ToggleMap()
     {
-        if (!hasGottenMap) { return; }
+        if (!hasGottenMap || mapBlock) { return; }
 
         if (Input.GetKeyDown(KeyCode.M))
         {
-            isShowingMap = !isShowingMap;
-            mapMenu.SetActive(isShowingMap);
-            playerController.CompleteMoveBlock = isShowingMap;
+            DisplayMap(!isShowingMap);
         }
+    }
+
+    public void DisplayMap(bool displayMap)
+    {
+        isShowingMap = displayMap;
+        mapMenu.SetActive(isShowingMap);
+        playerController.CompleteMoveBlock = isShowingMap;
     }
 
     public void ShowCityInfo(Sprite sprite, string title, string description, string locations)
@@ -182,22 +192,29 @@ public class UIManager : MonoBehaviour
         playerMarker.rectTransform.position = position + new Vector2(960, 540);
     }
 
-    public void SetMapGoalMarker(Vector2 position)
+    public void SetGoalMarkerX(float positionX)
     {
-        goalMarker.rectTransform.position = position + new Vector2(960, 540);
+        goalMarker.rectTransform.position = new Vector2(positionX + 960, goalMarker.rectTransform.position.y);
     }
 
-    public void ShowMiniMenu(MapMarkerType markerType, Vector2 position)
+    public void SetGoalMarkerY(float positionY)
+    {
+        goalMarker.rectTransform.position = new Vector2(goalMarker.rectTransform.position.x, positionY + 540);
+    }
+
+    public void ShowMiniMenu(MapMarkerType markerType, Vector2 position, string name)
     {
         switch (markerType)
         {
             case MapMarkerType.City:
                 cityMenu.SetActive(true);
                 cityMenu.GetComponent<RectTransform>().position = position;
+                cityText.text = name;
                 break;
             case MapMarkerType.POI:
                 poiMenu.SetActive(true);
                 poiMenu.GetComponent<RectTransform>().position = position;
+                poiText.text = name;
                 break;
         }
     }

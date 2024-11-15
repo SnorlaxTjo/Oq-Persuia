@@ -131,6 +131,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: ea243b5b205ed894995087648e608fc8, type: 3}
   placeInfo: {fileID: 4900000, guid: eaf49a72b4d1e1847a0eee1538511baf, type: 3}
+  worldId: 0
 --- !u!136 &2960405315175927250
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -246,6 +247,7 @@ MonoBehaviour:
   markerType: 1
   placeImage: {fileID: 21300000, guid: 58f4f1bb63e3f4540a0969f6d9a30793, type: 3}
   placeInfo: {fileID: 4900000, guid: 4c7f16fadb30e0343b4cb47db072535e, type: 3}
+  worldId: 0
 --- !u!136 &8692479854742109481
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -320,7 +322,7 @@ GameObject:
   - component: {fileID: 3426171314908407255}
   - component: {fileID: 6667588980181429780}
   m_Layer: 5
-  m_Name: Oq-Persuia Airport
+  m_Name: Airport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -398,6 +400,7 @@ MonoBehaviour:
   markerType: 1
   placeImage: {fileID: 21300000, guid: a57a239da271f614a8d131f510b1b5a3, type: 3}
   placeInfo: {fileID: 4900000, guid: 3fa4f6c6d26da6f49811466b32b643a2, type: 3}
+  worldId: 0
 --- !u!136 &6667588980181429780
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -552,6 +555,7 @@ MonoBehaviour:
   markerType: 1
   placeImage: {fileID: 21300000, guid: 68bd70f7e552a29429ae04a40829e230, type: 3}
   placeInfo: {fileID: 4900000, guid: d7191b8b8bbd06c44b36e067cf851cd3, type: 3}
+  worldId: 0
 --- !u!136 &5113168859992970100
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -912,7 +916,7 @@ GameObject:
   - component: {fileID: 2273548133075399062}
   - component: {fileID: 3274470550133322754}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: FastTravelText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1275,6 +1279,7 @@ MonoBehaviour:
   markerType: 1
   placeImage: {fileID: 21300000, guid: 6c2b57a7b0bbdf14ba1020fe760934a2, type: 3}
   placeInfo: {fileID: 4900000, guid: fce94499606cd1e4c82f8e6ee8220c1f, type: 3}
+  worldId: 0
 --- !u!136 &2851918365260909376
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1390,6 +1395,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: 92ddbd560c21e24498ece44cd066dad0, type: 3}
   placeInfo: {fileID: 4900000, guid: 54d978392e463c342b24f400e10058d5, type: 3}
+  worldId: 0
 --- !u!136 &5821905929450743270
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1505,6 +1511,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: ce1e5f7eeb6f3604f83f42203ca37e5a, type: 3}
   placeInfo: {fileID: 4900000, guid: d466b657fc702c3458c29a5d8adf3b93, type: 3}
+  worldId: 0
 --- !u!136 &7227232314205799621
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2025,6 +2032,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: 6a930235ac61cfe45978c99d0afe2d2c, type: 3}
   placeInfo: {fileID: 4900000, guid: 15877fc2b8eb21a4590684127d84a811, type: 3}
+  worldId: 0
 --- !u!136 &2749773858163722882
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2388,6 +2396,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: 2f6f1d52e33982e4aa02740d5759a987, type: 3}
   placeInfo: {fileID: 4900000, guid: c27f7c14e776ff5478525846ecd3250f, type: 3}
+  worldId: 9
 --- !u!136 &1376408815041052325
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2503,6 +2512,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: ef2ec04cdf33a72478890a6d732bc39e, type: 3}
   placeInfo: {fileID: 4900000, guid: 92c3e686a85a10e449298b424fa52cdc, type: 3}
+  worldId: 18
 --- !u!136 &2584026670965086544
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2655,6 +2665,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: e010d1f52f9a37541891396beab59c50, type: 3}
   placeInfo: {fileID: 4900000, guid: 0944eaf003c4676498403d726f99bed3, type: 3}
+  worldId: 0
 --- !u!136 &83479654111989282
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2807,6 +2818,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: 9edd7201a8ac5d34f87e4c5b7ca7ae65, type: 3}
   placeInfo: {fileID: 4900000, guid: d4ee99bada8e4ff45a26fc334b980206, type: 3}
+  worldId: 0
 --- !u!136 &345278975675102590
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2922,6 +2934,7 @@ MonoBehaviour:
   markerType: 1
   placeImage: {fileID: 21300000, guid: 54f62d809f90c62459db68f7acb21058, type: 3}
   placeInfo: {fileID: 4900000, guid: 9c817cc3e2c862b4cb10fb711aba70ef, type: 3}
+  worldId: 0
 --- !u!136 &2860188662802953824
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3151,6 +3164,7 @@ MonoBehaviour:
   markerType: 1
   placeImage: {fileID: 21300000, guid: 035615ab98b38514d99db66a25e2d2b4, type: 3}
   placeInfo: {fileID: 4900000, guid: 8021cd7c61f4e2d4d91e7d2b4164c24e, type: 3}
+  worldId: 0
 --- !u!136 &5727736065329499355
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3303,6 +3317,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: e4c303cad377cc34eb6b9eb0ee693e3d, type: 3}
   placeInfo: {fileID: 4900000, guid: 6ac05cd5c5a021d48962950f836e24b5, type: 3}
+  worldId: 0
 --- !u!136 &7920389818190902859
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3418,6 +3433,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: 7ede024aa0756794a8c760d41d227516, type: 3}
   placeInfo: {fileID: 4900000, guid: 67012ccb621d5b24e8e30704c2987355, type: 3}
+  worldId: 0
 --- !u!136 &4490018731247369428
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3533,6 +3549,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: a4d728d3c705f61409ec7fcaa2677c65, type: 3}
   placeInfo: {fileID: 4900000, guid: 84cb0ff3c22d040478d5bd4b920fac3c, type: 3}
+  worldId: 0
 --- !u!136 &3628226502486438009
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3911,6 +3928,7 @@ MonoBehaviour:
   markerType: 1
   placeImage: {fileID: 21300000, guid: bf8691fd2c1840f428f473eb321bf486, type: 3}
   placeInfo: {fileID: 4900000, guid: 21a96a0be1e30104f8749c6d9fdeb4bf, type: 3}
+  worldId: 0
 --- !u!136 &1136780612486215402
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4239,6 +4257,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: 6d61549db9daee54195c3f71c4276692, type: 3}
   placeInfo: {fileID: 4900000, guid: ab1d68465236c2c46b3c418bb6abd888, type: 3}
+  worldId: 0
 --- !u!136 &7434713827459882114
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4354,6 +4373,7 @@ MonoBehaviour:
   markerType: 1
   placeImage: {fileID: 21300000, guid: 4feaadb3ee8d1dd4a9336e6419e2c01f, type: 3}
   placeInfo: {fileID: 4900000, guid: e86556153f5cf694f8cb5de9d6983bad, type: 3}
+  worldId: 0
 --- !u!136 &2191004309308750491
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4656,6 +4676,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: 1d610e78ed6c9fa43881e93c030d95a7, type: 3}
   placeInfo: {fileID: 4900000, guid: 6daf8a8a58e2cfe4095c6fad2dcbddb1, type: 3}
+  worldId: 0
 --- !u!136 &1480547272093352727
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4771,6 +4792,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: 895f4ad60a3a25f4d95000fa86810544, type: 3}
   placeInfo: {fileID: 4900000, guid: 337514c23d79e4d4b82395e5ad383481, type: 3}
+  worldId: 0
 --- !u!136 &5059657854091113702
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5395,6 +5417,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: deb28320b05eb0948b127f5d01e45570, type: 3}
   placeInfo: {fileID: 4900000, guid: 5243a3df7ccba684d84dbf150f81a7b8, type: 3}
+  worldId: 2
 --- !u!136 &7938097123425786670
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5510,6 +5533,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: 06e1639e687420e43a5c5381cf5910af, type: 3}
   placeInfo: {fileID: 4900000, guid: 15d157654a74e68498ebad8c935cbfb8, type: 3}
+  worldId: 4
 --- !u!136 &3935811565419008817
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5625,6 +5649,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: c93f031b3952a8e488ed36b6c327ec5c, type: 3}
   placeInfo: {fileID: 4900000, guid: b33d9474f35023e4dae01088e23e1147, type: 3}
+  worldId: 0
 --- !u!136 &5753932892524393342
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5777,6 +5802,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: 0110dbff0460e2f40b287f52a2770ad4, type: 3}
   placeInfo: {fileID: 4900000, guid: c8fa9dd22cc97b5478f68f0e3b27ba4f, type: 3}
+  worldId: 0
 --- !u!136 &8372659404165516711
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6007,6 +6033,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: d0dcc8475908c0044aaeda26d5b06080, type: 3}
   placeInfo: {fileID: 4900000, guid: cbccd6f64d65cca42961ba8897c567d5, type: 3}
+  worldId: 20
 --- !u!136 &5035184676681591927
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6122,6 +6149,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: 53d93cceafde4814e92bfffa8299b6e6, type: 3}
   placeInfo: {fileID: 4900000, guid: fa7afb4472c3b2548b94d802cddefcbc, type: 3}
+  worldId: 0
 --- !u!136 &6523621706633107354
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6845,6 +6873,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: f6650724830bfc6488f06a57f960c5e5, type: 3}
   placeInfo: {fileID: 4900000, guid: a7dd83013a6e24a4a953d29161085042, type: 3}
+  worldId: 0
 --- !u!136 &6445457370389531891
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6927,7 +6956,9 @@ MonoBehaviour:
   playerMarker: {fileID: 3846059505314251970}
   goalMarker: {fileID: 4858015386545864563}
   cityMenu: {fileID: 9137233985407306516}
+  cityText: {fileID: 8702441462991785053}
   poiMenu: {fileID: 8281499842409062380}
+  poiText: {fileID: 7684993763145790578}
   transitionAnimator: {fileID: 6947647678803180651}
   playerHealthBar: {fileID: 7021488480231399426}
   playerHealthBarBackground: {fileID: 3173966464092162620}
@@ -7025,6 +7056,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: 8c910ff0d6c301e4690e5951e9cf03ad, type: 3}
   placeInfo: {fileID: 4900000, guid: eb0c27fbf1a02a548afe932e1e57d7ed, type: 3}
+  worldId: 0
 --- !u!136 &7620536194477555164
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7216,6 +7248,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: 0d851a8cd78a43a4088445d4599defca, type: 3}
   placeInfo: {fileID: 4900000, guid: 0e60eb064e664bd41b57c35bf8fe55c7, type: 3}
+  worldId: 0
 --- !u!136 &7428152021024322233
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7331,6 +7364,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: 9a3cc58b57395d545afa3de07a54690f, type: 3}
   placeInfo: {fileID: 4900000, guid: c5ea1ec1f1ca278499fba305b095c2d4, type: 3}
+  worldId: 0
 --- !u!136 &4003486928355179755
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7446,6 +7480,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: 0e9afd1c8e07be64d894ebae6a24e20c, type: 3}
   placeInfo: {fileID: 4900000, guid: fb7a3476c2821c54ba8369b511bf0a11, type: 3}
+  worldId: 12
 --- !u!136 &4125194355250603383
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7631,7 +7666,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5250055569750294007}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: FastTravel, Assembly-CSharp
+        m_MethodName: Travel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7858945686203666956
 GameObject:
   m_ObjectHideFlags: 0
@@ -7724,6 +7771,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: a2e7fdff75d2f4e4cb2ddce078a2f951, type: 3}
   placeInfo: {fileID: 4900000, guid: b558c7b4126277d429bed1c34edf9ed6, type: 3}
+  worldId: 0
 --- !u!136 &7807435710551405566
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7973,6 +8021,7 @@ MonoBehaviour:
   markerType: 1
   placeImage: {fileID: 21300000, guid: 9be18852dcb070d448b4092280ccbd30, type: 3}
   placeInfo: {fileID: 4900000, guid: 7da064e93d4062347983afd63d92b56c, type: 3}
+  worldId: 0
 --- !u!136 &4646698359959055716
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8121,7 +8170,7 @@ GameObject:
   - component: {fileID: 3808384187689299597}
   - component: {fileID: 6577684904591109157}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: CloseText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8335,6 +8384,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: d1fc4d92819c34947ac80286b55bd430, type: 3}
   placeInfo: {fileID: 4900000, guid: d8dc3c9790c55fd4a9fa749ee25d9ebe, type: 3}
+  worldId: 6
 --- !u!136 &4464372375846391556
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8450,6 +8500,7 @@ MonoBehaviour:
   markerType: 1
   placeImage: {fileID: 21300000, guid: 2d77e9d14f7021347930d68dfcb6a356, type: 3}
   placeInfo: {fileID: 4900000, guid: 0460c97b6e520d74a8ecf33e5d31d4cc, type: 3}
+  worldId: 0
 --- !u!136 &126132584890333688
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8736,6 +8787,7 @@ MonoBehaviour:
   markerType: 0
   placeImage: {fileID: 21300000, guid: 3e39e193b2da82a4cba3cbdc5ecd9b55, type: 3}
   placeInfo: {fileID: 4900000, guid: 90447c1ac10e41c41aec769327237ab3, type: 3}
+  worldId: 0
 --- !u!136 &8135952431652422822
 CapsuleCollider:
   m_ObjectHideFlags: 0

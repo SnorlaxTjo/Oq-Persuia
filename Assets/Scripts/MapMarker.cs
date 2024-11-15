@@ -13,6 +13,9 @@ public class MapMarker : MonoBehaviour
     [SerializeField] Sprite placeImage;
     [SerializeField] TextAsset placeInfo;
 
+    [Space]
+    [SerializeField] int worldId;
+
     string title;
     string description;
     string locations;
@@ -21,10 +24,13 @@ public class MapMarker : MonoBehaviour
     bool hasClicked;
     bool elseClicked;
 
+    bool hasVisited;
+
     Image markerImage;
     UIManager uiManager;
 
     public bool ElseClicked { set { elseClicked = value; } }
+    public bool HasVisited { get { return hasVisited; } set { hasVisited = value; } }
 
     private void Start()
     {
@@ -64,9 +70,23 @@ public class MapMarker : MonoBehaviour
         }
     }
 
+    public void ResetMarker()
+    {
+        uiManager.ClearCityInfo();
+
+        markerImage.color = new Color(1f, 1f, 1f);
+
+        isActivated = false;
+        hasClicked = false;
+        elseClicked = false;
+    }
+
     void ShowTinyMenu()
     {
-        uiManager.ShowMiniMenu(markerType, (Vector2)gameObject.GetComponent<Image>().rectTransform.position);
+        uiManager.ShowMiniMenu(markerType, (Vector2)gameObject.GetComponent<Image>().rectTransform.position, gameObject.name);
+        FastTravel fastTravel = FindObjectOfType<FastTravel>();
+        fastTravel.EnableTravel(hasVisited);
+        fastTravel.WorldToTeleportTo = worldId;
     }
 
     void SortTextFile()
