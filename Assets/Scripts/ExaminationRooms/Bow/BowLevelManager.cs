@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BowLevelManager : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class BowLevelManager : MonoBehaviour
     [SerializeField] float distanceToMove;
     [SerializeField] float timeToMove;
     [SerializeField] float timeToWait;
+
+    [Space]
+    [SerializeField] UnityEvent whatMoreToDoUponCompletion;
 
     int currentLevel;
     GameObject currentLevelObject;
@@ -111,6 +115,7 @@ public class BowLevelManager : MonoBehaviour
             if (currentLevel >= levels.Length - 1)
             {
                 worldManager.ChangeWorld(worldToTeleportOutTo, teleporter, false, 0);
+                whatMoreToDoUponCompletion?.Invoke();
                 return;
             }
 

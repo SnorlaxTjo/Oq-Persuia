@@ -159,8 +159,6 @@ public class PlayerController : MonoBehaviour
         controller.enabled = false;
 
         transform.position = placeToTeleportTo;
-        Debug.Log(placeToTeleportTo);
-        Debug.Log(transform.position);
 
         controller.enabled = true;
     }
