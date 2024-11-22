@@ -52,6 +52,12 @@ public class CutsceneManager : MonoBehaviour
         cameras[0].SetActive(true);
         cameras[1].SetActive(false);
     }
+
+    public void SetCutsceneCameraActive()
+    {
+        cameras[0].SetActive(false);
+        cameras[1].SetActive(true);
+    }
 }
 
 [Serializable]
