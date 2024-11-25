@@ -42,6 +42,11 @@ public class FinalBoss : MonoBehaviour
     [SerializeField] Transform groundPoundPosition;
     [SerializeField] float moveBlockTime;
 
+    [Space]
+    [Space]
+
+    [SerializeField] UnityEvent whatToDoUponVictory;
+
     int currentHealth;
     bool activated;
     float currentVelocity;
@@ -51,6 +56,7 @@ public class FinalBoss : MonoBehaviour
     float currentMoveSpeed;
     float standardHeight;
     bool damageBlock;
+    Vector3 originalPosition;
 
     Rigidbody bossRigidbody;
     Animator bossAnimator;
@@ -77,6 +83,8 @@ public class FinalBoss : MonoBehaviour
         currentMoveSpeed = moveSpeed;
         standardHeight = transform.position.y;
         currentHealth = health;
+
+        originalPosition = transform.position;
     }
 
     private void FixedUpdate()
@@ -150,12 +158,17 @@ public class FinalBoss : MonoBehaviour
         if (damageBlock) { return; }
 
         currentHealth -= damage;
+
+        currentHealth = Mathf.Clamp(currentHealth, 0, health);
         uiManager.SetBossHealthBar(currentHealth, health);
 
         if (currentHealth <= 0)
         {
-            gameObject.SetActive(false);
-            Destroy(gameObject);
+            activated = false;
+            bossRigidbody.velocity = Vector3.zero;
+            FindObjectOfType<WorldManager>().ChangeWorld(24, 0, true, 4);
+
+            whatToDoUponVictory?.Invoke();
         }
     }
 
@@ -274,6 +287,15 @@ public class FinalBoss : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         damageBlock = false;
+    }
+
+    public void ResetPosition()
+    {
+        bossRigidbody.position = originalPosition;
+        bossRigidbody.rotation = Quaternion.identity;
+
+        transform.position = originalPosition;
+        transform.localEulerAngles = Vector3.zero;
     }
 }
 

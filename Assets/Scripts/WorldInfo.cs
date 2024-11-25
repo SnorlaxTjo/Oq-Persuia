@@ -35,11 +35,11 @@ public class WorldInfo : MonoBehaviour
 
     public bool TurnOffCameraCollisions { get { return turnOffCameraCollision; } }
 
-    public bool UseCustomCameraPosition { get {  return useCustomCameraPosition; } }
+    public bool UseCustomCameraPosition { get {  return useCustomCameraPosition; } set { useCustomCameraPosition = value; } }
     public Vector3 CameraPlayerOffset { get {  return cameraPlayerOffset; } }
     public float CameraRotation { get { return cameraRotation; } }
 
-    public bool Bow { get { return bow; } }
+    public bool Bow { get { return bow; } set { bow = value; } }
     public bool GroundPound { get { return groundPound; } }
 
     public bool CanFastTravel { get {  return canFastTravel; } }
@@ -58,6 +58,8 @@ public class WorldInfo : MonoBehaviour
             Debug.LogWarning("Lower Camera Z is higher than Upper Camera Z on " + gameObject.name + ". This will cause issues if not fixed");
         }
     }
+
+
 
     private void OnDrawGizmos()
     {

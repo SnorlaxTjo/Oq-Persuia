@@ -282,6 +282,20 @@ public class UIManager : MonoBehaviour
                 bossHealthBar.color = new Color(1f, 0f, 0f, bossHealthBarAlpha);
                 bossHealthBarBackground.color = new Color(0.5f, 0f, 0f, bossHealthBarAlpha);
             }
+            else
+            {
+                bossHealthBarAlpha -= Time.deltaTime;
+
+                if (bossHealthBarAlpha <= 0f)
+                {
+                    bossHealthBarAlpha = 0f;
+                    bossHealthBarVisible = false;
+                    fadingBossHealthBar = false;
+                }
+
+                bossHealthBar.color = new Color(1f, 0f, 0f, bossHealthBarAlpha);
+                bossHealthBarBackground.color = new Color(0.5f, 0f, 0f, bossHealthBarAlpha);
+            }
         }
     }
 

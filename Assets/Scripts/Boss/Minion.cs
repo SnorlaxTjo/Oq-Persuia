@@ -18,12 +18,14 @@ public class Minion : MonoBehaviour
     float timeLeftToBeStunned;
     Vector3 movementDirection;
     GameObject correspondingArrow;
+    bool forMiniBossfight;
 
     Transform playerTransform;
     Rigidbody minionRigidbody;
     BossManager bossManager;
 
     public GameObject CorrespondingArrow { get { return correspondingArrow; } set { correspondingArrow = value; } }
+    public bool ForMiniBossfight { get { return forMiniBossfight; } set {  forMiniBossfight = value; } }
 
     private void Start()
     {
@@ -101,8 +103,17 @@ public class Minion : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            bossManager.RemoveEnemy();
-            bossManager.AllEnemyArrows.Remove(correspondingArrow);
+            if (!forMiniBossfight)
+            {
+                bossManager.RemoveEnemy();
+                bossManager.AllEnemyArrows.Remove(correspondingArrow);
+            }
+            else
+            {
+                MiniBoss miniBoss = FindObjectOfType<MiniBoss>();
+                miniBoss.RemoveEnemy();
+                miniBoss.AllEnemyArrows.Remove(correspondingArrow);
+            }
 
             correspondingArrow.SetActive(false);
             Destroy(correspondingArrow);
