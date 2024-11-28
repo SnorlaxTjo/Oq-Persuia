@@ -2,8 +2,6 @@ CITY
 
 MOJERA OUTSKIRTS
 
-The outskirts of Mojera
+The outskirts of Mojera. Many people working in Mojera live here.
 
-- Point A
-- Point B
-- Point C
+- Bow & Arrow Training Range

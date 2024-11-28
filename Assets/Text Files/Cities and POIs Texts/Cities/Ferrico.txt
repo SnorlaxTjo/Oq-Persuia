@@ -2,8 +2,6 @@ CITY
 
 FERRICO
 
-A good description about Ferrico
+The oldest city on Hisina Island
 
-- Point A
-- Point B
-- Point C
+- Mayor Richard's Home

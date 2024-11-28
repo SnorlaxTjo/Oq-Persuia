@@ -2,8 +2,6 @@ CITY
 
 JULGEN
 
-A good description about Julgen
+The only city on Zielen Island built after the forming of the country.
 
-- Point A
-- Point B
-- Point C
+- Ferry Port

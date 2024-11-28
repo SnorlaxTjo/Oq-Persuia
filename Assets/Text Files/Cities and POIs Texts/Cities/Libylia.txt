@@ -2,8 +2,6 @@ CITY
 
 LIBYLIA
 
-A good description about Libylia
+City not available in the current game version
 
-- Point A
-- Point B
-- Point C
+No notable locations

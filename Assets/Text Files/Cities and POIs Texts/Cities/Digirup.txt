@@ -2,9 +2,6 @@ CITY
 
 DIGIRUP
 
-The Capital City of Oq-Persuia
+City not available in the current game version
 
-- Location A
-- Location B
-- Location C
-- Location D
+No notable locations

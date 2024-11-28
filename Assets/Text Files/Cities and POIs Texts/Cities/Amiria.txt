@@ -2,8 +2,6 @@ CITY
 
 AMIRIA
 
-A good description about Amiria
+City not available in the current game version
 
-- Point A
-- Point B
-- Point C
+No notable locations

@@ -2,8 +2,6 @@ CITY
 
 PODALIA
 
-A city deep in a forest
+City not available in the current game version
 
-- Point A
-- Point B
-- Point C
+No notable locations

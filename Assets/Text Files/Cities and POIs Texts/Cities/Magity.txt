@@ -2,8 +2,6 @@ CITY
 
 MAGITY
 
-A good description about Magity
+City not available in the current game version
 
-- Point A
-- Point B
-- Point C
+No notable locations

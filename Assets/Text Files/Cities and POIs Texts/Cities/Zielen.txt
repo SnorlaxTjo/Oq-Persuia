@@ -2,8 +2,6 @@ CITY
 
 ZIELEN
 
-The oldest city in Oq-Persuia
+The oldest city in Oq-Persuia. The residents don't want the city renovated.
 
-- Point A
-- Point B
-- Point C
+No notable locations

@@ -2,8 +2,6 @@ CITY
 
 PERSUIA
 
-The biggest city in Oq-Persuia. Previously the Capital
+City not available in the current game version
 
-- Point A
-- Point B
-- Point C
+No notable locations

@@ -2,8 +2,8 @@ CITY
 
 MOJERA
 
-A good description about Mojera
+A city on an island in a lake. The second biggest city in Oq-Persuia, followed by Persuia.
 
-- Point A
-- Point B
-- Point C
+- Mojera Park
+- Oq-Persuia News Station
+- Mojera Lake

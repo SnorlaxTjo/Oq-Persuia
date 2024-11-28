@@ -2,8 +2,7 @@ CITY
 
 WIETRA
 
-A good description about Wietra
+One of the ferry transport hubs in Oq-Persuia. Located on the east end of Hisina Island.
 
-- Point A
-- Point B
-- Point C
+- Bow & Arrow Examination
+- Ferry Port

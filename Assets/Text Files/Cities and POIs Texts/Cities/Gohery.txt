@@ -2,8 +2,6 @@ CITY
 
 GOHERY
 
-A good description about Gohery
+A city on Hisina Island. The central hotel is often used by people traveling from the airport.
 
-- Point A
-- Point B
-- Point C
+- Travel Hotel
