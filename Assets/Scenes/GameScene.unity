@@ -73788,10 +73788,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1855521280}
     m_Modifications:
+    - target: {fileID: 1880887889724166030, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3008524642919474992, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1303328792}
+    - target: {fileID: 5444539195795740399, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7248130669429599122, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_Name
       value: UIManager
