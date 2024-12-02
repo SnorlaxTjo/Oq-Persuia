@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -37,6 +38,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] Image bossHealthBar;
     [SerializeField] Image bossHealthBarBackground;
 
+    [Header("Phone")]
+    [SerializeField] GameObject phoneMenu;
+
     #region Dialogue Variables
     bool isDisplayingSymbols;
     char[] dialogueChars;
@@ -63,12 +67,17 @@ public class UIManager : MonoBehaviour
     bool bossHealthBarVisible;
     #endregion
 
+    #region Phone Variables
+    bool hasObtainedPhone;
+    #endregion
+
     PlayerController playerController;
     PlayerHealth playerHealth;
 
     public bool IsDisplayingSymbols { get { return isDisplayingSymbols; } }
     public bool HasGottenMap { set { hasGottenMap = value; } }
     public bool MapBlock { get { return mapBlock; } set { mapBlock = value; } }
+    public bool HasObtainedPhone { set { hasObtainedPhone = value; } }
 
     private void Start()
     {
@@ -85,6 +94,7 @@ public class UIManager : MonoBehaviour
         ToggleMap();
         SetHealthBar();
         FadeHealthBars();
+        TogglePhoneMenu();
     }
 
     #region Dialogue
@@ -244,6 +254,12 @@ public class UIManager : MonoBehaviour
         float healthBarLength = fullPlayerHealthBarLength * healthPercentage;
 
         playerHealthBar.rectTransform.sizeDelta = new Vector2(healthBarLength, playerHealthBar.rectTransform.rect.height);
+        bool healthBarShouldBeVisible = playerHealth.CurrentHealth < playerHealth.MaxHealth;
+
+        if (!fadingPlayerHealthBar && healthBarShouldBeVisible != playerHealthBarVisible)
+        {
+            ActivatePlayerHealthBar(healthBarShouldBeVisible);
+        }
     }
 
     public void SetBossHealthBar(int bossHealth, int maxHealth)
@@ -252,6 +268,12 @@ public class UIManager : MonoBehaviour
         float healthBarLength = fullBossHealthBarLength * healthPercentage;
 
         bossHealthBar.rectTransform.sizeDelta = new Vector2(healthBarLength, bossHealthBar.rectTransform.rect.height);
+    }
+
+    void ActivatePlayerHealthBar(bool fadeOn)
+    {
+        playerHealthBarVisible = !fadeOn;
+        fadingPlayerHealthBar = true;
     }
 
     public void ActivateBossHealthBar()
@@ -263,7 +285,31 @@ public class UIManager : MonoBehaviour
     {
         if (fadingPlayerHealthBar)
         {
+            if (!playerHealthBarVisible)
+            {
+                playerHealthBarAlpha += Time.deltaTime;
 
+                if (playerHealthBarAlpha >= 1f)
+                {
+                    playerHealthBarAlpha = 1f;
+                    playerHealthBarVisible = true;
+                    fadingPlayerHealthBar = false;
+                }              
+            }
+            else
+            {
+                playerHealthBarAlpha -= Time.deltaTime;
+
+                if (playerHealthBarAlpha <= 1f)
+                {
+                    playerHealthBarAlpha = 0f;
+                    playerHealthBarVisible = false;
+                    fadingPlayerHealthBar = false;
+                }
+            }
+
+            playerHealthBar.color = new Color(1f, 0f, 0f, playerHealthBarAlpha);
+            playerHealthBarBackground.color = new Color(0.5f, 0f, 0f, playerHealthBarAlpha);
         }
 
         if (fadingBossHealthBar)
@@ -278,9 +324,6 @@ public class UIManager : MonoBehaviour
                     bossHealthBarVisible = true;
                     fadingBossHealthBar = false;
                 }
-
-                bossHealthBar.color = new Color(1f, 0f, 0f, bossHealthBarAlpha);
-                bossHealthBarBackground.color = new Color(0.5f, 0f, 0f, bossHealthBarAlpha);
             }
             else
             {
@@ -292,10 +335,24 @@ public class UIManager : MonoBehaviour
                     bossHealthBarVisible = false;
                     fadingBossHealthBar = false;
                 }
-
-                bossHealthBar.color = new Color(1f, 0f, 0f, bossHealthBarAlpha);
-                bossHealthBarBackground.color = new Color(0.5f, 0f, 0f, bossHealthBarAlpha);
             }
+
+            bossHealthBar.color = new Color(1f, 0f, 0f, bossHealthBarAlpha);
+            bossHealthBarBackground.color = new Color(0.5f, 0f, 0f, bossHealthBarAlpha);
+        }
+    }
+
+    #endregion
+
+    #region Phone
+
+    void TogglePhoneMenu()
+    {
+        if (!hasObtainedPhone) { return; }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            phoneMenu.SetActive(!phoneMenu.activeSelf);
         }
     }
 
