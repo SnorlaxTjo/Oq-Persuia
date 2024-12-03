@@ -9,6 +9,8 @@ public class Teleporter : MonoBehaviour
     [SerializeField] bool triggerCutscene;
     [SerializeField] int cutsceneToTrigger;
 
+    [SerializeField] int soundToPlay = 1;
+
     WorldManager worldManager;
 
     private void Start()
@@ -21,6 +23,7 @@ public class Teleporter : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             worldManager.ChangeWorld(worldToTeleportTo, teleporterPlaceToTeleportTo, triggerCutscene, cutsceneToTrigger);
+            FindObjectOfType<SFXManager>().CreateSFX(1);
         }
     }
 }

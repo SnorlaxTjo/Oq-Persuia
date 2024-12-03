@@ -804,6 +804,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 2
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &8877053
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1453,6 +1454,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &30684364
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2391,6 +2393,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &50156466
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2574,6 +2577,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 2
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &50899685
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3557,6 +3561,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &57419516
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4022,6 +4027,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 3
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &69858118
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4123,6 +4129,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &76557733
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7088,6 +7095,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 3
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &174844214
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8722,6 +8730,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 2
   triggerCutscene: 1
   cutsceneToTrigger: 2
+  soundToPlay: 1
 --- !u!65 &234853725
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10854,6 +10863,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &284553182
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11152,6 +11162,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &289732495
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12709,6 +12720,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &339230210
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13090,6 +13102,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &353253199
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13264,6 +13277,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &354102340
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16578,6 +16592,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &440540665
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20159,6 +20174,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 2
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &544302004
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22151,6 +22167,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &611815231
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22383,6 +22400,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &614931253
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22972,6 +22990,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &638526429
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23929,6 +23948,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &665859191
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26908,6 +26928,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &763948020
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27308,6 +27329,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &768118665
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28444,6 +28466,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &799308692
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29586,6 +29609,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &826130768
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29802,6 +29826,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &829420912
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35167,6 +35192,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &969776974
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35623,6 +35649,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &991338657
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36267,6 +36294,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &1005553522
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41849,6 +41877,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &1167680507
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43734,6 +43763,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 2
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &1212154637
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44431,6 +44461,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &1234019565
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45140,6 +45171,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &1266332453
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46946,6 +46978,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &1300868458
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49686,6 +49719,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &1354893903
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52951,6 +52985,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &1467839660
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53021,6 +53056,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &1470227858
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53526,6 +53562,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!1001 &1493019963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53837,6 +53874,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7601275791563323159, guid: 0a4b01fff2c53504684597bbb2da7e65, type: 3}
   m_PrefabInstance: {fileID: 1500499312}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1500735763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1500735764}
+  - component: {fileID: 1500735765}
+  m_Layer: 0
+  m_Name: SFXManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1500735764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500735763}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1855521280}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1500735765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500735763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebabf9d30e05a744bb729849fa8e1c90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxPlayer: {fileID: 6849511627960088883, guid: 066cfde553ac0874d8ecc1738003f418, type: 3}
+  sfxClips:
+  - {fileID: 8300000, guid: f6fe4b2c05364614881825046d0ba53c, type: 3}
+  - {fileID: 8300000, guid: accf7d22a5364074da4f883b578dbed6, type: 3}
+  - {fileID: 8300000, guid: 117967f3e2b9c454a8553685438f87f7, type: 3}
 --- !u!1001 &1504098659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57160,6 +57246,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &1579729396
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57257,6 +57344,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &1588677350
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58774,6 +58862,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &1619021917
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58922,6 +59011,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 1
   cutsceneToTrigger: 2
+  soundToPlay: 1
 --- !u!65 &1621044360
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59666,6 +59756,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &1641801246
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64081,6 +64172,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &1805701507
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65255,6 +65347,7 @@ Transform:
   - {fileID: 1158264502}
   - {fileID: 1606382472}
   - {fileID: 1303328793}
+  - {fileID: 1500735764}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1855521281
@@ -65869,6 +65962,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &1866719156
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67892,6 +67986,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &1926343254
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -70337,6 +70432,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &1990553473
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -71171,6 +71267,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &2008763762
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -74412,6 +74509,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &2124520555
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -74663,6 +74761,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  soundToPlay: 1
 --- !u!65 &2134287601
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75377,18 +75476,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1855521280}
     m_Modifications:
+    - target: {fileID: 1287620671579516784, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880887889724166030, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3008524642919474992, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1303328792}
+    - target: {fileID: 5444539195795740399, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6041136176190019749, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7248130669429599122, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_Name
       value: UIManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569662112095174257, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -245
       objectReference: {fileID: 0}
     - target: {fileID: 7866077781270458780, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: phoneMenu
       value: 
       objectReference: {fileID: 604476967}
+    - target: {fileID: 8626645739962057220, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -360
+      objectReference: {fileID: 0}
     - target: {fileID: 8799987319473712836, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

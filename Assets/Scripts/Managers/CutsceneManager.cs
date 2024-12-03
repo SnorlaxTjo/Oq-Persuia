@@ -58,6 +58,11 @@ public class CutsceneManager : MonoBehaviour
         cameras[0].SetActive(false);
         cameras[1].SetActive(true);
     }
+
+    public void TriggerSFX(int sfxToPlay)
+    {
+        FindObjectOfType<SFXManager>().CreateSFX(sfxToPlay);
+    }
 }
 
 [Serializable]
