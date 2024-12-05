@@ -53923,6 +53923,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f6fe4b2c05364614881825046d0ba53c, type: 3}
   - {fileID: 8300000, guid: accf7d22a5364074da4f883b578dbed6, type: 3}
   - {fileID: 8300000, guid: 117967f3e2b9c454a8553685438f87f7, type: 3}
+  - {fileID: 8300000, guid: 4338a1448bbb26347b408cfe309b6bb1, type: 3}
+  - {fileID: 8300000, guid: 5d60efe69127fdb44941e6df419a20e3, type: 3}
 --- !u!1001 &1504098659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75508,6 +75510,18 @@ PrefabInstance:
       propertyPath: phoneMenu
       value: 
       objectReference: {fileID: 604476967}
+    - target: {fileID: 7866077781270458780, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: mapSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866077781270458780, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: mapSounds.Array.data[0]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866077781270458780, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: mapSounds.Array.data[1]
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8626645739962057220, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -360

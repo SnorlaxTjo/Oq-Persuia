@@ -26,6 +26,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI cityText;
     [SerializeField] GameObject poiMenu;
     [SerializeField] TextMeshProUGUI poiText;
+    [SerializeField] int[] mapSounds;
 
     [Header("Transition")]
     [SerializeField] Animator transitionAnimator;
@@ -177,6 +178,17 @@ public class UIManager : MonoBehaviour
         isShowingMap = displayMap;
         mapMenu.SetActive(isShowingMap);
         playerController.CompleteMoveBlock = isShowingMap;
+
+        SFXManager sfx = FindObjectOfType<SFXManager>();
+
+        if (displayMap)
+        {
+            sfx.CreateSFX(mapSounds[0]);
+        }
+        else
+        {
+            sfx.CreateSFX(mapSounds[1]);
+        }
     }
 
     public void ShowCityInfo(Sprite sprite, string title, string description, string locations)
