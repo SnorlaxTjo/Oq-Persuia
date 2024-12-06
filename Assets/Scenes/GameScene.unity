@@ -8812,6 +8812,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1 &238777496
 GameObject:
   m_ObjectHideFlags: 0
@@ -8967,6 +8969,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1 &240817747
 GameObject:
   m_ObjectHideFlags: 0
@@ -10404,6 +10408,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 0
+  useCustomMusic: 1
+  customMusic: {fileID: 8300000, guid: b4d523f3acf45f9499aff018c7843dd4, type: 3}
 --- !u!1001 &279003828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14090,6 +14096,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1 &383417247
 GameObject:
   m_ObjectHideFlags: 0
@@ -14744,6 +14752,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 1
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1 &404803986
 GameObject:
   m_ObjectHideFlags: 0
@@ -15687,6 +15697,8 @@ MonoBehaviour:
   bow: 1
   groundPound: 0
   canFastTravel: 0
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1 &427597811
 GameObject:
   m_ObjectHideFlags: 0
@@ -18996,6 +19008,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1001 &503622780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23357,6 +23371,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1 &654319146
 GameObject:
   m_ObjectHideFlags: 0
@@ -25170,6 +25186,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1001 &715668245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27770,6 +27788,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!4 &784128584
 Transform:
   m_ObjectHideFlags: 0
@@ -33385,6 +33405,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1 &919897239
 GameObject:
   m_ObjectHideFlags: 0
@@ -37032,6 +37054,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1 &1030764144
 GameObject:
   m_ObjectHideFlags: 0
@@ -37199,6 +37223,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1 &1032405049
 GameObject:
   m_ObjectHideFlags: 0
@@ -40855,6 +40881,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1001 &1147385126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43463,6 +43491,148 @@ Transform:
   m_Children: []
   m_Father: {fileID: 676837302}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1202620836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1202620837}
+  - component: {fileID: 1202620839}
+  - component: {fileID: 1202620838}
+  m_Layer: 0
+  m_Name: MusicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1202620837
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202620836}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1855521280}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1202620838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202620836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d5d6e2e44c6e7e43b58ade777281374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardMusicClip: {fileID: 8300000, guid: 1a8d67ebdc010a74b9d515acb3bdd60b, type: 3}
+--- !u!82 &1202620839
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202620836}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1a8d67ebdc010a74b9d515acb3bdd60b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1204998671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45122,6 +45292,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1 &1266332450
 GameObject:
   m_ObjectHideFlags: 0
@@ -45753,6 +45925,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1 &1279668129
 GameObject:
   m_ObjectHideFlags: 0
@@ -53925,6 +54099,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 117967f3e2b9c454a8553685438f87f7, type: 3}
   - {fileID: 8300000, guid: 4338a1448bbb26347b408cfe309b6bb1, type: 3}
   - {fileID: 8300000, guid: 5d60efe69127fdb44941e6df419a20e3, type: 3}
+  - {fileID: 8300000, guid: 07dc427b8114bbc459f32d915e6f6d87, type: 3}
 --- !u!1001 &1504098659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57165,6 +57340,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1 &1577828467
 GameObject:
   m_ObjectHideFlags: 0
@@ -57244,7 +57421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27b20ae53001e14b807e33ac9995abd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worldToTeleportTo: 24
+  worldToTeleportTo: 10
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
@@ -58388,6 +58565,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1001 &1610962857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63220,6 +63399,8 @@ MonoBehaviour:
   bow: 1
   groundPound: 1
   canFastTravel: 1
+  useCustomMusic: 1
+  customMusic: {fileID: 8300000, guid: 18db5319c48cc304c8afd96fa64a4cf4, type: 3}
 --- !u!1 &1763138515
 GameObject:
   m_ObjectHideFlags: 0
@@ -65185,6 +65366,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5361011510429182785, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5832990595037976738, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
+      propertyPath: shootSound
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6864215830752537921, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8332667353228838633, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
       propertyPath: groundDistance
       value: 1.3
@@ -65350,6 +65543,7 @@ Transform:
   - {fileID: 1606382472}
   - {fileID: 1303328793}
   - {fileID: 1500735764}
+  - {fileID: 1202620837}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1855521281
@@ -67423,6 +67617,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1 &1909716590
 GameObject:
   m_ObjectHideFlags: 0
@@ -68074,6 +68270,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1001 &1930311907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68476,6 +68674,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1761564768}
         m_TargetAssemblyTypeName: WorldInfo, Assembly-CSharp
         m_MethodName: set_UseCustomCameraPosition
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1761564768}
+        m_TargetAssemblyTypeName: WorldInfo, Assembly-CSharp
+        m_MethodName: set_UseCustomMusic
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -69582,6 +69792,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1001 &1953791826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71819,6 +72031,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1001 &2034073392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74253,6 +74467,8 @@ MonoBehaviour:
   bow: 0
   groundPound: 0
   canFastTravel: 1
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1 &2124181843
 GameObject:
   m_ObjectHideFlags: 0
@@ -74928,6 +75144,8 @@ MonoBehaviour:
   bow: 1
   groundPound: 0
   canFastTravel: 0
+  useCustomMusic: 0
+  customMusic: {fileID: 0}
 --- !u!1001 &2137145627
 PrefabInstance:
   m_ObjectHideFlags: 0

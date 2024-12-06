@@ -61,7 +61,7 @@ public class CutsceneManager : MonoBehaviour
 
     public void TriggerSFX(int sfxToPlay)
     {
-        FindObjectOfType<SFXManager>().CreateSFX(sfxToPlay);
+        SFXManager.instance.CreateSFX(sfxToPlay);
     }
 }
 

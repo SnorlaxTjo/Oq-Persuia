@@ -33,14 +33,14 @@ public class PlayerDialogueChecker : MonoBehaviour
                         currentDialogueIndex = currentDialogue.DialogueLines.Length - 1;
                         uiManager.ShowDialogue(currentDialogue.DialogueLines[currentDialogueIndex].dialogueLine, currentDialogue.DisplayName, currentDialogue.DialogueLines[currentDialogueIndex].npcName);
                         currentDialogueIndex++;
-                        FindObjectOfType<SFXManager>().CreateSFX(0);
+                        SFXManager.instance.CreateSFX(0);
                     }
                     else
                     {
                         uiManager.ShowDialogue(currentDialogue.DialogueLines[currentDialogueIndex].dialogueLine, currentDialogue.DisplayName, currentDialogue.DialogueLines[currentDialogueIndex].npcName);
 
                         currentDialogueIndex++;
-                        FindObjectOfType<SFXManager>().CreateSFX(0);
+                        SFXManager.instance.CreateSFX(0);
                     }                  
                 }
                 else

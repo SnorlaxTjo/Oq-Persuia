@@ -179,7 +179,7 @@ public class UIManager : MonoBehaviour
         mapMenu.SetActive(isShowingMap);
         playerController.CompleteMoveBlock = isShowingMap;
 
-        SFXManager sfx = FindObjectOfType<SFXManager>();
+        SFXManager sfx = SFXManager.instance;
 
         if (displayMap)
         {

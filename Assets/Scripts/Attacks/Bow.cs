@@ -10,6 +10,7 @@ public class Bow : MonoBehaviour
     [SerializeField] BowStage[] bowStages;
     [SerializeField] float timeBewteenStages;
     [SerializeField] Transform shootPosition;
+    [SerializeField] int shootSound;
 
     int currentStage;
     float timeLeftUntilNextStage;
@@ -67,6 +68,8 @@ public class Bow : MonoBehaviour
 
     void ShootArrow()
     {
+        SFXManager.instance.CreateSFX(shootSound);
+
         BowStage setBowStage = bowStages[currentStage];
 
         if (setBowStage.arrowVelocity <= 0) { return; }

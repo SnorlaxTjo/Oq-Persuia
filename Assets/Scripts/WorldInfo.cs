@@ -27,6 +27,11 @@ public class WorldInfo : MonoBehaviour
     [Space]
     [SerializeField] bool canFastTravel = true;
 
+    [Space]
+    [Header("Music")]
+    [SerializeField] bool useCustomMusic;
+    [SerializeField] AudioClip customMusic;
+
     Vector3 finalLowerCameraLimit;
     Vector3 finalUpperCameraLimit;
 
@@ -44,6 +49,9 @@ public class WorldInfo : MonoBehaviour
 
     public bool CanFastTravel { get {  return canFastTravel; } }
 
+    public bool UseCustomMusic { get { return useCustomMusic; } set { useCustomMusic = value; } }
+    public AudioClip CustomMusic { get { return customMusic; } }
+
     private void Start()
     {
         finalLowerCameraLimit = transform.position + lowerCameraLimit;
@@ -58,8 +66,6 @@ public class WorldInfo : MonoBehaviour
             Debug.LogWarning("Lower Camera Z is higher than Upper Camera Z on " + gameObject.name + ". This will cause issues if not fixed");
         }
     }
-
-
 
     private void OnDrawGizmos()
     {

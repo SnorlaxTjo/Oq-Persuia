@@ -40,16 +40,25 @@ public class WorldManager : MonoBehaviour
 
     IEnumerator ChangeWorldRoutine(int world, int teleportPosition, bool startCutscene, int cutscene)
     {
+        World setWorld = worlds[world];
+
+        WorldInfo setWorldInfo = setWorld.world.GetComponent<WorldInfo>();
+
         player.GetComponent<PlayerController>().CompleteMoveBlock = true;
 
         uiManager.SetTransition(true);
         uiManager.MapBlock = true;
 
+        if (setWorldInfo.UseCustomMusic)
+        {
+            MusicManager.instance.ChangeMusicWithFade(setWorldInfo.CustomMusic, 1);
+        }
+        else
+        {
+            MusicManager.instance.PlayStandardMusic();
+        }
+
         yield return new WaitForSeconds(1);
-
-        World setWorld = worlds[world];
-
-        WorldInfo setWorldInfo = setWorld.world.GetComponent<WorldInfo>();
 
         Vector3 lowerCameraLimit = setWorldInfo.LowerCameraLimit;
         Vector3 upperCameraLimit = setWorldInfo.UpperCameraLimit;
