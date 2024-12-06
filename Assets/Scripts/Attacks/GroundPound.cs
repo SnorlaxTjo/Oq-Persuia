@@ -4,6 +4,7 @@ public class GroundPound : MonoBehaviour
 {
     [SerializeField] GameObject groundPoundChecker;
     [SerializeField] Transform groundPoundCheckerSpawnPos;
+    [SerializeField] int groundPoundSound;
 
     PlayerController playerController;
 
@@ -28,5 +29,7 @@ public class GroundPound : MonoBehaviour
 
         playerController.IsGroundPounding = false;
         playerController.CompleteMoveBlock = true;
+
+        SFXManager.instance.CreateSFX(groundPoundSound);
     }
 }

@@ -1223,6 +1223,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 2
     messageOptions: 0
+  - time: 4.9
+    functionName: TriggerSFX
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 6
+    messageOptions: 0
   - time: 8.733334
     functionName: ResetCamera
     data: 

@@ -5,6 +5,7 @@ public class Arrow : MonoBehaviour
     [SerializeField] float arrowLifeTime;
     [SerializeField] float raycastLength;
     [SerializeField] GameObject hitPoint;
+    [SerializeField] int hitSound;
 
     [SerializeField] Rigidbody arrowRigidbody;
 
@@ -40,6 +41,12 @@ public class Arrow : MonoBehaviour
 
                 GameObject arrowHitPoint = Instantiate(hitPoint);
                 arrowHitPoint.transform.position = hit.point;
+
+                SFXManager.instance.CreateSFX(hitSound);
+
+                //GetComponent<Collider>().enabled = false;
+                arrowRigidbody.velocity = Vector3.zero;
+                arrowRigidbody.isKinematic = true;
             }
         }
     }

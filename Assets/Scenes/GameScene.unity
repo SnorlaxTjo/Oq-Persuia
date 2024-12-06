@@ -43549,7 +43549,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1a8d67ebdc010a74b9d515acb3bdd60b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -54100,6 +54100,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4338a1448bbb26347b408cfe309b6bb1, type: 3}
   - {fileID: 8300000, guid: 5d60efe69127fdb44941e6df419a20e3, type: 3}
   - {fileID: 8300000, guid: 07dc427b8114bbc459f32d915e6f6d87, type: 3}
+  - {fileID: 8300000, guid: 5ffc88ef3714017409401780e138ac7d, type: 3}
+  - {fileID: 8300000, guid: b41636304d9c80f4597e21031e64af9a, type: 3}
+  - {fileID: 8300000, guid: 74f7977b93620aa4090f55c46e8fa493, type: 3}
+  - {fileID: 8300000, guid: 687f86d5f7891734a843c03b6f884b50, type: 3}
+  - {fileID: 8300000, guid: 0164266d32a99834b98eae6c93cfaa9b, type: 3}
 --- !u!1001 &1504098659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57421,7 +57426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27b20ae53001e14b807e33ac9995abd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worldToTeleportTo: 10
+  worldToTeleportTo: 24
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
@@ -65307,18 +65312,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 1855521280}
     m_Modifications:
     - target: {fileID: 772662949130237890, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 772662949130237890, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 772662949130237890, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 772662949130237890, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30
       objectReference: {fileID: 0}
@@ -65362,25 +65355,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3798214278775842110, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5361011510429182785, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5832990595037976738, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
-      propertyPath: shootSound
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6864215830752537921, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332667353228838633, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
-      propertyPath: groundDistance
-      value: 1.3
+    - target: {fileID: 5822954693144033425, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
+      propertyPath: groundPoundSound
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

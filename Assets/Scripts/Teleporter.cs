@@ -23,7 +23,7 @@ public class Teleporter : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             worldManager.ChangeWorld(worldToTeleportTo, teleporterPlaceToTeleportTo, triggerCutscene, cutsceneToTrigger);
-            SFXManager.instance.CreateSFX(1);
+            SFXManager.instance.CreateSFX(soundToPlay);
         }
     }
 }

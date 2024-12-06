@@ -33,4 +33,16 @@ public class SFXManager : MonoBehaviour
             sfx.PlayClip(sfxClips[sfxToPlay]);
         }
     }
+
+    public void StopSoundEffect(int sfxToStop)
+    {
+        foreach (SFXPlayer sfx in FindObjectsOfType<SFXPlayer>())
+        {
+            if (sfx.GetComponent<AudioSource>().clip == sfxClips[sfxToStop])
+            {
+                sfx.gameObject.SetActive(false);
+                Destroy(sfx.gameObject);
+            }
+        }
+    }
 }
