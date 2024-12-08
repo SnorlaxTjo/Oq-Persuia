@@ -9,11 +9,13 @@ public class BallParts : MonoBehaviour
     [SerializeField] float distanceToHideArrow;
     [SerializeField] float distanceToFreezeFromPlayer;
     [SerializeField] int damageToPlayer;
+    [SerializeField] int damageSound;
 
     [Header("Shooting")]
     [SerializeField] Transform eye;
     [SerializeField] GameObject enemyProjectile;
     [SerializeField] float timeBetweenEachProjectile;
+    [SerializeField] int shootSound;
 
     [Header("Only Required for the Right One")]
     [SerializeField] bool isRightOne;
@@ -113,6 +115,7 @@ public class BallParts : MonoBehaviour
         if (timeSinceLastProjectile >= timeBetweenEachProjectile)
         {
             Instantiate(enemyProjectile, eye.transform.position, eye.transform.rotation);
+            SFXManager.instance.CreateSFX(shootSound);
 
             timeSinceLastProjectile -= timeBetweenEachProjectile;
         }
@@ -121,6 +124,7 @@ public class BallParts : MonoBehaviour
     void Damage(int damage)
     {
         currentHealth -= damage;
+        SFXManager.instance.CreateSFX(damageSound);
 
         if (currentHealth <= 0)
         {

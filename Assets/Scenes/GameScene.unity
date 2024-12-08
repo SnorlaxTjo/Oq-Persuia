@@ -9423,9 +9423,11 @@ MonoBehaviour:
   distanceToHideArrow: 25
   distanceToFreezeFromPlayer: 7
   damageToPlayer: 5
+  damageSound: 17
   eye: {fileID: 1689921318}
   enemyProjectile: {fileID: 116527427897961074, guid: 4d29a230b69a1aa469e9498df81ad588, type: 3}
   timeBetweenEachProjectile: 5
+  shootSound: 18
   isRightOne: 1
   leftCannon: {fileID: 1412546245}
 --- !u!54 &249711009
@@ -15697,8 +15699,8 @@ MonoBehaviour:
   bow: 1
   groundPound: 0
   canFastTravel: 0
-  useCustomMusic: 0
-  customMusic: {fileID: 0}
+  useCustomMusic: 1
+  customMusic: {fileID: 8300000, guid: f63179c8e2cd88346b82427bcaa540f2, type: 3}
 --- !u!1 &427597811
 GameObject:
   m_ObjectHideFlags: 0
@@ -21983,11 +21985,6 @@ Transform:
   - {fileID: 548608068}
   m_Father: {fileID: 1938473567}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &604476967 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3419259986153616994, guid: 98697301fa559c2469cd102195099811, type: 3}
-  m_PrefabInstance: {fileID: 1274491597413253920}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &605438359 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8231877689135029610, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
@@ -28160,9 +28157,11 @@ MonoBehaviour:
   distanceToHideArrow: 25
   distanceToFreezeFromPlayer: 8
   damageToPlayer: 10
+  damageSound: 17
   eye: {fileID: 54498396}
   enemyProjectile: {fileID: 116527427897961074, guid: 4d29a230b69a1aa469e9498df81ad588, type: 3}
   timeBetweenEachProjectile: 3
+  shootSound: 18
   isRightOne: 0
   leftCannon: {fileID: 0}
 --- !u!54 &790465530
@@ -28696,6 +28695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  damageSound: 21
   moveSpeed: 6
   smoothTime: 0.1
   playerTransform: {fileID: 959911869}
@@ -28774,16 +28774,20 @@ MonoBehaviour:
   stunTime: 1
   ball: {fileID: 704192000619679106, guid: 3644e716da7730d478e8d53fcc1ccd26, type: 3}
   ballSpawnPoint: {fileID: 499737583}
+  ballSound: 19
   animationTime: 9
+  slapSound: 0
   dashSpeed: 90
   dashTime: 0.25
   timeToStayStillBetweenDash: 1
+  dashSound: 22
   jumpBoost: 10
   jumpTime: 1
   downBoost: 50
   groundPoundObject: {fileID: 8014744861563751781, guid: 3e6a5e3a319577a48bbb85521c3e9d34, type: 3}
   groundPoundPosition: {fileID: 80759620}
   moveBlockTime: 1
+  groundPoundSound: 20
   whatToDoUponVictory:
     m_PersistentCalls:
       m_Calls:
@@ -43536,7 +43540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d5d6e2e44c6e7e43b58ade777281374, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standardMusicClip: {fileID: 8300000, guid: 1a8d67ebdc010a74b9d515acb3bdd60b, type: 3}
+  standardMusicClip: {fileID: 8300000, guid: bcc94894857d1bb40b4cc4c7f4e4f8c7, type: 3}
 --- !u!82 &1202620839
 AudioSource:
   m_ObjectHideFlags: 0
@@ -43547,7 +43551,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1a8d67ebdc010a74b9d515acb3bdd60b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: bcc94894857d1bb40b4cc4c7f4e4f8c7, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0
   m_Pitch: 1
@@ -44237,6 +44241,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1500735765}
+        m_TargetAssemblyTypeName: SFXManager, Assembly-CSharp
+        m_MethodName: CreateSFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 16
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -48839,6 +48855,7 @@ MonoBehaviour:
     - {fileID: 1084603939}
     - {fileID: 325847990}
     - {fileID: 1440315206}
+  minionSpawnSound: 16
   smallCannons:
   - {fileID: 1412546244}
   - {fileID: 249711006}
@@ -51209,9 +51226,11 @@ MonoBehaviour:
   distanceToHideArrow: 25
   distanceToFreezeFromPlayer: 7
   damageToPlayer: 5
+  damageSound: 17
   eye: {fileID: 510605007}
   enemyProjectile: {fileID: 116527427897961074, guid: 4d29a230b69a1aa469e9498df81ad588, type: 3}
   timeBetweenEachProjectile: 5
+  shootSound: 18
   isRightOne: 0
   leftCannon: {fileID: 0}
 --- !u!54 &1412546247
@@ -54105,6 +54124,21 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 74f7977b93620aa4090f55c46e8fa493, type: 3}
   - {fileID: 8300000, guid: 687f86d5f7891734a843c03b6f884b50, type: 3}
   - {fileID: 8300000, guid: 0164266d32a99834b98eae6c93cfaa9b, type: 3}
+  - {fileID: 8300000, guid: de8382973f627da42b63ee2ac8a0630c, type: 3}
+  - {fileID: 8300000, guid: b49c4529d03eb714bb57ed3899dd9a49, type: 3}
+  - {fileID: 8300000, guid: d16128e86bbc8664793f4f1489eeb333, type: 3}
+  - {fileID: 8300000, guid: 998146d0d7716a94ab4f23f4c9dedaf4, type: 3}
+  - {fileID: 8300000, guid: 301671e4c150efe4989b303caeb54316, type: 3}
+  - {fileID: 8300000, guid: f96b54601adb3634b96c90fe3014f9ea, type: 3}
+  - {fileID: 8300000, guid: 15f00fcf6d3259d438c2b825d368a04d, type: 3}
+  - {fileID: 8300000, guid: b69b8e406ab835d4e9ac4e53654b40d0, type: 3}
+  - {fileID: 8300000, guid: 0b20e88a05204d44dae61e3bea2d2735, type: 3}
+  - {fileID: 8300000, guid: f3393ff1a78f27046997e19d188e5bba, type: 3}
+  - {fileID: 8300000, guid: 15dac6477a2070e4e9b96f628ee40c50, type: 3}
+  - {fileID: 8300000, guid: 9f325ee4791716d45a4397e558788354, type: 3}
+  - {fileID: 8300000, guid: 5b3ce332d93e81240b30fd9bdd434832, type: 3}
+  - {fileID: 8300000, guid: f1650bdaa902b5843a90d606ee0b3133, type: 3}
+  - {fileID: 8300000, guid: f571227192ac11348a04b3b5dc68813b, type: 3}
 --- !u!1001 &1504098659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57426,7 +57460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27b20ae53001e14b807e33ac9995abd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worldToTeleportTo: 24
+  worldToTeleportTo: 13
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
@@ -63405,7 +63439,7 @@ MonoBehaviour:
   groundPound: 1
   canFastTravel: 1
   useCustomMusic: 1
-  customMusic: {fileID: 8300000, guid: 18db5319c48cc304c8afd96fa64a4cf4, type: 3}
+  customMusic: {fileID: 8300000, guid: 2e6ea59d7c2c3d041ad338de9b34af7d, type: 3}
 --- !u!1 &1763138515
 GameObject:
   m_ObjectHideFlags: 0
@@ -65350,6 +65384,22 @@ PrefabInstance:
     - target: {fileID: 772662949130237890, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155256027598741207, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
+      propertyPath: damageSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155256027598741207, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
+      propertyPath: damageSounds.Array.data[0]
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155256027598741207, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
+      propertyPath: damageSounds.Array.data[1]
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155256027598741207, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
+      propertyPath: damageSounds.Array.data[2]
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3798214278775842110, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
       propertyPath: m_Name
@@ -75673,53 +75723,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1855521280}
     m_Modifications:
-    - target: {fileID: 1287620671579516784, guid: 98697301fa559c2469cd102195099811, type: 3}
-      propertyPath: m_text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1880887889724166030, guid: 98697301fa559c2469cd102195099811, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3008524642919474992, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1303328792}
-    - target: {fileID: 5444539195795740399, guid: 98697301fa559c2469cd102195099811, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6041136176190019749, guid: 98697301fa559c2469cd102195099811, type: 3}
-      propertyPath: m_text
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 7248130669429599122, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_Name
       value: UIManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 7569662112095174257, guid: 98697301fa559c2469cd102195099811, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -245
-      objectReference: {fileID: 0}
-    - target: {fileID: 7866077781270458780, guid: 98697301fa559c2469cd102195099811, type: 3}
-      propertyPath: phoneMenu
-      value: 
-      objectReference: {fileID: 604476967}
-    - target: {fileID: 7866077781270458780, guid: 98697301fa559c2469cd102195099811, type: 3}
-      propertyPath: mapSounds.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7866077781270458780, guid: 98697301fa559c2469cd102195099811, type: 3}
-      propertyPath: mapSounds.Array.data[0]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7866077781270458780, guid: 98697301fa559c2469cd102195099811, type: 3}
-      propertyPath: mapSounds.Array.data[1]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8626645739962057220, guid: 98697301fa559c2469cd102195099811, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -360
       objectReference: {fileID: 0}
     - target: {fileID: 8799987319473712836, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_LocalPosition.x

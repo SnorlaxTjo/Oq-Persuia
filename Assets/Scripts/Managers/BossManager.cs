@@ -16,6 +16,7 @@ public class BossManager : MonoBehaviour
     [Header("Stage 1 -  Minions")]
     [SerializeField] GameObject minion;
     [SerializeField] MinionSpawnLocations[] minionSpawnLocations;
+    [SerializeField] int minionSpawnSound;
 
     [Header("Stage 2 - Cannons")]
     [SerializeField] GameObject[] smallCannons;
@@ -81,6 +82,8 @@ public class BossManager : MonoBehaviour
                     summonedMinion.GetComponent<Minion>().CorrespondingArrow = summonedEnemyArrow;
                     allEnemyArrows.Add(summonedEnemyArrow);
                 }
+
+                SFXManager.instance.CreateSFX(minionSpawnSound);
                 break;
 
             case 1:

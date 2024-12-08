@@ -41,6 +41,7 @@ public class UIManager : MonoBehaviour
 
     [Header("Phone")]
     [SerializeField] GameObject phoneMenu;
+    [SerializeField] int phoneSound;
 
     #region Dialogue Variables
     bool isDisplayingSymbols;
@@ -365,6 +366,11 @@ public class UIManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P))
         {
             phoneMenu.SetActive(!phoneMenu.activeSelf);
+
+            if (phoneMenu.activeSelf)
+            {
+                SFXManager.instance.CreateSFX(phoneSound);
+            }
         }
     }
 

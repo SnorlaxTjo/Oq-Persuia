@@ -10,6 +10,7 @@ public class Minion : MonoBehaviour
     [SerializeField] int damageToPlayer;
     [SerializeField] float hitKnockbackStrength;
     [SerializeField] float distanceToHideArrow;
+    [SerializeField] int damageSound;
 
     bool stunned;
     bool knockback;
@@ -100,6 +101,8 @@ public class Minion : MonoBehaviour
     void Damage(int damage)
     {
         currentHealth -= damage;
+
+        SFXManager.instance.CreateSFX(damageSound);
 
         if (currentHealth <= 0)
         {

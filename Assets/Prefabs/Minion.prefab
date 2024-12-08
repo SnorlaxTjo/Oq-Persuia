@@ -81,6 +81,7 @@ MonoBehaviour:
   damageToPlayer: 5
   hitKnockbackStrength: 2
   distanceToHideArrow: 15
+  damageSound: 15
 --- !u!1 &2068773242227757570
 GameObject:
   m_ObjectHideFlags: 0

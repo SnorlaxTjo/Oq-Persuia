@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] int maxHealth;
+    [SerializeField] int[] damageSounds;
 
     int currentHealth;
 
@@ -17,6 +18,9 @@ public class PlayerHealth : MonoBehaviour
     public void Damage(int damage)
     {
         currentHealth -= damage;
+
+        int randomSound = Random.Range(0, damageSounds.Length);
+        SFXManager.instance.CreateSFX(damageSounds[randomSound]);
 
         if (currentHealth <= 0)
         {

@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class FinalBoss : MonoBehaviour
 {
     [SerializeField] int health;
+    [SerializeField] int damageSound;
 
     [Space]
 
@@ -25,14 +26,17 @@ public class FinalBoss : MonoBehaviour
     [Header("Ball")]
     [SerializeField] GameObject ball;
     [SerializeField] Transform ballSpawnPoint;
+    [SerializeField] int ballSound;
 
     [Header("Slap")]
     [SerializeField] float animationTime;
+    [SerializeField] int slapSound;
 
     [Header("Dash")]
     [SerializeField] float dashSpeed;
     [SerializeField] float dashTime;
     [SerializeField] float timeToStayStillBetweenDash;
+    [SerializeField] int dashSound;
 
     [Header("Ground Pound")]
     [SerializeField] float jumpBoost;
@@ -41,6 +45,7 @@ public class FinalBoss : MonoBehaviour
     [SerializeField] GameObject groundPoundObject;
     [SerializeField] Transform groundPoundPosition;
     [SerializeField] float moveBlockTime;
+    [SerializeField] int groundPoundSound;
 
     [Space]
     [Space]
@@ -132,6 +137,8 @@ public class FinalBoss : MonoBehaviour
 
             GameObject summonedGroundPound = Instantiate(groundPoundObject, groundPoundPosition);
 
+            SFXManager.instance.CreateSFX(groundPoundSound);
+
             StartCoroutine(MoveBlockRoutine());
         }
     }
@@ -159,6 +166,8 @@ public class FinalBoss : MonoBehaviour
 
         currentHealth -= damage;
 
+        SFXManager.instance.CreateSFX(damageSound);
+
         currentHealth = Mathf.Clamp(currentHealth, 0, health);
         uiManager.SetBossHealthBar(currentHealth, health);
 
@@ -176,6 +185,8 @@ public class FinalBoss : MonoBehaviour
 
     public void SpawnBall()
     {
+        SFXManager.instance.CreateSFX(ballSound);
+
         GameObject summonedBall = Instantiate(ball);
         summonedBall.transform.position = ballSpawnPoint.position;
 
@@ -189,6 +200,11 @@ public class FinalBoss : MonoBehaviour
         Debug.Log("Slap");
     }
 
+    public void PlaySlapSound()
+    {
+        SFXManager.instance.CreateSFX(slapSound);
+    }
+
     public void Dash()
     {
         StartCoroutine(DashRoutine());
@@ -197,7 +213,7 @@ public class FinalBoss : MonoBehaviour
     }
 
     public void GroundPound()
-    {
+    {       
         StartCoroutine(GroundPoundRoutine());
 
         Debug.Log("Ground Pound");
@@ -220,6 +236,7 @@ public class FinalBoss : MonoBehaviour
 
         yield return new WaitForSeconds(timeToStayStillBetweenDash);
 
+        SFXManager.instance.CreateSFX(dashSound);
         currentMoveSpeed = dashSpeed;
         moveBlock = false;
 
