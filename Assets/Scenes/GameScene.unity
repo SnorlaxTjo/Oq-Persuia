@@ -57460,7 +57460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27b20ae53001e14b807e33ac9995abd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worldToTeleportTo: 13
+  worldToTeleportTo: 10
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
@@ -65385,29 +65385,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3155256027598741207, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
-      propertyPath: damageSounds.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3155256027598741207, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
-      propertyPath: damageSounds.Array.data[0]
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 3155256027598741207, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
-      propertyPath: damageSounds.Array.data[1]
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 3155256027598741207, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
-      propertyPath: damageSounds.Array.data[2]
-      value: 14
-      objectReference: {fileID: 0}
     - target: {fileID: 3798214278775842110, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5822954693144033425, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
-      propertyPath: groundPoundSound
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
