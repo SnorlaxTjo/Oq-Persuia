@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
 
     CharacterController controller;
     GroundPound groundPound;
+    Animator playerAnimator;
 
     public bool MoveBlock { get { return moveBlock; } set {  moveBlock = value; } }
     public bool CompleteMoveBlock { get { return completeMoveBlock; } set { completeMoveBlock = value; } }
@@ -48,10 +49,13 @@ public class PlayerController : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         groundPound = GetComponent<GroundPound>();
+        playerAnimator = GetComponent<Animator>();
     }
 
     private void Update()
     {
+        SetMoveAnimation();
+
         if (completeMoveBlock) { return; }
 
         Jump();
@@ -79,6 +83,14 @@ public class PlayerController : MonoBehaviour
         moveDirection.Normalize();
 
         controller.Move(moveSpeed * Time.deltaTime * moveDirection);    
+    }
+
+    void SetMoveAnimation()
+    {
+        if (playerAnimator.GetBool("IsWalking") != isMoving)
+        {
+            playerAnimator.SetBool("IsWalking", isMoving);
+        }        
     }
 
     void RotatePlayer()
