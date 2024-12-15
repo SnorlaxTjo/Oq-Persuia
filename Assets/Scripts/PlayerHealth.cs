@@ -1,6 +1,7 @@
+using System.Collections;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : DamageIndicators
 {
     [SerializeField] int maxHealth;
     [SerializeField] int[] damageSounds;
@@ -21,6 +22,8 @@ public class PlayerHealth : MonoBehaviour
 
         int randomSound = Random.Range(0, damageSounds.Length);
         SFXManager.instance.CreateSFX(damageSounds[randomSound]);
+
+        StartCoroutine(ShowDamageIndicatorsRoutine());
 
         if (currentHealth <= 0)
         {

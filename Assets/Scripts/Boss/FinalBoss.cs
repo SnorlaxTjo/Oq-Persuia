@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody))]
-public class FinalBoss : MonoBehaviour
+public class FinalBoss : DamageIndicators
 {
     [SerializeField] int health;
     [SerializeField] int damageSound;
@@ -167,6 +167,8 @@ public class FinalBoss : MonoBehaviour
         currentHealth -= damage;
 
         SFXManager.instance.CreateSFX(damageSound);
+
+        StartCoroutine(ShowDamageIndicatorsRoutine());
 
         currentHealth = Mathf.Clamp(currentHealth, 0, health);
         uiManager.SetBossHealthBar(currentHealth, health);

@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class BallParts : MonoBehaviour
+public class BallParts : DamageIndicators
 {
     [SerializeField] int health;
     [SerializeField] float moveSpeed;
@@ -125,6 +125,8 @@ public class BallParts : MonoBehaviour
     {
         currentHealth -= damage;
         SFXManager.instance.CreateSFX(damageSound);
+
+        StartCoroutine(ShowDamageIndicatorsRoutine());
 
         if (currentHealth <= 0)
         {

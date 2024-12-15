@@ -1,7 +1,8 @@
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class Minion : MonoBehaviour
+public class Minion : DamageIndicators
 {
     [SerializeField] int health;
     [SerializeField] float moveSpeed;
@@ -103,6 +104,8 @@ public class Minion : MonoBehaviour
         currentHealth -= damage;
 
         SFXManager.instance.CreateSFX(damageSound);
+
+        StartCoroutine(ShowDamageIndicatorsRoutine());
 
         if (currentHealth <= 0)
         {
