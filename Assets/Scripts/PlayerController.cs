@@ -87,9 +87,16 @@ public class PlayerController : MonoBehaviour
 
     void SetMoveAnimation()
     {
+        if (completeMoveBlock || moveBlock)
+        {
+            playerAnimator.SetBool("IsWalking", false);
+            return;
+        }
+
         if (playerAnimator.GetBool("IsWalking") != isMoving)
         {
             playerAnimator.SetBool("IsWalking", isMoving);
+            return;
         }        
     }
 

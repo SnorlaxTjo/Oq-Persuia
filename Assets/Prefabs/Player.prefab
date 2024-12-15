@@ -5981,6 +5981,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1288165678982946534}
   - {fileID: 3097536204873149803}
   - {fileID: 923587421735047769}
   - {fileID: 6666528457881210396}
@@ -6201,6 +6202,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrow: {fileID: 8299571494207201286, guid: 50b46e570bacdda4b99231c229f293c2, type: 3}
   bowStages:
+  - stageObject: {fileID: 8543068935415140669}
+    arrowVelocity: 0
+    damage: 0
   - stageObject: {fileID: 7005866740306951214}
     arrowVelocity: 0
     damage: 0
@@ -6217,6 +6221,7 @@ MonoBehaviour:
   shootPosition: {fileID: 7625019434804070293}
   shootSound: 5
   dragSound: 8
+  playerAnimator: {fileID: 6500266148426110052}
 --- !u!1 &6002189145363921774
 GameObject:
   m_ObjectHideFlags: 0
@@ -8182,6 +8187,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &8543068935415140669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1288165678982946534}
+  m_Layer: 6
+  m_Name: NoBow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1288165678982946534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8543068935415140669}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5127663162662811125}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8891856888108424889
 GameObject:
   m_ObjectHideFlags: 0

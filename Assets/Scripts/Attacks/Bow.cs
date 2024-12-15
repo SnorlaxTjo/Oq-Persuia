@@ -12,6 +12,7 @@ public class Bow : MonoBehaviour
     [SerializeField] Transform shootPosition;
     [SerializeField] int shootSound;
     [SerializeField] int dragSound;
+    [SerializeField] Animator playerAnimator;
 
     int currentStage;
     float timeLeftUntilNextStage;
@@ -35,6 +36,7 @@ public class Bow : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             SFXManager.instance.CreateSFX(dragSound);
+            playerAnimator.SetBool("IsShooting", true);
         }
 
         if (Input.GetMouseButtonUp(1))
@@ -42,6 +44,7 @@ public class Bow : MonoBehaviour
             ShootArrow();
             ResetBow();
             SFXManager.instance.StopSoundEffect(dragSound);
+            playerAnimator.SetBool("IsShooting", false);
 
             playerController.MoveBlock = false;
         }
