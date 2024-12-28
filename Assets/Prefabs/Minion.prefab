@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5846372254934122416}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shoe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5530625075093688673}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShoeBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: 337773705215474560}
   - component: {fileID: 7144591013003706439}
   - component: {fileID: 3974222680234701543}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: BottomArmDamage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ GameObject:
   - component: {fileID: 6663611664471374483}
   - component: {fileID: 7809289334792829323}
   - component: {fileID: 6900660861476247735}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: TopArmDamage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 3568804900431986784}
   - component: {fileID: 7350405839949361577}
   - component: {fileID: 7937614591553017972}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Minion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330,6 +330,8 @@ MonoBehaviour:
   hitKnockbackStrength: 2
   distanceToHideArrow: 15
   damageSound: 15
+  enemyLayer: 9
+  layersToIgnoreCollision: 070000000a000000
 --- !u!136 &7937614591553017972
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -362,7 +364,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1631345388901494216}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Face
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -397,7 +399,7 @@ GameObject:
   - component: {fileID: 6515709750422429742}
   - component: {fileID: 4767464895233425798}
   - component: {fileID: 2829022177943680169}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pupil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,7 +480,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2850139287655073177}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PersonModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -515,7 +517,7 @@ GameObject:
   - component: {fileID: 1172551558389390424}
   - component: {fileID: 3755281027747588658}
   - component: {fileID: 5674427680252453931}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BottomLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -599,7 +601,7 @@ GameObject:
   - component: {fileID: 1033045705238094395}
   - component: {fileID: 3737113269680697811}
   - component: {fileID: 8914668950905191115}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Central
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -682,7 +684,7 @@ GameObject:
   - component: {fileID: 7112529224231266861}
   - component: {fileID: 3708224198402859875}
   - component: {fileID: 1190733355798108291}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShoeStick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -763,7 +765,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5436356579240377107}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -796,7 +798,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6448940821722690967}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -832,7 +834,7 @@ GameObject:
   - component: {fileID: 365386342418247387}
   - component: {fileID: 1475735253829098207}
   - component: {fileID: 3415196328909099687}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColoredPart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -915,7 +917,7 @@ GameObject:
   - component: {fileID: 3686481419318786802}
   - component: {fileID: 3713660029464290668}
   - component: {fileID: 216597946185985367}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: BottomArmDamage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -998,7 +1000,7 @@ GameObject:
   - component: {fileID: 430728163357883100}
   - component: {fileID: 5309105557602072447}
   - component: {fileID: 7261513860199184191}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: HeadDamage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1081,7 +1083,7 @@ GameObject:
   - component: {fileID: 2956536181696703009}
   - component: {fileID: 6343148721789539441}
   - component: {fileID: 4314870869865098062}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: ShoeDamage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1164,7 +1166,7 @@ GameObject:
   - component: {fileID: 974683449150549030}
   - component: {fileID: 1421363023581232834}
   - component: {fileID: 2881599633944161165}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1246,7 +1248,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5219441299508864695}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShoeBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1281,7 +1283,7 @@ GameObject:
   - component: {fileID: 8128771647369665013}
   - component: {fileID: 1840097646891447848}
   - component: {fileID: 3614406047488497846}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShoeTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1364,7 +1366,7 @@ GameObject:
   - component: {fileID: 4484952632919828839}
   - component: {fileID: 8940427246411034416}
   - component: {fileID: 4314818308470473023}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TopArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1448,7 +1450,7 @@ GameObject:
   - component: {fileID: 9008192960140782429}
   - component: {fileID: 390109750807951127}
   - component: {fileID: 4038079987660507284}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1531,7 +1533,7 @@ GameObject:
   - component: {fileID: 8977505571404520588}
   - component: {fileID: 727399559037773564}
   - component: {fileID: 8605431485968135067}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1612,7 +1614,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7694737518266822439}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1648,7 +1650,7 @@ GameObject:
   - component: {fileID: 5379904200603005598}
   - component: {fileID: 1429889551800834972}
   - component: {fileID: 765278933547674428}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShoeStick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1729,7 +1731,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8454955093469762958}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1764,7 +1766,7 @@ GameObject:
   - component: {fileID: 1550074201638270319}
   - component: {fileID: 9002917350265735064}
   - component: {fileID: 6308575104185018848}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TopLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1848,7 +1850,7 @@ GameObject:
   - component: {fileID: 2296878539714048043}
   - component: {fileID: 8359786094479266441}
   - component: {fileID: 604478831300186709}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TopLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1932,7 +1934,7 @@ GameObject:
   - component: {fileID: 5678238455547462285}
   - component: {fileID: 7251685643872728649}
   - component: {fileID: 1658941923894277045}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pupil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2015,7 +2017,7 @@ GameObject:
   - component: {fileID: 2371310398861729221}
   - component: {fileID: 3310119982407405115}
   - component: {fileID: 5686285068163204120}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShoeTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2098,7 +2100,7 @@ GameObject:
   - component: {fileID: 5508449078479722281}
   - component: {fileID: 7984040733011201948}
   - component: {fileID: 2980699524509057632}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WhitePart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2181,7 +2183,7 @@ GameObject:
   - component: {fileID: 7649742791024090417}
   - component: {fileID: 3820786447411035162}
   - component: {fileID: 8125157362066895278}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: TopArmDamage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2264,7 +2266,7 @@ GameObject:
   - component: {fileID: 7199868653258123355}
   - component: {fileID: 3453672037482680179}
   - component: {fileID: 5735769252094237542}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: BottomLegDamage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2347,7 +2349,7 @@ GameObject:
   - component: {fileID: 2301462202266744651}
   - component: {fileID: 2270756301913797887}
   - component: {fileID: 9122313832519489023}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BottomLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2431,7 +2433,7 @@ GameObject:
   - component: {fileID: 6757928702949640600}
   - component: {fileID: 8971592411748387842}
   - component: {fileID: 8101418523819891572}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Central
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2514,7 +2516,7 @@ GameObject:
   - component: {fileID: 8255703895806792512}
   - component: {fileID: 3824914964560262450}
   - component: {fileID: 4968280199667007960}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WhitePart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2597,7 +2599,7 @@ GameObject:
   - component: {fileID: 480445226369522711}
   - component: {fileID: 1801419717046059294}
   - component: {fileID: 6703125459490005077}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TopArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2679,7 +2681,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2895649278672525678}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shoe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2716,7 +2718,7 @@ GameObject:
   - component: {fileID: 399325544341230545}
   - component: {fileID: 2618358634323709990}
   - component: {fileID: 5524888539390384404}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BottomArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2798,7 +2800,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3957489267074600309}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2830,7 +2832,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1159701076777667154}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2866,7 +2868,7 @@ GameObject:
   - component: {fileID: 1286312215922030438}
   - component: {fileID: 6899923061814473109}
   - component: {fileID: 8812422839780370377}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: BodyDamage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2949,7 +2951,7 @@ GameObject:
   - component: {fileID: 4544855584985781232}
   - component: {fileID: 2950483912494987364}
   - component: {fileID: 9036877994362985399}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3031,7 +3033,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1137101233690112547}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Arms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3064,7 +3066,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2790549871070711601}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3100,7 +3102,7 @@ GameObject:
   - component: {fileID: 975253857713246798}
   - component: {fileID: 8104630983867579900}
   - component: {fileID: 5093484446827039271}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: BottomLegDamage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3183,7 +3185,7 @@ GameObject:
   - component: {fileID: 3889240521009360726}
   - component: {fileID: 4332074994592079515}
   - component: {fileID: 2295797049096341475}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BottomArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3267,7 +3269,7 @@ GameObject:
   - component: {fileID: 3022975849602004681}
   - component: {fileID: 2252205846146491030}
   - component: {fileID: 4790358069173987041}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColoredPart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3350,7 +3352,7 @@ GameObject:
   - component: {fileID: 5443633969159090341}
   - component: {fileID: 8254017803666610960}
   - component: {fileID: 7148057400388840334}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: TopLegDamage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3431,7 +3433,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3490063104442413811}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3466,7 +3468,7 @@ GameObject:
   - component: {fileID: 2595214605610601276}
   - component: {fileID: 3072049853659671589}
   - component: {fileID: 5135206157041288117}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: ShoeDamage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3547,7 +3549,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6577301189280092600}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3582,7 +3584,7 @@ GameObject:
   - component: {fileID: 1727850484066440993}
   - component: {fileID: 4785960550770301376}
   - component: {fileID: 5367633543142150517}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: TopLegDamage
   m_TagString: Untagged
   m_Icon: {fileID: 0}

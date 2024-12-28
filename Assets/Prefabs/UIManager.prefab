@@ -7079,7 +7079,7 @@ MonoBehaviour:
   bossHealthBar: {fileID: 2207760307154636610}
   bossHealthBarBackground: {fileID: 8823341210897079430}
   phoneMenu: {fileID: 3419259986153616994}
-  phoneSound: 1
+  phoneSound: 11
 --- !u!1 &7253891953184997174
 GameObject:
   m_ObjectHideFlags: 0

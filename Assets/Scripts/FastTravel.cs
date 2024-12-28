@@ -7,7 +7,7 @@ public class FastTravel : MonoBehaviour
 {
     [SerializeField] Button fastTravelButton;
 
-    bool hasGottenFastTravel = true; // Only temporarily true to test out fast travel
+    bool hasGottenFastTravel;
     bool canTravel;
 
     int worldToTeleportTo;
@@ -33,8 +33,6 @@ public class FastTravel : MonoBehaviour
 
     public void Travel()
     {
-        Debug.Log("Button Works!!!");
-
         if (worldToTeleportTo == 0)
         {
             Debug.LogWarning("The world ID for the world you wanted to teleport to was set to 0, you are sent to the airport");
@@ -45,7 +43,7 @@ public class FastTravel : MonoBehaviour
             marker.ResetMarker();
         }
 
-        worldManager.ChangeWorld(worldToTeleportTo, 0, false, 0);
+        worldManager.ChangeWorld(worldToTeleportTo, 0);
         uiManager.DisplayMap(false);
     }
 }

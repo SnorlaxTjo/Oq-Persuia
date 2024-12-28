@@ -15,8 +15,7 @@ public class StartCollider : MonoBehaviour
         {
             bossManager.SummonNextWave();
 
-            gameObject.SetActive(false);
-            Destroy(gameObject);
+            GetComponent<Collider>().enabled = false;
         }
     }
 }

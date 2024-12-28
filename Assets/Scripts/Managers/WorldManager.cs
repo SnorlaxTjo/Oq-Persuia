@@ -16,11 +16,17 @@ public class WorldManager : MonoBehaviour
     Vector3 cameraPosition;
     float cameraRotation;
 
+    int currentWorld;
+
     CameraManager cameraManager;
     UIManager uiManager;
     CutsceneManager cutsceneManager;
 
     Bow bow;
+
+    public World[] Worlds { get { return worlds; } }
+    public Vector3[] LocalCameraLimits { get { return localCameraLimits; } }
+    public int CurrentWorld { get { return currentWorld; } }
 
     private void Start()
     {
@@ -29,11 +35,9 @@ public class WorldManager : MonoBehaviour
         cutsceneManager = FindObjectOfType<CutsceneManager>();
 
         bow = FindObjectOfType<Bow>();
-    }
+    }  
 
-    public Vector3[] LocalCameraLimits { get { return localCameraLimits; } }
-
-    public void ChangeWorld(int worldToChangeTo, int teleportPosition, bool startCutscene, int cutscene)
+    public void ChangeWorld(int worldToChangeTo, int teleportPosition, bool startCutscene = false, int cutscene = 0)
     {
         StartCoroutine(ChangeWorldRoutine(worldToChangeTo, teleportPosition, startCutscene, cutscene));
     }
@@ -41,6 +45,7 @@ public class WorldManager : MonoBehaviour
     IEnumerator ChangeWorldRoutine(int world, int teleportPosition, bool startCutscene, int cutscene)
     {
         World setWorld = worlds[world];
+        currentWorld = world;
 
         WorldInfo setWorldInfo = setWorld.world.GetComponent<WorldInfo>();
 
@@ -77,7 +82,14 @@ public class WorldManager : MonoBehaviour
         setWorld.world.SetActive(true);
 
         cameraManager.ChangeCameraLimits(localCameraLimits[0], localCameraLimits[1]);
-        player.GetComponent<PlayerController>().Teleport(setWorld.teleportPlaces[teleportPosition].position);
+        if (teleportPosition != -1)
+        {
+            player.GetComponent<PlayerController>().Teleport(setWorld.teleportPlaces[teleportPosition].position);
+        }
+        else
+        {
+            player.GetComponent<PlayerController>().Teleport(ProgressKeeper.instance.SpawnTeleporterPlace.transform.position);
+        }
 
         cameraManager.CanCheckForCollision = !turnOffCameraCollisions;
 

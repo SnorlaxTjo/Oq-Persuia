@@ -805,6 +805,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 2
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &8877053
 BoxCollider:
@@ -1455,6 +1456,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &30684364
 BoxCollider:
@@ -2086,6 +2088,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46930414}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &47770279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 47770280}
+  - component: {fileID: 47770281}
+  m_Layer: 0
+  m_Name: Floor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &47770280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47770279}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalScale: {x: 5, y: 1, z: 5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255329614}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &47770281
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47770279}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &48998275
 GameObject:
   m_ObjectHideFlags: 0
@@ -2397,6 +2452,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &50156466
 BoxCollider:
@@ -2581,6 +2637,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 2
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &50899685
 BoxCollider:
@@ -3566,6 +3623,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &57419516
 BoxCollider:
@@ -3971,7 +4029,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8812731147592718458, guid: c84bb0a3ce071ae4c9d5c00cb711c582, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4032,6 +4090,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 3
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &69858118
 BoxCollider:
@@ -4134,6 +4193,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &76557733
 BoxCollider:
@@ -4511,7 +4571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5724469449575831662, guid: eda629b29ebac5842bc88a47b8815bce, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6360,7 +6420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6227185849288871507, guid: e94fcfbb6e7afce4da18a229e52896e6, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7960821313601284710, guid: e94fcfbb6e7afce4da18a229e52896e6, type: 3}
       propertyPath: m_LocalScale.x
@@ -6703,7 +6763,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8812731147592718458, guid: c84bb0a3ce071ae4c9d5c00cb711c582, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7433,6 +7493,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 3
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &174844214
 BoxCollider:
@@ -8179,6 +8240,78 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185336888}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &185941951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 185941952}
+  - component: {fileID: 185941954}
+  - component: {fileID: 185941953}
+  m_Layer: 8
+  m_Name: Teleporter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &185941952
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185941951}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255329614}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &185941953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185941951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e27b20ae53001e14b807e33ac9995abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldToTeleportTo: 0
+  teleporterPlaceToTeleportTo: -1
+  triggerCutscene: 0
+  cutsceneToTrigger: 0
+  playSound: 0
+  soundToPlay: 1
+--- !u!65 &185941954
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185941951}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &187176252
 GameObject:
   m_ObjectHideFlags: 0
@@ -9234,6 +9367,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 2
   triggerCutscene: 1
   cutsceneToTrigger: 2
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &234853725
 BoxCollider:
@@ -10123,6 +10257,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5321948953743770716, guid: b396398a825a2fb4c9492391dd568bb0, type: 3}
   m_PrefabInstance: {fileID: 250677056}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &255329613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 255329614}
+  m_Layer: 0
+  m_Name: SpawnPlatform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &255329614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255329613}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 500, y: 0, z: -300}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 47770280}
+  - {fileID: 185941952}
+  - {fileID: 1005651760}
+  - {fileID: 1858295052}
+  m_Father: {fileID: 306476724}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &259169315
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11546,6 +11715,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &284553182
 BoxCollider:
@@ -11846,6 +12016,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &289732495
 BoxCollider:
@@ -12491,6 +12662,7 @@ Transform:
   - {fileID: 180865264}
   - {fileID: 1676326762}
   - {fileID: 138742782}
+  - {fileID: 255329614}
   m_Father: {fileID: 1855521280}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &306476725
@@ -13405,6 +13577,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &339230210
 BoxCollider:
@@ -13721,7 +13894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5724469449575831662, guid: eda629b29ebac5842bc88a47b8815bce, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13787,6 +13960,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &353253199
 BoxCollider:
@@ -13962,6 +14136,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &354102340
 BoxCollider:
@@ -17450,6 +17625,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &440540665
 BoxCollider:
@@ -21118,6 +21294,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 2
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &544302004
 BoxCollider:
@@ -21797,7 +21974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3477004147056983105, guid: 0b72638d076f3e24dbd4ec5f2f577b68, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22731,7 +22908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3984175253273326847, guid: 7b54932f1e5e2b442a6f7b13c2dd521f, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4209077158539325551, guid: 7b54932f1e5e2b442a6f7b13c2dd521f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23107,6 +23284,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &611815231
 BoxCollider:
@@ -23340,6 +23518,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &614931253
 BoxCollider:
@@ -23841,7 +24020,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 624840346}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Ruins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23930,6 +24109,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &638526429
 BoxCollider:
@@ -24973,6 +25153,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &665859191
 BoxCollider:
@@ -25080,7 +25261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8651457420674264836, guid: 543cf90c96b1a554daed769bacc71d37, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28039,6 +28220,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &763948020
 BoxCollider:
@@ -28294,7 +28476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3477004147056983105, guid: 0b72638d076f3e24dbd4ec5f2f577b68, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28523,6 +28705,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &768118665
 BoxCollider:
@@ -29669,6 +29852,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &799308692
 BoxCollider:
@@ -30220,7 +30404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6451412211930710430, guid: ebbb4b5c18c15b94e8e1caa65eb2f362, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30924,6 +31108,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &826130768
 BoxCollider:
@@ -31141,6 +31326,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &829420912
 BoxCollider:
@@ -31937,7 +32123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1194503289876535647, guid: 52288523567435d489c7e1023b296d2f, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1631127415824204394, guid: 52288523567435d489c7e1023b296d2f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32652,7 +32838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4596474629851593271, guid: b7bdba91ad066d648988e4d08cace227, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36676,6 +36862,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &969776974
 BoxCollider:
@@ -37133,6 +37320,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &991338657
 BoxCollider:
@@ -37778,6 +37966,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &1005553522
 BoxCollider:
@@ -37800,6 +37989,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3, y: 10, z: 1}
   m_Center: {x: 0, y: 5, z: 0}
+--- !u!1 &1005651759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1005651760}
+  m_Layer: 0
+  m_Name: TeleporterPlace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1005651760
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005651759}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -470, y: 2, z: -20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255329614}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1005830545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39803,7 +40023,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9205655483384922558, guid: 9f4226cb909ecac44bb708d5e9feba1a, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43626,6 +43846,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &1167680507
 BoxCollider:
@@ -43994,6 +44215,11 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: de56bad3c5656b74d8cc92d71dee9f62, type: 3}
+--- !u!224 &1178469832 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6914888747273728709, guid: 98697301fa559c2469cd102195099811, type: 3}
+  m_PrefabInstance: {fileID: 1274491597413253920}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1180451467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45270,7 +45496,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bcc94894857d1bb40b4cc4c7f4e4f8c7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b4d523f3acf45f9499aff018c7843dd4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0
   m_Pitch: 1
@@ -45656,6 +45882,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 2
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &1212154637
 BoxCollider:
@@ -46366,6 +46593,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &1234019565
 BoxCollider:
@@ -46489,7 +46717,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8812731147592718458, guid: c84bb0a3ce071ae4c9d5c00cb711c582, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -47078,6 +47306,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &1266332453
 BoxCollider:
@@ -48888,6 +49117,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &1300868458
 BoxCollider:
@@ -51630,6 +51860,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &1354893903
 BoxCollider:
@@ -54074,7 +54305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6514480484741372934, guid: b51bdcba9a4fe24418e9686091ac7ac9, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -55235,6 +55466,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &1467839660
 BoxCollider:
@@ -55306,6 +55538,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &1470227858
 BoxCollider:
@@ -55812,6 +56045,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!1001 &1493019963
 PrefabInstance:
@@ -59546,10 +59780,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27b20ae53001e14b807e33ac9995abd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worldToTeleportTo: 10
+  worldToTeleportTo: 24
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &1579729396
 BoxCollider:
@@ -59648,6 +59883,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &1588677350
 BoxCollider:
@@ -61170,6 +61406,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &1619021917
 BoxCollider:
@@ -61319,6 +61556,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 1
   cutsceneToTrigger: 2
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &1621044360
 BoxCollider:
@@ -62064,6 +62302,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 1
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &1641801246
 BoxCollider:
@@ -64405,7 +64644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1899868175178494489, guid: 57e267eff02e36344a2775d32ef4a6bb, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3615776838733213023, guid: 57e267eff02e36344a2775d32ef4a6bb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -65842,7 +66081,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4607789443911756905, guid: 9fecff91020aab4439434bcfa26cd1c9, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5985912148704834009, guid: 9fecff91020aab4439434bcfa26cd1c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -66357,11 +66596,11 @@ MonoBehaviour:
   player: {fileID: 959911869}
   offset: {x: 0, y: 9, z: -9}
   hitMoveOffset: {x: 0, y: -0.5, z: 0.5}
-  lowerLimit: {x: -12, y: 0, z: -322}
-  upperLimit: {x: 72, y: 0, z: -300}
+  lowerLimit: {x: 299, y: 0, z: -501}
+  upperLimit: {x: 301, y: 0, z: -499}
   layerMask:
     serializedVersion: 2
-    m_Bits: 448
+    m_Bits: 1984
 --- !u!4 &1800178842
 Transform:
   m_ObjectHideFlags: 0
@@ -66371,7 +66610,7 @@ Transform:
   m_GameObject: {fileID: 1800178840}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30, y: 10.5, z: -329}
+  m_LocalPosition: {x: 300, y: 12, z: -500}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -66566,6 +66805,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &1805701507
 BoxCollider:
@@ -67685,15 +67925,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 772662949130237890, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 772662949130237890, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 772662949130237890, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -320
+      value: -300
       objectReference: {fileID: 0}
     - target: {fileID: 772662949130237890, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
       propertyPath: m_LocalRotation.w
@@ -67986,6 +68226,89 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: a5300953c6462ed479f4e71b69fb4c78, type: 3}
   m_PrefabInstance: {fileID: 1857472071}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1858295051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1858295052}
+  - component: {fileID: 1858295055}
+  - component: {fileID: 1858295054}
+  m_Layer: 0
+  m_Name: BlackCameraCover
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1858295052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858295051}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
+  m_LocalPosition: {x: -200, y: 0, z: -190}
+  m_LocalScale: {x: 100, y: 50, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255329614}
+  m_LocalEulerAnglesHint: {x: 50, y: 0, z: 0}
+--- !u!23 &1858295054
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858295051}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 228a3ffe9ad5d3147a48928964187f1f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1858295055
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858295051}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1858934719
 GameObject:
   m_ObjectHideFlags: 0
@@ -68503,6 +68826,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &1866719156
 BoxCollider:
@@ -70530,6 +70854,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &1926343254
 BoxCollider:
@@ -70881,7 +71206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7934617710757787016, guid: c543bdd518a7f1d4e9fea62c7330af20, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -72992,6 +73317,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &1990553473
 BoxCollider:
@@ -73910,6 +74236,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &2008763762
 BoxCollider:
@@ -76134,6 +76461,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450d824d7fed5b24091277856c40f215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnTeleporter: {fileID: 185941953}
+  spawnTeleporterPlace: {fileID: 1005651759}
+  playerYTeleportOffset: 0.22
   dialogueObjects:
   - {fileID: 5355378091154536392}
   - {fileID: 280941768}
@@ -76180,7 +76510,22 @@ MonoBehaviour:
   playerData:
     worldId: 0
     playerPosition: {x: 0, y: 0, z: 0}
-    playerBool: []
+    playerBool:
+    - name: HasObtainedMap
+      value: 0
+    - name: HasObtainedPhone
+      value: 0
+    - name: HasObtainedBow
+      value: 0
+  mapGoalMarker: {fileID: 1178469832}
+  triggerOnTouch:
+  - {fileID: 434574462}
+  - {fileID: 1088365895}
+  - {fileID: 1677326867}
+  - {fileID: 410394795}
+  - {fileID: 1223277083}
+  - {fileID: 1555850505}
+  - {fileID: 1938139600}
 --- !u!4 &2078230033
 Transform:
   m_ObjectHideFlags: 0
@@ -77333,6 +77678,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &2124520555
 BoxCollider:
@@ -77668,6 +78014,7 @@ MonoBehaviour:
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
+  playSound: 1
   soundToPlay: 1
 --- !u!65 &2134287601
 BoxCollider:

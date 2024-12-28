@@ -13,6 +13,11 @@ public class Minion : DamageIndicators
     [SerializeField] float distanceToHideArrow;
     [SerializeField] int damageSound;
 
+    [Space]
+
+    [SerializeField] int enemyLayer;
+    [SerializeField] int[] layersToIgnoreCollision;
+
     bool stunned;
     bool knockback;
     int currentHealth;
@@ -37,6 +42,11 @@ public class Minion : DamageIndicators
 
         currentHealth = health;
         timeLeftToBeStunned = timeToBeStunned;
+
+        foreach (int i in layersToIgnoreCollision)
+        {
+            Physics.IgnoreLayerCollision(enemyLayer, i, true);
+        }      
     }
 
     private void Update()

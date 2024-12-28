@@ -11,8 +11,7 @@ public class TriggerOnTouch : MonoBehaviour
         {
             whatToDoUponTouch?.Invoke();
 
-            gameObject.SetActive(false);
-            Destroy(gameObject);
+            GetComponent<Collider>().enabled = false;
         }
     }
 }

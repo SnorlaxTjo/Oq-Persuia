@@ -16,7 +16,7 @@ public class Bow : MonoBehaviour
 
     int currentStage;
     float timeLeftUntilNextStage;
-    bool hasObtainedBow = true; // Only temporarily true for playtest
+    bool hasObtainedBow;
     bool canShoot;
 
     PlayerController playerController;

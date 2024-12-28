@@ -4,7 +4,9 @@ using JetBrains.Annotations;
 
 public static class SaveSystem
 {
-    static string fileName = "/01.oq";
+    static readonly string fileName = "/06.oq";
+
+    public static string FileName { get { return fileName; } }
 
     public static void SaveData(string completeData)
     {

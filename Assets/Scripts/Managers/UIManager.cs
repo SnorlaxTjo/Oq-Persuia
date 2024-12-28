@@ -77,9 +77,9 @@ public class UIManager : MonoBehaviour
     PlayerHealth playerHealth;
 
     public bool IsDisplayingSymbols { get { return isDisplayingSymbols; } }
-    public bool HasGottenMap { set { hasGottenMap = value; } }
+    public bool HasGottenMap { get { return hasGottenMap; } set { hasGottenMap = value; } }
     public bool MapBlock { get { return mapBlock; } set { mapBlock = value; } }
-    public bool HasObtainedPhone { set { hasObtainedPhone = value; } }
+    public bool HasObtainedPhone { get { return hasObtainedPhone; } set { hasObtainedPhone = value; } }
 
     private void Start()
     {
@@ -176,10 +176,6 @@ public class UIManager : MonoBehaviour
 
     public void DisplayMap(bool displayMap)
     {
-        isShowingMap = displayMap;
-        mapMenu.SetActive(isShowingMap);
-        playerController.CompleteMoveBlock = isShowingMap;
-
         SFXManager sfx = SFXManager.instance;
 
         if (displayMap)
@@ -189,7 +185,17 @@ public class UIManager : MonoBehaviour
         else
         {
             sfx.CreateSFX(mapSounds[1]);
+            HideMiniMenu();
+
+            foreach (MapMarker marker in FindObjectsOfType<MapMarker>())
+            {
+                marker.ResetMarker();
+            }
         }
+
+        isShowingMap = displayMap;
+        mapMenu.SetActive(isShowingMap);
+        playerController.CompleteMoveBlock = isShowingMap;
     }
 
     public void ShowCityInfo(Sprite sprite, string title, string description, string locations)
@@ -365,6 +371,7 @@ public class UIManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.P))
         {
+            playerController.MoveBlock = !phoneMenu.activeSelf;
             phoneMenu.SetActive(!phoneMenu.activeSelf);
 
             if (phoneMenu.activeSelf)

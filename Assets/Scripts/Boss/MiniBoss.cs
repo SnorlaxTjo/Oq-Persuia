@@ -58,7 +58,7 @@ public class MiniBoss : MonoBehaviour
 
         if (enemiesLeft <= 0)
         {
-            FindObjectOfType<WorldManager>().ChangeWorld(20, 0, false, 0);
+            FindObjectOfType<WorldManager>().ChangeWorld(20, 0);
             whatToDoUponVictory?.Invoke();
         }
     }
