@@ -10,7 +10,6 @@ public class DelayEvent : MonoBehaviour
 
     public void StartDelay()
     {
-        Debug.Log("a");
         StartCoroutine(DelayEventRoutine());
     }
 

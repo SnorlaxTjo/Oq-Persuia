@@ -2934,12 +2934,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[2].dialogueLine
-      value: I feel like you would only benefit from knowing how the country of Oq
-        Persuia came to be.
+      value: I feel like you would only benefit from knowing how the country of Oq-Persuia
+        came to be.
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[3].dialogueLine
-      value: You see, 1000 years ago, the islans of Zielen got an attack from an
+      value: You see, 1000 years ago, the islands of Zielen got an attack from an
         evil creature.
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
@@ -12811,14 +12811,14 @@ MonoBehaviour:
     - {fileID: 345860965}
     - {fileID: 878275149}
     markerObject: {fileID: 1274491597413253924}
-    markerPosition: {x: 0, y: 0}
+    markerPosition: {x: 112, y: 340}
   - name: 19 - ROUTE | Julgen - Zielen
     world: {fileID: 2120494528}
     teleportPlaces:
     - {fileID: 1219124175}
     - {fileID: 285166020}
     markerObject: {fileID: 0}
-    markerPosition: {x: 0, y: 0}
+    markerPosition: {x: 10, y: 340}
   - name: 20 - CITY | Zielen
     world: {fileID: 404244320}
     teleportPlaces:
@@ -12826,33 +12826,33 @@ MonoBehaviour:
     - {fileID: 402333681}
     - {fileID: 1707838974}
     markerObject: {fileID: 1274491597413253923}
-    markerPosition: {x: 0, y: 0}
+    markerPosition: {x: -11, y: 409}
   - name: 21 - ROUTE | Zielen - Zielen Ruins
     world: {fileID: 1030113400}
     teleportPlaces:
     - {fileID: 289842462}
     - {fileID: 1317560038}
     markerObject: {fileID: 0}
-    markerPosition: {x: 0, y: 0}
+    markerPosition: {x: -45, y: 409}
   - name: 22 - POI | Zielen Ruins
     world: {fileID: 1909339677}
     teleportPlaces:
     - {fileID: 1323966667}
     markerObject: {fileID: 1274491597413253921}
-    markerPosition: {x: 0, y: 0}
+    markerPosition: {x: -57, y: 385}
   - name: 23 - ROUTE | Zielen - Ancient Ruins
     world: {fileID: 1609250300}
     teleportPlaces:
     - {fileID: 244404876}
     - {fileID: 1905823778}
     markerObject: {fileID: 0}
-    markerPosition: {x: 0, y: 0}
+    markerPosition: {x: 0, y: 464}
   - name: 24 - POI | Anient Ruins
     world: {fileID: 1761564766}
     teleportPlaces:
     - {fileID: 111088195}
     markerObject: {fileID: 1274491597413253922}
-    markerPosition: {x: 0, y: 0}
+    markerPosition: {x: 94, y: 464}
   timeToHaveBlackScreen: 0.5
 --- !u!1 &309427057
 GameObject:
@@ -14861,7 +14861,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[0].dialogueLine
-      value: The enemy is like literally right here.
+      value: The enemy is literally right here.
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[1].dialogueLine
@@ -18179,7 +18179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[4].dialogueLine
-      value: It's a map over the entire country of Oq Persuia.
+      value: It's a map over the entire country of Oq-Persuia.
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[5].dialogueLine
@@ -24919,12 +24919,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[4].dialogueLine
-      value: There are lights underneach each target, but I think you'll understand
+      value: There are lights underneath each target, but I think you'll understand
         better when you enter.
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[5].dialogueLine
-      value: The examination takes place in the giant gray building in the north
+      value: The examination takes place in the giant brick building in the north
         of the town.
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
@@ -30169,7 +30169,7 @@ MonoBehaviour:
   - {fileID: 848726355}
   - {fileID: 1408772017}
   timeToDisplayDamageIndicators: 1
-  health: 1
+  health: 300
   damageSound: 21
   moveSpeed: 6
   smoothTime: 0.1
@@ -30251,7 +30251,7 @@ MonoBehaviour:
   ballSpawnPoint: {fileID: 499737583}
   ballSound: 19
   animationTime: 9
-  slapSound: 0
+  slapSound: 23
   dashSpeed: 90
   dashTime: 0.25
   timeToStayStillBetweenDash: 1
@@ -46191,6 +46191,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2105844466}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 16
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!65 &1223277083
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48137,11 +48149,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[0].dialogueLine
-      value: Our home
+      value: Our home.
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[1].dialogueLine
-      value: It's gonna get destroyed
+      value: It's gonna get destroyed.
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.size
@@ -52241,11 +52253,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[4].dialogueLine
-      value: But more importantly, I'm gonna tell you something about defence.
+      value: But more importantly, I'm gonna tell you something about defense.
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[5].dialogueLine
-      value: You see, here in Julgen, there is a defence examination building.
+      value: You see, here in Julgen, there is a defense examination building.
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[6].dialogueLine
@@ -52258,7 +52270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[8].dialogueLine
-      value: So you'll just have to go in without defences.
+      value: So you'll just have to go in without defenses.
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[9].dialogueLine
@@ -56866,7 +56878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[4].dialogueLine
-      value: Depending on how long you hold down for, the arrow will travel diferent
+      value: Depending on how long you hold down for, the arrow will travel different
         lengths.
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
@@ -58552,7 +58564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[0].dialogueLine
-      value: I don't know why I'm just standing ouside my house.
+      value: I don't know why I'm just standing outside my house.
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[1].dialogueLine
@@ -59768,7 +59780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27b20ae53001e14b807e33ac9995abd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worldToTeleportTo: 24
+  worldToTeleportTo: 9
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
@@ -69419,7 +69431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[3].dialogueLine
-      value: You see, I got a call from the mayor of Ferrico
+      value: You see, I got a call from the mayor of Ferrico.
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[4].dialogueLine
@@ -72082,7 +72094,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: dialogueLines2.Array.data[7].dialogueLine
-      value: The residents of Oq Persuia is gonna see you as a threat if you are
+      value: The residents of Oq-Persuia are gonna see you as a threat if you are
         too strong, and you will be kicked out.
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
@@ -78720,6 +78732,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1855521280}
     m_Modifications:
+    - target: {fileID: 1522441292726477405, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3008524642919474992, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -78727,6 +78743,14 @@ PrefabInstance:
     - target: {fileID: 7248130669429599122, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_Name
       value: UIManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8487417957147726079, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -638
+      objectReference: {fileID: 0}
+    - target: {fileID: 8487417957147726079, guid: 98697301fa559c2469cd102195099811, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -307
       objectReference: {fileID: 0}
     - target: {fileID: 8799987319473712836, guid: 98697301fa559c2469cd102195099811, type: 3}
       propertyPath: m_LocalPosition.x

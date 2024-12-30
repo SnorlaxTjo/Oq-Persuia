@@ -83,12 +83,6 @@ public class BallParts : DamageIndicators
     {
         if (!activated) { return; }
 
-        // DEBUG ONLY! Remove in final project
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            Damage(health);
-        }
-
         Vector3 enemyDirection = transform.position - correspondingArrow.transform.position;
         Vector3 newRotation = Vector3.RotateTowards(correspondingArrow.transform.forward, enemyDirection, Time.deltaTime, 0);
 

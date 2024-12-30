@@ -2002,7 +2002,7 @@ AnimationClip:
   - time: 16.016666
     functionName: ChangeText
     data: It is attacking from the Ancient Ruins on Zielen Island. If you live on
-      Zielen Island, it is recommended to seek sheler as sson as possible.
+      Zielen Island, it is recommended to seek sheler as soon as possible.
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
