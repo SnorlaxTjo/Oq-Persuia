@@ -17,7 +17,19 @@ public class ProgressKeeper : MonoBehaviour
     [SerializeField] RectTransform mapGoalMarker;
     [SerializeField] Collider[] triggerOnTouch;
 
+    [Space]
+
+    [SerializeField] float timeBetweenAutoSave;
+    [SerializeField] GameObject saveText;
+
+    float timeSinceAutoSave;
+    bool canSave;
+    bool enableAutoSave = true;
+
     public GameObject SpawnTeleporterPlace { get { return spawnTeleporterPlace; } }
+    public float TimeBetweenAutoSave { get { return timeBetweenAutoSave; } set { timeBetweenAutoSave = value; } }
+    public bool CanSave { get { return canSave; } set { canSave = value; } }
+    public bool EnableAutoSave { get { return enableAutoSave; } set {  enableAutoSave = value; } }
 
     private void Awake()
     {
@@ -25,6 +37,7 @@ public class ProgressKeeper : MonoBehaviour
         {
             instance = this;
         }
+        canSave = true;
     }
 
     private void Start()
@@ -38,10 +51,25 @@ public class ProgressKeeper : MonoBehaviour
         {
             Save();
         }
+
+        timeSinceAutoSave += Time.deltaTime;
+        if (timeSinceAutoSave > timeBetweenAutoSave - 2 && timeSinceAutoSave < timeBetweenAutoSave)
+        {
+            saveText.SetActive(true);
+        }
+
+        if (timeSinceAutoSave >= timeBetweenAutoSave)
+        {
+            Save();
+            timeSinceAutoSave -= timeBetweenAutoSave;
+            saveText.SetActive(false);
+        }
     }
 
     public void Save()
     {
+        if (!canSave) { return; }
+
         #region Change In GameObject Bools
         bool[] dialogueObjectsActive = new bool[dialogueObjects.Length];
         bool[] teleportersActive = new bool[teleporters.Length];
@@ -180,6 +208,8 @@ public class ProgressKeeper : MonoBehaviour
         string completeData = dialogueHexa + "ÿ" + teleporterHexa + "ÿ" + playerBoolHexa + "ÿ" + playerPositionString + "ÿ" + markerPositionString + "ÿ" + hasVisitedHexa
             + "ÿ" + hasTriggeredTouchHexa;
         SaveSystem.SaveData(completeData);
+
+        
     }
 
     public void Load()
