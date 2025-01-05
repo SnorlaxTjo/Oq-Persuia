@@ -319,7 +319,7 @@ public class UIManager : MonoBehaviour
             {
                 playerHealthBarAlpha -= Time.deltaTime;
 
-                if (playerHealthBarAlpha <= 1f)
+                if (playerHealthBarAlpha <= 0f)
                 {
                     playerHealthBarAlpha = 0f;
                     playerHealthBarVisible = false;
@@ -360,7 +360,6 @@ public class UIManager : MonoBehaviour
             bossHealthBarBackground.color = new Color(0.5f, 0f, 0f, bossHealthBarAlpha);
         }
     }
-
     #endregion
 
     #region Phone

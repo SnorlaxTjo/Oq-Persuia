@@ -1,10 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 public static class BinaryHexaConverter
 {
-    static string hexaNumbers = "0123456789ABCDEF";
+    static readonly string hexaNumbers = "0123456789ABCDEF";
     static char[] hexaChars;
 
     public static string ConvertBinaryToHexa(bool[] binaryToConvert)

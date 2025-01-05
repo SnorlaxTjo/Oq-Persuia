@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ProgressKeeper : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class ProgressKeeper : MonoBehaviour
 
     [SerializeField] float timeBetweenAutoSave;
     [SerializeField] GameObject saveText;
+    [SerializeField] Button[] saveButtonsInPauseMenu;
 
     float timeSinceAutoSave;
     bool canSave;
@@ -28,7 +30,7 @@ public class ProgressKeeper : MonoBehaviour
 
     public GameObject SpawnTeleporterPlace { get { return spawnTeleporterPlace; } }
     public float TimeBetweenAutoSave { get { return timeBetweenAutoSave; } set { timeBetweenAutoSave = value; } }
-    public bool CanSave { get { return canSave; } set { canSave = value; } }
+    public bool CanSave { get { return canSave; } }
     public bool EnableAutoSave { get { return enableAutoSave; } set {  enableAutoSave = value; } }
 
     private void Awake()
@@ -43,6 +45,15 @@ public class ProgressKeeper : MonoBehaviour
     private void Start()
     {
         Load();
+    }
+
+    public void EnableSave(bool enable)
+    {
+        canSave = enable;
+        foreach(Button button in saveButtonsInPauseMenu)
+        {
+            button.interactable = enable;
+        }
     }
 
     private void Update()

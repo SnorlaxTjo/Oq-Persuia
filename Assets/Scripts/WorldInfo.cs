@@ -26,6 +26,7 @@ public class WorldInfo : MonoBehaviour
 
     [Space]
     [SerializeField] bool canFastTravel = true;
+    [SerializeField] bool canSave = true;
 
     [Space]
     [Header("Music")]
@@ -47,7 +48,8 @@ public class WorldInfo : MonoBehaviour
     public bool Bow { get { return bow; } set { bow = value; } }
     public bool GroundPound { get { return groundPound; } }
 
-    public bool CanFastTravel { get {  return canFastTravel; } }
+    public bool CanFastTravel { get { return canFastTravel; } }
+    public bool CanSave { get { return canSave; } set { canSave = value; } }
 
     public bool UseCustomMusic { get { return useCustomMusic; } set { useCustomMusic = value; } }
     public AudioClip CustomMusic { get { return customMusic; } }

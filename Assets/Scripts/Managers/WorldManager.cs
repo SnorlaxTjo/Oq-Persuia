@@ -119,6 +119,7 @@ public class WorldManager : MonoBehaviour
         }    
 
         FindObjectOfType<FastTravel>().EnableTravel(setWorldInfo.CanFastTravel);
+        ProgressKeeper.instance.EnableSave(setWorldInfo.CanSave);
 
         yield return new WaitForSeconds(timeToHaveBlackScreen);
 
