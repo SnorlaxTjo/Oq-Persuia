@@ -26,6 +26,12 @@ public class MusicManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
+    private void Start()
+    {
+        Debug.Log("a");
+        ChangeStandardVolume(Options.instance.CurrentMusicVolume);
+    }
+
     private void Update()
     {
         if (!isFadingMusic) { return; }
@@ -40,6 +46,12 @@ public class MusicManager : MonoBehaviour
         }
 
         audioSource.volume = currentMusicVolume;
+    }
+
+    public void ChangeStandardVolume(int volume)
+    {
+        standardMusicVolume = (float)volume / 100f;
+        audioSource.volume = standardMusicVolume;
     }
 
     public void ChangeMusic(AudioClip clip)

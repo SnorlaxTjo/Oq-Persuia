@@ -6,10 +6,26 @@ using UnityEngine.UI;
 
 public class Options : MonoBehaviour
 {
+    public static Options instance;
+
     [SerializeField] GameObject[] pages;
+
+    [Header("Music Volume")]
+    [SerializeField] TextMeshProUGUI musicVolumeText;
+    [SerializeField] Slider musicVolumeSlider;
+
+    [Header("SFX Volume")]
+    [SerializeField] TextMeshProUGUI sfxVolumeText;
+    [SerializeField] Slider sfxVolumeSlider;
+
+    [Header("Fullscreen")]
+    [SerializeField] Toggle fullscreenToggle;
 
     [Header("Resolution")]
     [SerializeField] TMP_Dropdown resolutionDropdown;
+
+    [Header("Autosave")]
+    [SerializeField] Toggle autosaveToggle;
 
     [Header("Autosave Frequency")]
     [SerializeField] TextMeshProUGUI timeText;
@@ -17,6 +33,11 @@ public class Options : MonoBehaviour
     [SerializeField] Button increaseAutosaveButton;
     [SerializeField] int minAutosaveValue;
     [SerializeField] int maxAutosaveValue;
+
+    OldOptions oldOptions;
+
+    int currentMusicVolume;
+    int currentSfxVolume;
 
     Resolution[] resolutions;
     List<Resolution> filteredResolutions;
@@ -26,8 +47,30 @@ public class Options : MonoBehaviour
 
     int currentPage;
 
+    public int CurrentMusicVolume { get { return currentMusicVolume; } }
+    public int CurrentSfxVolume { get { return currentSfxVolume; } }
+    public bool Autosave { get { return autosaveToggle.isOn; } }
+    public int CurrentAutosaveTime { get { return currentAutosaveTime; } }
+
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
+
     private void Start()
     {
+        currentMusicVolume = 100;
+        currentSfxVolume = 100;
+
+        #region Fullscreen
+        fullscreenToggle.isOn = Screen.fullScreen;
+        #endregion
+
+        #region Screen Resolutions
         resolutions = Screen.resolutions;
         filteredResolutions = new List<Resolution>();
 
@@ -62,6 +105,15 @@ public class Options : MonoBehaviour
         resolutionDropdown.AddOptions(resolutionOptions);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
+        #endregion
+    }
+
+    public void SaveOldOptions()
+    {
+        oldOptions.musicVolume = currentMusicVolume;
+        oldOptions.sfxVolume = currentSfxVolume;
+        oldOptions.autosave = autosaveToggle.isOn;
+        oldOptions.autosaveFrequency = currentAutosaveTime;
     }
 
     public void ChangePage(int direction)
@@ -95,10 +147,58 @@ public class Options : MonoBehaviour
         return setPage;
     }
 
+    public void SetMusicVolume()
+    {
+        currentMusicVolume = (int)musicVolumeSlider.value;
+        MusicManager musicManager = FindObjectOfType<MusicManager>();
+
+        if (musicManager != null)
+        {
+            musicManager.ChangeStandardVolume(currentMusicVolume);
+        }
+        else
+        {
+            FindObjectOfType<AudioSource>().volume = (float)currentMusicVolume / 100f;
+        }
+
+        musicVolumeText.text = "Music Volume: " + currentMusicVolume;
+    }
+
+    public void SetSFXVolume()
+    {
+        currentSfxVolume = (int)sfxVolumeSlider.value;
+
+        if (SFXManager.instance != null)
+        {
+            SFXManager.instance.SetVolume(currentSfxVolume);
+        }
+
+        sfxVolumeText.text = "Sound Effect Volume: " + currentSfxVolume;
+    }
+
+    public void Fullscreen(bool setFullscreen)
+    {
+        Debug.Log("Fullscreen: " + setFullscreen);
+        Screen.fullScreen = setFullscreen;
+    }
+
+    public void SetResolution(int resolutionIndex)
+    {
+        Resolution resolution = filteredResolutions[resolutionIndex];
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+    }
+
     public void ChangeAutosaveTime(int direction)
     {
         currentAutosaveTime += direction;
 
+        SetAutosaveFrequencyButtons();
+
+        timeText.text = currentAutosaveTime + " Minutes";
+    }
+
+    void SetAutosaveFrequencyButtons()
+    {
         if (currentAutosaveTime <= minAutosaveValue)
         {
             currentAutosaveTime = minAutosaveValue;
@@ -118,14 +218,29 @@ public class Options : MonoBehaviour
         {
             increaseAutosaveButton.interactable = true;
         }
-
-        timeText.text = currentAutosaveTime + " Minutes";
     }
 
-    public void SetResolution(int resolutionIndex)
+    public void RevertOptions()
     {
-        Resolution resolution = filteredResolutions[resolutionIndex];
-        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+        musicVolumeSlider.value = oldOptions.musicVolume;
+        sfxVolumeSlider.value = oldOptions.sfxVolume;
+        autosaveToggle.isOn = oldOptions.autosave;
+        currentAutosaveTime = oldOptions.autosaveFrequency;
+
+        SetMusicVolume();
+        SetSFXVolume();
+        SetAutosaveFrequencyButtons();
+    }
+
+    public void DistributeOptions()
+    {
+        ProgressKeeper progressKeeper = FindObjectOfType<ProgressKeeper>();
+
+        if (progressKeeper != null)
+        {
+            progressKeeper.EnableAutoSave = autosaveToggle.isOn;
+            progressKeeper.TimeBetweenAutoSave = currentAutosaveTime * 60;
+        }
     }
 
     public void QuitOptions()
@@ -133,3 +248,21 @@ public class Options : MonoBehaviour
         FindObjectOfType<OptionsAccesser>().QuitOptions();
     }
 }
+
+[System.Serializable]
+public struct OldOptions
+{
+    public int musicVolume;
+    public int sfxVolume;
+    public bool autosave;
+    public int autosaveFrequency;
+
+    public OldOptions(int musicVolume, int sfxVolume, bool autosave, int autosaveFrequency)
+    {
+        this.musicVolume = musicVolume;
+        this.sfxVolume = sfxVolume;
+        this.autosave = autosave;
+        this.autosaveFrequency = autosaveFrequency;
+    }
+}
+

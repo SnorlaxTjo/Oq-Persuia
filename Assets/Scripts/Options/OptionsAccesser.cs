@@ -10,6 +10,7 @@ public class OptionsAccesser : MonoBehaviour
     {       
         Options options = FindObjectOfType<Options>(true);
         options.gameObject.SetActive(show);
+        options.SaveOldOptions();
     }
 
     public void QuitOptions()

@@ -1,11 +1,7 @@
 WHAT TO DO BEFORE DEADLINE JAN 12
 
-- Make a death screen with option to reload from last save or exit to main menu
 - Fix all the options. Make them actually change stuff
 - Make options save when exiting the game
-- Natural regeneration
-- Disable saving in certain situations
-- Let every world have their standard values, and use triggers to change them.
 
 (If possible, not necessary, but would be nice)
 - Add audio to main menu

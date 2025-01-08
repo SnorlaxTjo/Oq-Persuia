@@ -45,6 +45,8 @@ public class ProgressKeeper : MonoBehaviour
     private void Start()
     {
         Load();
+        enableAutoSave = Options.instance.Autosave;
+        timeBetweenAutoSave = Options.instance.CurrentAutosaveTime * 60;
     }
 
     public void EnableSave(bool enable)
@@ -62,6 +64,8 @@ public class ProgressKeeper : MonoBehaviour
         {
             Save();
         }
+
+        if (!enableAutoSave) { return; }
 
         timeSinceAutoSave += Time.deltaTime;
         if (timeSinceAutoSave > timeBetweenAutoSave - 2 && timeSinceAutoSave < timeBetweenAutoSave)

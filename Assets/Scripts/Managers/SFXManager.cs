@@ -11,12 +11,24 @@ public class SFXManager : MonoBehaviour
 
     [SerializeField] AudioClip[] sfxClips;
 
+    float sfxVolume = 1f;
+
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
         }
+    }
+
+    private void Start()
+    {
+        SetVolume(Options.instance.CurrentSfxVolume);
+    }
+
+    public void SetVolume(int volume)
+    {
+        sfxVolume = (float)volume / 100f;
     }
 
     public void CreateSFX(int sfxToPlay)
@@ -30,6 +42,7 @@ public class SFXManager : MonoBehaviour
         }
         else
         {
+            sfxObject.GetComponent<AudioSource>().volume = sfxVolume;
             sfx.PlayClip(sfxClips[sfxToPlay]);
         }
     }
