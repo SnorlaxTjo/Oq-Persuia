@@ -106,6 +106,10 @@ public class Options : MonoBehaviour
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
         #endregion
+
+        LoadOptions();
+
+        gameObject.SetActive(false);
     }
 
     public void SaveOldOptions()
@@ -158,7 +162,7 @@ public class Options : MonoBehaviour
         }
         else
         {
-            FindObjectOfType<AudioSource>().volume = (float)currentMusicVolume / 100f;
+            FindObjectOfType<MainMenuMusicManager>().SetVolume();
         }
 
         musicVolumeText.text = "Music Volume: " + currentMusicVolume;
@@ -241,6 +245,53 @@ public class Options : MonoBehaviour
             progressKeeper.EnableAutoSave = autosaveToggle.isOn;
             progressKeeper.TimeBetweenAutoSave = currentAutosaveTime * 60;
         }
+
+        SaveOptions();
+    }
+
+    void SaveOptions()
+    {
+        Debug.Log("a");
+
+        PlayerPrefs.SetInt("musicVolume", (int)currentMusicVolume);
+        PlayerPrefs.SetInt("sfxVolume", (int)currentSfxVolume);
+
+        int isAutosaveOn;
+
+        if (autosaveToggle.isOn)
+        {
+            isAutosaveOn = 1;
+        }
+        else
+        {
+            isAutosaveOn = 0;
+        }
+
+        PlayerPrefs.SetInt("Autosave", isAutosaveOn);
+        PlayerPrefs.SetInt("AutosaveFrequency", currentAutosaveTime);       
+    }
+
+    void LoadOptions()
+    {
+        SetMusicVolume();
+        SetSFXVolume();
+        ChangeAutosaveTime(0);
+
+        if (!PlayerPrefs.HasKey("musicVolume")) { return; }
+
+        musicVolumeSlider.value = PlayerPrefs.GetInt("musicVolume");
+        sfxVolumeSlider.value = PlayerPrefs.GetInt("sfxVolume");
+
+        int isAutosaveOn = PlayerPrefs.GetInt("Autosave");
+        if (isAutosaveOn == 1)
+        {
+            autosaveToggle.isOn = true;
+        }
+        else
+        {
+            autosaveToggle.isOn = false;
+        }
+        currentAutosaveTime = PlayerPrefs.GetInt("AutosaveFrequency");       
     }
 
     public void QuitOptions()

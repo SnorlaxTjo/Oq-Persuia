@@ -13,6 +13,7 @@ public class MusicManager : MonoBehaviour
     bool isFadingDown;
     float standardMusicVolume;
     float currentMusicVolume;
+    float maxMusicVolume;
 
     AudioSource audioSource;
 
@@ -28,30 +29,35 @@ public class MusicManager : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("a");
         ChangeStandardVolume(Options.instance.CurrentMusicVolume);
     }
 
     private void Update()
     {
-        if (!isFadingMusic) { return; }
-
-        if (isFadingDown)
+        if (isFadingMusic)
         {
-            currentMusicVolume -= Time.deltaTime * standardMusicVolume;
-        }
-        else
-        {
-            currentMusicVolume += Time.deltaTime * standardMusicVolume;
+            if (isFadingDown)
+            {
+                currentMusicVolume -= Time.deltaTime * standardMusicVolume;
+            }
+            else
+            {
+                currentMusicVolume += Time.deltaTime * standardMusicVolume;
+            }
+
+            audioSource.volume = currentMusicVolume;
         }
 
-        audioSource.volume = currentMusicVolume;
+        if (audioSource != null && audioSource.volume > maxMusicVolume)
+        {
+            audioSource.volume = maxMusicVolume;
+        }
     }
 
     public void ChangeStandardVolume(int volume)
     {
-        standardMusicVolume = (float)volume / 100f;
-        audioSource.volume = standardMusicVolume;
+        maxMusicVolume = (float)volume / 100f;
+        audioSource.volume = maxMusicVolume;
     }
 
     public void ChangeMusic(AudioClip clip)
@@ -60,14 +66,14 @@ public class MusicManager : MonoBehaviour
         audioSource.Play();
     }
 
-    public void ChangeMusicWithFade(AudioClip clip, float endVolume)
+    public void ChangeMusicWithFade(AudioClip clip)
     {
         standardMusicVolume = audioSource.volume;
         currentMusicVolume = standardMusicVolume;
-        StartCoroutine(MusicFadeRoutine(clip, endVolume));
+        StartCoroutine(MusicFadeRoutine(clip));
     }
 
-    IEnumerator MusicFadeRoutine(AudioClip clip, float endVolume)
+    IEnumerator MusicFadeRoutine(AudioClip clip)
     {
         isFadingDown = true;
         isFadingMusic = true;
@@ -83,11 +89,11 @@ public class MusicManager : MonoBehaviour
 
         isFadingDown = false;
         isFadingMusic = true;
-        standardMusicVolume = endVolume;
+        standardMusicVolume = maxMusicVolume;
 
         yield return new WaitForSeconds(1f);
 
-        currentMusicVolume = endVolume;
+        currentMusicVolume = maxMusicVolume;
         isFadingMusic = false;
     }
 
@@ -95,7 +101,7 @@ public class MusicManager : MonoBehaviour
     {
         if (audioSource.clip != standardMusicClip)
         {
-            ChangeMusicWithFade(standardMusicClip, 1);
+            ChangeMusicWithFade(standardMusicClip);
         }
     }
 }

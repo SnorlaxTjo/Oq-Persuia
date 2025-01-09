@@ -56,7 +56,7 @@ public class WorldManager : MonoBehaviour
 
         if (setWorldInfo.UseCustomMusic)
         {
-            MusicManager.instance.ChangeMusicWithFade(setWorldInfo.CustomMusic, 1);
+            MusicManager.instance.ChangeMusicWithFade(setWorldInfo.CustomMusic);
         }
         else
         {

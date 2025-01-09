@@ -1292,6 +1292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 292033175}
   - component: {fileID: 292033174}
+  - component: {fileID: 292033176}
   m_Layer: 0
   m_Name: MusicManager
   m_TagString: Untagged
@@ -1410,6 +1411,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &292033176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292033173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407079f391e691b4cb5adba1d89d76a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &314958309
 GameObject:
   m_ObjectHideFlags: 0
@@ -3934,8 +3947,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 697383638}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 30, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4485,7 +4498,7 @@ RectTransform:
   m_Father: {fileID: 251311557}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6238,7 +6251,7 @@ RectTransform:
   m_Father: {fileID: 765510519}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7182,8 +7195,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 596767705}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 30, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -9303,6 +9316,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2027070750}
         m_TargetAssemblyTypeName: Options, Assembly-CSharp
+        m_MethodName: DistributeOptions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2027070750}
+        m_TargetAssemblyTypeName: Options, Assembly-CSharp
         m_MethodName: QuitOptions
         m_Mode: 1
         m_Arguments:
@@ -9449,7 +9474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2027070750
 MonoBehaviour:
   m_ObjectHideFlags: 0

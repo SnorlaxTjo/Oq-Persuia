@@ -1,8 +1,5 @@
 WHAT TO DO BEFORE DEADLINE JAN 12
 
-- Fix all the options. Make them actually change stuff
-- Make options save when exiting the game
-
 (If possible, not necessary, but would be nice)
 - Add audio to main menu
 - Fix player animation to make it look better
