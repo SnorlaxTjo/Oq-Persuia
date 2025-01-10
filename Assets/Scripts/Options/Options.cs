@@ -251,8 +251,6 @@ public class Options : MonoBehaviour
 
     void SaveOptions()
     {
-        Debug.Log("a");
-
         PlayerPrefs.SetInt("musicVolume", (int)currentMusicVolume);
         PlayerPrefs.SetInt("sfxVolume", (int)currentSfxVolume);
 

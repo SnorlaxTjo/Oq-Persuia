@@ -1,10 +1,5 @@
 WHAT TO DO BEFORE DEADLINE JAN 12
 
-(If possible, not necessary, but would be nice)
-- Add audio to main menu
-- Fix player animation to make it look better
-- Try to fix the player moving issue in build mode
-
 Last Thing To Do:
 Remove all debugging stuff (Hotkeys, quick teleporter, etc.)
 Remove all unnecessary references in all scripts (using)

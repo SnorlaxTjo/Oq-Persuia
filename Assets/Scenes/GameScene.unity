@@ -68437,17 +68437,13 @@ PrefabInstance:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 72491813}
-    - target: {fileID: 3155256027598741207, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
-      propertyPath: timeBetweenRegen
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3155256027598741207, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
-      propertyPath: timeBetweenDamageAndRegen
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 3798214278775842110, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3997582702687750556, guid: c736accee9c7f964ba42c82ea4c75714, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

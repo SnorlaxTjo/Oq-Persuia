@@ -4153,6 +4153,8 @@ MonoBehaviour:
   maxHealth: 100
   damageSounds: 0c0000000d0000000e000000
   deathScreen: {fileID: 0}
+  timeBetweenDamageAndRegen: 5
+  timeBetweenRegen: 1
 --- !u!95 &6500266148426110052
 Animator:
   serializedVersion: 5
@@ -4405,7 +4407,7 @@ Transform:
   m_GameObject: {fileID: 3997582702687750556}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4480,7 +4482,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 1}
 --- !u!54 &5132596427564701275
 Rigidbody:
   m_ObjectHideFlags: 0
