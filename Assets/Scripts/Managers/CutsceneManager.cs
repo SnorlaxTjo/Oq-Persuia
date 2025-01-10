@@ -63,6 +63,11 @@ public class CutsceneManager : MonoBehaviour
     {
         SFXManager.instance.CreateSFX(sfxToPlay);
     }
+
+    public void FadeMusic(int fadeOut)
+    {
+        MusicManager.instance.FadeMusic(fadeOut == 0);
+    }
 }
 
 [Serializable]

@@ -1,10 +1,9 @@
 using UnityEngine;
 using System.IO;
-using JetBrains.Annotations;
 
 public static class SaveSystem
 {
-    static readonly string fileName = "/06.oq";
+    static readonly string fileName = "/bd2jzq6.oq";
 
     public static string FileName { get { return fileName; } }
 
@@ -24,7 +23,6 @@ public static class SaveSystem
         }
         else
         {
-            Debug.LogWarning("Save File not found in " + path);
             return null;
         }
         

@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Jobs;
 
 public class Arrow : MonoBehaviour
 {
@@ -48,7 +47,6 @@ public class Arrow : MonoBehaviour
                 Vector3 rotation = transform.eulerAngles;
                 Vector3 scale = transform.localScale;
 
-                //GetComponent<Collider>().enabled = false;
                 arrowRigidbody.velocity = Vector3.zero;
                 arrowRigidbody.isKinematic = true;
                 transform.parent = hit.transform.parent;

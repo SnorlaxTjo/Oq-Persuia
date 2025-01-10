@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SFXManager : MonoBehaviour
@@ -10,6 +8,7 @@ public class SFXManager : MonoBehaviour
     [Space]
 
     [SerializeField] AudioClip[] sfxClips;
+    [SerializeField] int[] musicClips;
 
     float sfxVolume = 1f;
 
@@ -38,11 +37,28 @@ public class SFXManager : MonoBehaviour
 
         if (sfxToPlay >= sfxClips.Length || sfxToPlay < 0)
         {
-            Debug.LogError("ErrorCode: Bönor. \n Invalid SFX ID");
+            Debug.LogWarning("Invalid SFX ID");
         }
         else
         {
-            sfxObject.GetComponent<AudioSource>().volume = sfxVolume;
+            bool isMusic = false;
+            foreach (int music in musicClips)
+            {
+                if (music ==  sfxToPlay)
+                {
+                    isMusic = true;
+                }
+            }
+
+            if (isMusic)
+            {
+                sfxObject.GetComponent<AudioSource>().volume = MusicManager.instance.MaxMusicVolume;
+            }
+            else
+            {
+                sfxObject.GetComponent<AudioSource>().volume = sfxVolume;
+            }
+            
             sfx.PlayClip(sfxClips[sfxToPlay]);
         }
     }

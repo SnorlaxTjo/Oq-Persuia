@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 [RequireComponent(typeof(AudioSource))]
 public class MusicManager : MonoBehaviour
@@ -16,6 +15,8 @@ public class MusicManager : MonoBehaviour
     float maxMusicVolume;
 
     AudioSource audioSource;
+
+    public float MaxMusicVolume { get { return maxMusicVolume; } }
 
     private void Awake()
     {
@@ -70,10 +71,24 @@ public class MusicManager : MonoBehaviour
     {
         standardMusicVolume = audioSource.volume;
         currentMusicVolume = standardMusicVolume;
-        StartCoroutine(MusicFadeRoutine(clip));
+        StartCoroutine(FullMusicFadeRoutine(clip));
     }
 
-    IEnumerator MusicFadeRoutine(AudioClip clip)
+    public void FadeMusic(bool fadeOut)
+    {
+        if (fadeOut)
+        {
+            standardMusicVolume = audioSource.volume;
+            currentMusicVolume = standardMusicVolume;
+            StartCoroutine(MusicFadeOutRoutine());
+        }
+        else
+        {
+            StartCoroutine(MusicFadeInRoutine());
+        }
+    }
+
+    IEnumerator FullMusicFadeRoutine(AudioClip clip)
     {
         isFadingDown = true;
         isFadingMusic = true;
@@ -90,6 +105,28 @@ public class MusicManager : MonoBehaviour
         isFadingDown = false;
         isFadingMusic = true;
         standardMusicVolume = maxMusicVolume;
+
+        yield return new WaitForSeconds(1f);
+
+        currentMusicVolume = maxMusicVolume;
+        isFadingMusic = false;
+    }
+
+    IEnumerator MusicFadeOutRoutine()
+    {
+        isFadingDown = true;
+        isFadingMusic = true;
+
+        yield return new WaitForSeconds(1f);
+
+        currentMusicVolume = 0f;
+        isFadingMusic = false;
+    }
+
+    IEnumerator MusicFadeInRoutine()
+    {
+        isFadingDown = false;
+        isFadingMusic = true;
 
         yield return new WaitForSeconds(1f);
 

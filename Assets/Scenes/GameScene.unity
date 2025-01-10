@@ -56851,6 +56851,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5b3ce332d93e81240b30fd9bdd434832, type: 3}
   - {fileID: 8300000, guid: f1650bdaa902b5843a90d606ee0b3133, type: 3}
   - {fileID: 8300000, guid: f571227192ac11348a04b3b5dc68813b, type: 3}
+  - {fileID: 8300000, guid: 244f423e6bd181847bfbe3bc5c0aeff1, type: 3}
+  musicClips: 1800000019000000
 --- !u!1001 &1504098659
 PrefabInstance:
   m_ObjectHideFlags: 0

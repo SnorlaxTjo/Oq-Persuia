@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -37,6 +35,7 @@ public class FastTravel : MonoBehaviour
         {
             Debug.LogWarning("The world ID for the world you wanted to teleport to was set to 0, you are sent to the airport");
         }
+
         uiManager.HideMiniMenu();
         foreach (MapMarker marker in FindObjectsOfType<MapMarker>())
         {

@@ -101,10 +101,6 @@ public class BowLevelManager : MonoBehaviour
                     isMoving = false;
                 }
                 break;
-
-            default:
-                Debug.LogWarning("Move Stage is not a valid number, please check");
-                break;
         }
     }
 

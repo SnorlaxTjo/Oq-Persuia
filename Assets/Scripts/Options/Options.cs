@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -182,7 +181,6 @@ public class Options : MonoBehaviour
 
     public void Fullscreen(bool setFullscreen)
     {
-        Debug.Log("Fullscreen: " + setFullscreen);
         Screen.fullScreen = setFullscreen;
     }
 

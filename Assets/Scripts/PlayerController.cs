@@ -182,6 +182,11 @@ public class PlayerController : MonoBehaviour
         controller.enabled = true;
     }
 
+    public void PlaySFX(int sfxToPlay)
+    {
+        SFXManager.instance.CreateSFX(sfxToPlay);
+    }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.cyan;

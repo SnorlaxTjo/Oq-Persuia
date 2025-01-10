@@ -60,11 +60,6 @@ public class ProgressKeeper : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            Save();
-        }
-
         if (!enableAutoSave) { return; }
 
         timeSinceAutoSave += Time.deltaTime;
