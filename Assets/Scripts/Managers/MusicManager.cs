@@ -39,11 +39,11 @@ public class MusicManager : MonoBehaviour
         {
             if (isFadingDown)
             {
-                currentMusicVolume -= Time.deltaTime * standardMusicVolume;
+                currentMusicVolume -= Time.deltaTime * maxMusicVolume;
             }
             else
             {
-                currentMusicVolume += Time.deltaTime * standardMusicVolume;
+                currentMusicVolume += Time.deltaTime * maxMusicVolume;
             }
 
             audioSource.volume = currentMusicVolume;
@@ -69,8 +69,7 @@ public class MusicManager : MonoBehaviour
 
     public void ChangeMusicWithFade(AudioClip clip)
     {
-        standardMusicVolume = audioSource.volume;
-        currentMusicVolume = standardMusicVolume;
+        currentMusicVolume = maxMusicVolume;
         StartCoroutine(FullMusicFadeRoutine(clip));
     }
 
@@ -78,8 +77,7 @@ public class MusicManager : MonoBehaviour
     {
         if (fadeOut)
         {
-            standardMusicVolume = audioSource.volume;
-            currentMusicVolume = standardMusicVolume;
+            currentMusicVolume = maxMusicVolume;
             StartCoroutine(MusicFadeOutRoutine());
         }
         else
@@ -96,6 +94,7 @@ public class MusicManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         currentMusicVolume = 0f;
+        audioSource.volume = currentMusicVolume;
         isFadingMusic = false;
         audioSource.clip = clip;
         audioSource.Play();
@@ -104,7 +103,6 @@ public class MusicManager : MonoBehaviour
 
         isFadingDown = false;
         isFadingMusic = true;
-        standardMusicVolume = maxMusicVolume;
 
         yield return new WaitForSeconds(1f);
 
@@ -116,10 +114,12 @@ public class MusicManager : MonoBehaviour
     {
         isFadingDown = true;
         isFadingMusic = true;
+        StopCoroutine(FullMusicFadeRoutine(null));
 
         yield return new WaitForSeconds(1f);
 
         currentMusicVolume = 0f;
+        audioSource.volume = currentMusicVolume;
         isFadingMusic = false;
     }
 
@@ -131,6 +131,7 @@ public class MusicManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         currentMusicVolume = maxMusicVolume;
+        audioSource.volume = currentMusicVolume;
         isFadingMusic = false;
     }
 

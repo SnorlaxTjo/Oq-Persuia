@@ -32577,7 +32577,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -32642,7 +32642,7 @@ PrefabInstance:
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[6].m_Target
       value: 
-      objectReference: {fileID: 404244322}
+      objectReference: {fileID: 1920264273}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[7].m_Target
       value: 
@@ -32713,7 +32713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[6].m_MethodName
-      value: set_CanSave
+      value: set_enabled
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[7].m_MethodName
@@ -32749,7 +32749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[6].m_TargetAssemblyTypeName
-      value: WorldInfo, Assembly-CSharp
+      value: UnityEngine.Collider, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[7].m_TargetAssemblyTypeName
@@ -32785,7 +32785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[6].m_Arguments.m_BoolArgument
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8839263462779972987, guid: 0ce9ac9d53e19e8488d6d3e8ebb2fb5c, type: 3}
       propertyPath: whatToDoUponFinishedTalking.m_PersistentCalls.m_Calls.Array.data[7].m_Arguments.m_BoolArgument
@@ -60221,7 +60221,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1579729394
 Transform:
   m_ObjectHideFlags: 0
@@ -60249,7 +60249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27b20ae53001e14b807e33ac9995abd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worldToTeleportTo: 24
+  worldToTeleportTo: 23
   teleporterPlaceToTeleportTo: 0
   triggerCutscene: 0
   cutsceneToTrigger: 0
@@ -77928,7 +77928,7 @@ GameObject:
   - component: {fileID: 2105844467}
   - component: {fileID: 2105844469}
   - component: {fileID: 2105844468}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}

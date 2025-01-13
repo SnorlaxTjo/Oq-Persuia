@@ -270,8 +270,7 @@ public class Options : MonoBehaviour
     void LoadOptions()
     {
         SetMusicVolume();
-        SetSFXVolume();
-        ChangeAutosaveTime(0);
+        SetSFXVolume();     
 
         if (!PlayerPrefs.HasKey("musicVolume")) { return; }
 
@@ -287,7 +286,9 @@ public class Options : MonoBehaviour
         {
             autosaveToggle.isOn = false;
         }
-        currentAutosaveTime = PlayerPrefs.GetInt("AutosaveFrequency");       
+        currentAutosaveTime = PlayerPrefs.GetInt("AutosaveFrequency");
+
+        ChangeAutosaveTime(0);
     }
 
     public void QuitOptions()

@@ -9,8 +9,8 @@ public class PauseManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            ShowPauseMenu(!isPaused);
-            PauseGame(!isPaused);
+            ShowPauseMenu(true);
+            PauseGame(true);
         }
     }
 

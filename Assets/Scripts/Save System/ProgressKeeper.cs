@@ -63,7 +63,7 @@ public class ProgressKeeper : MonoBehaviour
         if (!enableAutoSave) { return; }
 
         timeSinceAutoSave += Time.deltaTime;
-        if (timeSinceAutoSave > timeBetweenAutoSave - 2 && timeSinceAutoSave < timeBetweenAutoSave)
+        if (timeSinceAutoSave > timeBetweenAutoSave - 2 && timeSinceAutoSave < timeBetweenAutoSave && canSave)
         {
             saveText.SetActive(true);
         }
